@@ -101,6 +101,16 @@ Stopped).</comment>
 </shadow>
 </value>
 <next>
+<block type="dcMotor_setProperty_Direction" id="Gu`NH~j]`8N_MmM@1PcP">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">Direction</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_direction" id=",L*h+mrnDQEDp`0fGthZ">
+<field name="DIRECTION">REVERSE</field>
+</shadow>
+</value>
+<next>
 <block type="dcMotor_setProperty_RunMode" id="O,oj!!a};v7Oc9Mj_o}#">
 <field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
 <field name="PROP">Mode</field>
@@ -269,6 +279,8 @@ Stopped).</comment>
 </next>
 </block>
 </statement>
+</block>
+</next>
 </block>
 </next>
 </block>
