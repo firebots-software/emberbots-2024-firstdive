@@ -1,46 +1,17 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
 <variables>
+<variable id=")mg!]vQx_|dw]rE,0n!E">slideSpeed</variable>
+<variable id="?]0fv-0ldv9PfuV?zJDD">scalingFactor</variable>
+<variable id="_gZn(t)m$-VK*1c%H`{}">targetHeight</variable>
+<variable id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</variable>
+<variable id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</variable>
+<variable id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</variable>
 <variable id="J@-^28Z,VL%yRluKZ9#k">scalingValue</variable>
-<variable id="Bx#(#Lox2!|330T@x~XD">viperSlideButtonA</variable>
+<variable id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</variable>
+<variable id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</variable>
+<variable id="83zPLvxz$jMdjC[uR~bC">leftStickYValue</variable>
 </variables>
-<block type="procedures_defnoreturn" id="Q,VQ,qQKGD@}!e[k?]A_" x="585" y="75">
-<field name="NAME">viperSlideControl</field>
-<comment pinned="false" h="80" w="160">Describe this function...</comment>
-<statement name="STACK">
-<block type="dcMotor_setProperty_Number" id="bVZMQc6~!Cw$3r%Seq6L">
-<field name="IDENTIFIER">viperSlideAsDcMotor</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"viperSlide"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="Qe5;B#m#/Im1q1jV.1(]">
-<field name="NUM">0</field>
-</shadow>
-<block type="math_arithmetic" id="1sH3v(?$8VfI0U0HuvQs">
-<field name="OP">DIVIDE</field>
-<value name="A">
-<shadow type="math_number" id="c:mqgqLvuw)5r4!%_Z(*">
-<field name="NUM">1</field>
-</shadow>
-<block type="gamepad_getProperty_Number" id="0_Kiecx^M_!zEpSLll$t">
-<field name="IDENTIFIER">gamepad1</field>
-<field name="PROP">LeftStickY</field>
-<data>{"IDENTIFIER":"gamepad1"}</data>
-</block>
-</value>
-<value name="B">
-<shadow type="math_number" id="I-cX/CuT(a.7]D[q4,8+">
-<field name="NUM">1</field>
-</shadow>
-<block type="variables_get" id="v/?e5uf.3%Cq|uGHh[gG">
-<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">scalingValue</field>
-</block>
-</value>
-</block>
-</value>
-</block>
-</statement>
-</block>
-<block type="procedures_defnoreturn" id="WtpyD@tEu+EoY=P9iY,D" deletable="false" x="21" y="126">
+<block type="procedures_defnoreturn" id="WtpyD@tEu+EoY=P9iY,D" deletable="false" x="-9" y="132">
 <field name="NAME">runOpMode</field>
 <comment pinned="false" h="141" w="577">This sample contains the bare minimum Blocks for any regular OpMode. The 3 blue
 Comment Blocks show where to place Initialization code (runs once, after touching the
@@ -57,11 +28,27 @@ Stopped).</comment>
 <block type="comment" id="+Q|y$Vp/R^ZUe^Lj^`N?">
 <field name="COMMENT">When a button is pressed the viper slide goes to a pre-set length: 3167 to 3300</field>
 <next>
-<block type="variables_set" id="n4rZhy=AeEm~t[Y1Q1[+">
-<field name="VAR" id="Bx#(#Lox2!|330T@x~XD">viperSlideButtonA</field>
+<block type="variables_set" id="Ee+o5P(Ni!bnm8Z6a.aA">
+<field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
 <value name="VALUE">
-<block type="math_number" id="c=V@Yo.fj?|V:i]s?T,v">
-<field name="NUM">0</field>
+<block type="math_number" id="gUSc;H.D@I:#Y.toBh2Q">
+<field name="NUM">0.2</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id=";Q^ZU@p#AJ#)f5=T8onW">
+<field name="VAR" id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</field>
+<value name="VALUE">
+<block type="math_number" id="ydM*:(+vV4PTr,85(8C1">
+<field name="NUM">3167</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="I;4C!n#bL@0;/}G-ej[S">
+<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
+<value name="VALUE">
+<block type="math_number" id="]#|l7G#9X_`i`U|.1k*#">
+<field name="NUM">5320</field>
 </block>
 </value>
 <next>
@@ -69,7 +56,23 @@ Stopped).</comment>
 <field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">scalingValue</field>
 <value name="VALUE">
 <block type="math_number" id="AY.[#_nhYECKubM~8E~W">
-<field name="NUM">3</field>
+<field name="NUM">5</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="e#%i$C{LP*]GY8jl9Qih">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="%mI$)QvlZRFgKDcZU*hs">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="%$BGA;$nMRhsMxx/;(U(">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+<value name="VALUE">
+<block type="math_number" id="_+u/~d2-OB6HoP2sJ)f^">
+<field name="NUM">200</field>
 </block>
 </value>
 <next>
@@ -120,20 +123,396 @@ Stopped).</comment>
 <block type="comment" id="Jh/;L$n@JuX8AQJDFCul">
 <field name="COMMENT">Put loop blocks here.</field>
 <next>
-<block type="procedures_callnoreturn" id="^=8V$u0KBP;Db0wpmR-}">
-<mutation name="viperSlideControl"/>
+<block type="variables_set" id=".]?zmJ./IXFe(T1I5aq6">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">leftStickYValue</field>
+<value name="VALUE">
+<block type="gamepad_getProperty_Number" id="{g1GkN;uO(4tD.NF5V9G">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">LeftStickY</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
 <next>
-<block type="telemetry_addNumericData_Number" id="32;`[0G$8;2!GI}6@ZV)">
+<block type="controls_if" id="?oOrM8e`4Z6V{UGhzbn,">
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="?wj+5#?Pj*szEMnksONP">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">A</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="lX9C9g/D.G+2/0OUq~yk">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="ASHU])^USsIWzQ3t]874">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="QspA9!o5Em3lbgrSvYdP">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">targetHeight</field>
+<value name="VALUE">
+<block type="variables_get" id="t9r:sk+=bKm6rEVd{d@#">
+<field name="VAR" id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="ScJ8h7(=n;:Hrx/3Ajw2">
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="+rWgEYm|nsRM5yzp}[=$">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">B</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="y-}A-ObiM!e2CwoMA!+:">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="q4wOtvJ{puTUd{CE`B}e">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id=",Q?nvb~)^MQmKJxsMH@Y">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">targetHeight</field>
+<value name="VALUE">
+<block type="variables_get" id="vY.y-y3?Wr,Bzf5XPr@n">
+<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="JvJ}mKNdK@}MT[zr##@+">
+<value name="IF0">
+<block type="logic_operation" id="tuM:OeuI(o8tC4Iw{^J_">
+<field name="OP">OR</field>
+<value name="A">
+<block type="logic_compare" id="s(BE8*eSE}(yr*#*wRI,">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="HI,S{YZfYB-QvS_xNcI-">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">leftStickYValue</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="Z7y@col9Uo9ku$nbwLp.">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="logic_compare" id="-JBLDXFy:wh_w#{m#=wX">
+<field name="OP">GT</field>
+<value name="A">
+<block type="variables_get" id="GvxzlW0m]CT0vw,5`T1:">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">leftStickYValue</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="6rKV$myW]nv#Z[7w|Pzt">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="EDR@y.6A^$N3)Qf@?@bY">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="|yr[l*:t#-}COWW0b%1n">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="Ey3C[J3/#HX)T7J)Jt2b">
+<value name="IF0">
+<block type="logic_compare" id="OXT7v[v,3r@Q;7mfhIUT">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="variables_get" id="s~Oj}Y@.-fx0FoOqpx4X">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+</block>
+</value>
+<value name="B">
+<block type="logic_boolean" id="Qk_C/K9qZWmCP?5(iEhq">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="controls_if" id="?1L9YNYL}FYf5jMq!{3X">
+<mutation elseif="1"/>
+<value name="IF0">
+<block type="logic_operation" id="yPsgg06mlf*(5_A$S]x!">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id=":AHE?AMyWfKs$/dL:Gb$">
+<field name="OP">LT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id="ab?@1WKtwJPae9prONt:">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+</block>
+</value>
+<value name="B">
+<block type="math_arithmetic" id="qe6!b;jRBa!#B^Y#y-U)">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number" id="6[DnE(5:qfa8K9B_Jg]i">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="xz4FjLj_FZ+bd[;u8^S!">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">targetHeight</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="*=hXz2Xe$V:4j%x?7W/a">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="H(S,+4tL!Bh/5E~V/[x{">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="logic_compare" id="9hI3QYv%=P5INk~ajcb|">
+<field name="OP">LT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id=")NgMM7~eP:3e*8UwNp/$">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+</block>
+</value>
+<value name="B">
+<block type="math_arithmetic" id="|?$Lx+m1$!y2RPH}%z,?">
+<field name="OP">MINUS</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="Mk7L[6R+SEAH[)A;B!!D">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">targetHeight</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="oZ(xu8;?8?yd$Cg;Gmom">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="]^![t*YcRhIIh;O92;EC">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">slideSpeed</field>
+<value name="VALUE">
+<block type="variables_get" id="UM!dVyrx_b14uOI9D-5D">
+<field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
+</block>
+</value>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_operation" id="(WyH=.nkR#uKkf$y9M9j">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id="$o!SfG7kJ}D(Ga[Y^tbA">
+<field name="OP">GT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id="2qQL/WGn/_RF`i`[)ASx">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+</block>
+</value>
+<value name="B">
+<block type="math_arithmetic" id="s,MaH;0^W;Z]ssj*n7oO">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number" id="Ud6fzYphM(@?[8I$jSUw">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="BX8+Rq:^_VQxAx5kdEOK">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">targetHeight</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="Pw~!UFESzRD/d9#XR@zW">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="-!)wSsFVqsqIIWJCOtO!">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="logic_compare" id="pq%~/oAz[jd89:wTnCci">
+<field name="OP">GT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id="~^^fqv,vyM7H/!tl,ngj">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+</block>
+</value>
+<value name="B">
+<block type="math_arithmetic" id="^D#!n?k$q%,)iTg/K@PO">
+<field name="OP">MINUS</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="P:dDJKsEMId1r1p=(1^K">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">targetHeight</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="KlpUxDo{FJRsR~WQ$vl3">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="nsfJd[LfP_dnGln};7[/">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">slideSpeed</field>
+<value name="VALUE">
+<block type="math_single" id="~kbO7ZZ$T^.w/k%nF{mW">
+<field name="OP">NEG</field>
+<value name="NUM">
+<shadow type="math_number" id="jm(rca^k3r#t/$00[O,N">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="+CtDUJI%R^7g?H1]88Cp">
+<field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</statement>
+<next>
+<block type="telemetry_addNumericData_Number" id="~vJIsSPwX^?yX}AJGy}I">
 <value name="KEY">
-<shadow type="text" id="$k~N`!Y/y,$-1gcZgvZ/">
-<field name="TEXT">ViperSlideCurrentPosition</field>
+<shadow type="text" id="v8jPfp21SPe_u:Y1BGt!">
+<field name="TEXT">currentHeight</field>
 </shadow>
 </value>
 <value name="NUMBER">
-<shadow type="math_number" id=";$JypyT#3]=BjI6tmCp~">
+<shadow type="math_number">
 <field name="NUM">123</field>
 </shadow>
-<block type="dcMotor_getProperty_Number" id="*FsNr2?SJSaBbpC)`o%=">
+<block type="dcMotor_getProperty_Number" id="?FsZQaxh1X=(ZrBGc]Pw">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="oLxJ)]c8uH}AU4z,W@tg">
+<value name="KEY">
+<shadow type="text" id="stF!;=pBVl*E[rfEN*+,">
+<field name="TEXT">targetHeight</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="r9^4Yq`c)+%@XjT$Fr|7">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">targetHeight</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="d0(HESt.D_L*H+B@#:Ns">
+<value name="KEY">
+<shadow type="text" id="3.GNAVpkQC#**~[9ehvW">
+<field name="TEXT">targetHeight</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id=".JSJ_~U7?91BQlv#AdyV">
+<field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
+</block>
+</value>
+<next>
+<block type="telemetry_update" id="e)qK~.:$1,Gn6H@KI4g,"/>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="procedures_callnoreturn" id="xHl3oU0m3jeiPpK:X=}C">
+<mutation name="viperSlideControl">
+<arg name="slideSpeed"/>
+<arg name="scalingFactor"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="l4vYEL4T_;iwduikZw}}">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">slideSpeed</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="4o!5j|Tm!cbX+}iXQh;,">
+<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">scalingValue</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="v:lQjZ?/0EfSR!%IrWS@">
+<value name="KEY">
+<shadow type="text" id="2?wL)1dyQc?[cM,/Q:(P">
+<field name="TEXT">encoderValue</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="M8k~A9ePd?T`ZnRSs#z!">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="|`?kfS`vNKwKSo{Fn$X`">
 <field name="IDENTIFIER">viperSlideAsDcMotor</field>
 <field name="PROP">CurrentPosition</field>
 <data>{"IDENTIFIER":"viperSlide"}</data>
@@ -147,6 +526,16 @@ Stopped).</comment>
 </block>
 </next>
 </block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
 </statement>
 </block>
 </next>
@@ -168,6 +557,60 @@ Stopped).</comment>
 </next>
 </block>
 </next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="KpzWf6EBhfAK)`g,o7X|" x="1324" y="165">
+<mutation>
+<arg name="targetHeight" varid="_gZn(t)m$-VK*1c%H`{}"/>
+</mutation>
+<field name="NAME">preSetHeight</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+</block>
+<block type="procedures_defnoreturn" id="Q,VQ,qQKGD@}!e[k?]A_" x="840" y="476">
+<mutation>
+<arg name="slideSpeed" varid=")mg!]vQx_|dw]rE,0n!E"/>
+<arg name="scalingFactor" varid="?]0fv-0ldv9PfuV?zJDD"/>
+</mutation>
+<field name="NAME">viperSlideControl</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="dcMotor_setProperty_Number" id="bVZMQc6~!Cw$3r%Seq6L">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="Qe5;B#m#/Im1q1jV.1(]">
+<field name="NUM">0</field>
+</shadow>
+<block type="math_arithmetic" id="$gXD34@%y~#N$gD=,;p`">
+<field name="OP">DIVIDE</field>
+<value name="A">
+<shadow type="math_number" id="^x0Eay1T1R)hv4Kmo=,3">
+<field name="NUM">0</field>
+</shadow>
+<block type="variables_get" id="8scnM7L{SAo?M#S|xdga">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">slideSpeed</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="EV`T8iHqEwhTXvzI?L($">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="OPg}GzC2Z84Or6$oyzln">
+<field name="VAR" id="?]0fv-0ldv9PfuV?zJDD">scalingFactor</field>
+</block>
+</value>
+</block>
+</value>
 </block>
 </statement>
 </block>
