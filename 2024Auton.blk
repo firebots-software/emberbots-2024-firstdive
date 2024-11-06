@@ -1,0 +1,3288 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+<variables>
+<variable id="fp?]#.)xaq[?0VHc)xko">gamePad2A</variable>
+<variable id="$7;AFN?opO3E^lz-!V![">gamePad2B</variable>
+<variable id="Shzx#2W=(F{^Afqnda]h">forwardSpeed</variable>
+<variable id="9$#c=qd^u2zS_7WkH4w@">turnSpeed</variable>
+<variable id="/oL(Kw1dzLP(d+XGhmD@">strafeSpeed</variable>
+<variable id="Q0_0G_%LAT`v?rFi^LO=">gamepad1A</variable>
+<variable id="|%d}C)SKt37gDc;NwhUD">distance</variable>
+<variable id="|*FRyn7rVpJgKK62S)%j">speed</variable>
+<variable id="fNSN|omh?|#[Y(A/t)]z">degree</variable>
+<variable id="YNhjMRdKsewYK)J{z.+Y">turnSpeedAutonInput</variable>
+<variable id="WW@^#9CT5Wu%]%F,0!Fz">degrees</variable>
+<variable id="rr9ac3ICXaTW)-N(f;yN">targetDistanceIn</variable>
+<variable id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</variable>
+<variable id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</variable>
+<variable id="jVqR{N:_s}~sO+.7bCc}">driveWithEncoderSpeed</variable>
+<variable id="b0(GSHYaEg$OM{D(C:,-">rotatorLowButton</variable>
+<variable id="xY[%V7UAtl,11_J-PBH^">rotatorHighButton</variable>
+<variable id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</variable>
+<variable id="34!;}4BSyu;Kp~-$aLfC">rotatorRunDirect</variable>
+<variable id="B#^Iq$-H)??CK(}xCNYt">clipScale</variable>
+<variable id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</variable>
+<variable id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</variable>
+<variable id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</variable>
+<variable id="=*!OfUo12rVzBY{u!g~w">forwardInch</variable>
+<variable id="p)KXl2QV}$[W}boo;maD">moveSpeed</variable>
+<variable id="kJIMlg3)-]l*OgyK3}n0">moveOneTile</variable>
+<variable id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</variable>
+<variable id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</variable>
+<variable id="Fd9Hj2f9:*,7`8`2kQAW">secondRotation</variable>
+<variable id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</variable>
+<variable id="Eo@Big~Xq4^uE+]=dL5n">thirdRotation</variable>
+<variable id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</variable>
+<variable id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</variable>
+<variable id="q_H6`b?rp]a0MIoyc0/,">currentYaw</variable>
+<variable id="bJUB|L9Ad:!GI:huC!aX">manualScaling</variable>
+<variable id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</variable>
+<variable id="qRJJ9!1F-NGPHQN^OcZL">rotationVal</variable>
+<variable id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</variable>
+<variable id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</variable>
+<variable id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</variable>
+<variable id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</variable>
+<variable id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</variable>
+<variable id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</variable>
+<variable id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</variable>
+<variable id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</variable>
+<variable id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</variable>
+<variable id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</variable>
+<variable id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</variable>
+<variable id="Q1q.K;7cdaCFAbDLQXL#">distanceCovered</variable>
+<variable id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</variable>
+<variable id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</variable>
+<variable id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</variable>
+<variable id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</variable>
+<variable id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</variable>
+<variable id="sKi7z-1YC[,j#twF*s|A">rotatorTicksPerRotation</variable>
+<variable id="B0TR%]+l}_jx=YHJ)o)M">rotatorScaling</variable>
+<variable id="nv^HGhpb?a$gaCyLKb$~">speedScaleButtonState</variable>
+<variable id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</variable>
+<variable id="B-dChE?L5C%Ls5uF6cMZ">speedScalePressCount</variable>
+<variable id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</variable>
+</variables>
+<block type="procedures_defnoreturn" id="TY@_[f/C!HjYQvYL`Ui;" x="-2988" y="324">
+<field name="NAME">T2:1ToT2:2Obv</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="]I%@DWT]4sFGjs7hd;ni">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="y{iWv957|d-j*O3C29_g">
+<field name="VAR" id="=*!OfUo12rVzBY{u!g~w">forwardInch</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="PIp6iRY/kE4}ZXQ/}p*Z">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="meJio)^:u4X#j(XUJ13$">
+<mutation name="turnRight">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="==Ef_|.z0mI+@@?rG;qy">
+<field name="VAR" id="qRJJ9!1F-NGPHQN^OcZL">rotationVal</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="fH5GPrHWcsiy/CK5Bd?A" x="-2696" y="320">
+<field name="NAME">T2:1ToT2:2</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="J%fEm*]xXpTt,Un4/6HB">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="slCG(bC5fwjJ_N58?8v^">
+<field name="VAR" id="=*!OfUo12rVzBY{u!g~w">forwardInch</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="*Tdgf)DIQ-DYST)Pz~Fi">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="?0(k~,?ucZiKoL@P!A2;">
+<mutation name="turnLeft">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="r$Jwa:iL;Y3_[hzdc_#$">
+<field name="VAR" id="qRJJ9!1F-NGPHQN^OcZL">rotationVal</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="Uqie6Q1kO9F%(;D,+qqB" x="-2382" y="334">
+<field name="NAME">T2:1ToNetToSpikeToNet</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_whileUntil" id="n}l==.U]0FOsj7zZ+@D;">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_boolean" id="6(IEFxt%l%B1:X9atid)">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<statement name="DO">
+<block type="procedures_callnoreturn" id="G:l13FjAmfMZ}EMwqYeD">
+<mutation name="T2:1ToT2:2"/>
+<next>
+<block type="procedures_callnoreturn" id="4}@_@Dz=S=?w]S#De?qR">
+<mutation name="T2:2ToBasket"/>
+<next>
+<block type="procedures_callnoreturn" id="wN;/,lMHG!5c5Zarn$4^">
+<mutation name="BasketToSpikeToBasket"/>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="b$dq|}T8^qa}-pwu38:@" x="-2059" y="329">
+<field name="NAME">T2:1ToNet</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_whileUntil" id="xzy}^P~;IrPaJ|$UM*Gn">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_boolean" id="h~2Mm`ykG`66E(+c.)Ot">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<statement name="DO">
+<block type="procedures_callnoreturn" id="0KlGmbQn=Yo*p!nR$Z?f">
+<mutation name="T2:1ToT2:2"/>
+<next>
+<block type="procedures_callnoreturn" id="P8c::JTiLeKYgY.{wFc^">
+<mutation name="T2:2ToBasket"/>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="R3R#FFHsqNP:HXDi%h|n" x="-1654" y="361">
+<field name="NAME">initialConfigRotator</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="dcMotor_setProperty_RunMode" id="3F.wj?e,BVsHK)!65BEZ">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="1$A:}9x`MCGs]Q8.qq/!">
+<field name="RUN_MODE">STOP_AND_RESET_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_ZeroPowerBehavior" id="+~Wws@Lgl0Exy4vL`:R}">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">ZeroPowerBehavior</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_zeroPowerBehavior" id="4O:,KADG~hfxBF13;HG+">
+<field name="ZERO_POWER_BEHAVIOR">BRAKE</field>
+</shadow>
+</value>
+<next>
+<block type="variables_set" id="T=VXst|940yT@NWVvSzG">
+<field name="VAR" id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</field>
+<value name="VALUE">
+<block type="math_number" id="bvu1:hHw0vvL)6b5bMlm">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="j!=1M?zIY?X~6fgx7JE:">
+<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
+<value name="VALUE">
+<block type="math_number" id="VZ_.4:X=bc^Z$OGW53Q:">
+<field name="NUM">1288</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="r4|wJzR)_D!z#50w;$mP">
+<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
+<value name="VALUE">
+<block type="math_number" id="gn1)M/t1L-~1Lm%9u!Q|">
+<field name="NUM">-225</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="oC2cVa+-_b]HkE0Laod=">
+<field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="Wa]W6)[xfzmH2iu`let6">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="B*iXRD/1)D%na8@1gWw.">
+<field name="VAR" id="B0TR%]+l}_jx=YHJ)o)M">rotatorScaling</field>
+<value name="VALUE">
+<block type="math_number" id="ROm8f76tX64!YsoqKdhl">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="lBZvgg$BfqBYu)x1=%.F">
+<field name="VAR" id="sKi7z-1YC[,j#twF*s|A">rotatorTicksPerRotation</field>
+<value name="VALUE">
+<block type="math_number" id="~,(A8)vbQwQ}B)l=vHa+">
+<field name="NUM">5281.1</field>
+</block>
+</value>
+<next>
+<block type="dcMotor_setProperty_Number" id="cBS[8wE_`2Cr?*?#_,5B">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">TargetPosition</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="math_number">
+<field name="NUM">0</field>
+</shadow>
+<block type="variables_get" id="QE,0iF:hykZq(+=ZjZO*">
+<field name="VAR" id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</field>
+</block>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="ma[2n!v$`/(DN!S)W%CW">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="eHJ@k{~TSDpdQAi^.RfW">
+<field name="RUN_MODE">RUN_TO_POSITION</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="WtpyD@tEu+EoY=P9iY,D" deletable="false" x="-284" y="293">
+<field name="NAME">runOpMode</field>
+<comment pinned="false" h="141" w="577">This sample contains the bare minimum Blocks for any regular OpMode. The 3 blue
+Comment Blocks show where to place Initialization code (runs once, after touching the
+DS INIT button, and before touching the DS Start arrow), Run code (runs once, after
+touching Start), and Loop code (runs repeatedly while the OpMode is active, namely not
+Stopped).</comment>
+<data>{"commentPositionLeft":-20,"commentPositionTop":-169}</data>
+<statement name="STACK">
+<block type="comment" id="Lc#BFtj*NTB48YL;eBl.">
+<field name="COMMENT">Put initialization blocks here.</field>
+<next>
+<block type="linearOpMode_waitForStart" id=":`$wN_ci`O;o6P0~.(+g">
+<next>
+<block type="controls_whileUntil" id="qPx!e$d5*td~icAIx==7">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="linearOpMode_opModeIsActive" id="$4.6rQbUm^6UwgOsKS{`"/>
+</value>
+<statement name="DO">
+<block type="procedures_callnoreturn" id="m=*|7`*IEQRzdW9bo!+}">
+<mutation name="T2:1ToObvToSpikeToObv"/>
+<next>
+<block type="controls_flow_statements" id="fnGmN;[$_P8f8.ZGp:#e">
+<field name="FLOW">BREAK</field>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="1?(A|}z4b+LEu)0-x@uR" x="-3264" y="475">
+<field name="NAME">moveTile</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="QO?J/zUyQP%i]){7vj|h">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="_djEMj^ba-n/=,^nWMA)">
+<field name="VAR" id="kJIMlg3)-]l*OgyK3}n0">moveOneTile</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="1J!Szu.Q1v{)N?nHo35^">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="mmLu6*Fn;|5Ar%S:@fKW" x="-827" y="398">
+<mutation>
+<arg name="gamePad2A" varid="fp?]#.)xaq[?0VHc)xko"/>
+<arg name="gamePad2B" varid="$7;AFN?opO3E^lz-!V!["/>
+</mutation>
+<field name="NAME">runViperslide</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="telemetry_addNumericData_Number" id="1gXD#dQW}G8hk*m4F0ZM">
+<value name="KEY">
+<shadow type="text" id="{u,H=f#ndN(ZIF05hJ{m">
+<field name="TEXT">yValueExists</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="p)--{o^jl/lq7kC-v3Un">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</field>
+</block>
+</value>
+<next>
+<block type="controls_if" id="xt./3[Vj*xhovv6O[]3(">
+<value name="IF0">
+<block type="variables_get" id="rSbuGvLZTz{sUdc9c3Ii">
+<field name="VAR" id="fp?]#.)xaq[?0VHc)xko">gamePad2A</field>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="+WAV$vMyU9)5zzSxcR[5">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="~4j+xXQWg?n((,?Q{7lR">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="LZZ?;qX;Y1rEwMGZ2X6V">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</field>
+<value name="VALUE">
+<block type="variables_get" id="xs?}B}V*QHa-E_:i1.hx">
+<field name="VAR" id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addLine" id="AYstml.m$tq`*7,-XN9*">
+<value name="TEXT">
+<shadow type="text" id="1V33Yb;hKU@|itfDAp58">
+<field name="TEXT">buttonAPressed</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="rfy||uwO)zsS!/?rIBjk">
+<value name="IF0">
+<block type="variables_get" id="=|E#DAkO7hFxQBO;C7Bt">
+<field name="VAR" id="$7;AFN?opO3E^lz-!V![">gamePad2B</field>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="(f,KKyG_#20j46mJH=4w">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="n!ag^T/;i.)T2JWAb_Y9">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="99xJUPZeXCNE$@cVFU(K">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</field>
+<value name="VALUE">
+<block type="variables_get" id="X=Ky0|NP+aYkpq)-^2?[">
+<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addLine" id="n)=Hlyb{Her!rvqw~e54">
+<value name="TEXT">
+<shadow type="text" id="PEqoS,w,E+y=`.yhoO5L">
+<field name="TEXT">buttonBPressed</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="g_kB2c5xL1GMu,u:zmGv">
+<mutation else="1"/>
+<value name="IF0">
+<block type="logic_operation" id="{,8{7Z4Ps(5T2rl;)V^t">
+<field name="OP">OR</field>
+<value name="A">
+<block type="logic_compare" id="2N.DdP7,0D*m2Jb,,zFp">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="!CD(O6W/:?NF.sH%IbW^">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="HV!AfKcwq;`AGh2NBx^u">
+<field name="NUM">-0.15</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="logic_compare" id="c$cK{oHXyioN861NGYq$">
+<field name="OP">GT</field>
+<value name="A">
+<block type="variables_get" id="*!LrFr?]Yv0bVKHqTkYG">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="Ds{$_iw@$r=lzb+J?*0o">
+<field name="NUM">0.15</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="telemetry_addNumericData_Number" id="L,jtE`$9Y}toe*(Q$$5r">
+<value name="KEY">
+<shadow type="text" id="KGQ,R@*4@$:{Qq2v0~1N">
+<field name="TEXT">yValueExists</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="xVdX#sc%zEj@NYKsET}v">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="`na.d[]-PJ{iub!7F#|W">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
+<value name="VALUE">
+<block type="variables_get" id="e~#^xy+d=D6a5(6~;_!j">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="oO]#2I@4O/p]a~HEMaud">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="-dLViG~?dMB8=U^IuzlB">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="telemetry_addNumericData_Number" id="amwUz^TiD6-)h~*09;c?">
+<value name="KEY">
+<shadow type="text" id="1:#r6KUGv7|U_w%]{Vo0">
+<field name="TEXT">stopped</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="Nars85GOg/}bt5DC}NNB">
+<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="NsI8#|LhK6H,M?:P|NJ3">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
+<value name="VALUE">
+<block type="math_number" id=";)-r`5r0n!}zByh@9H[l">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="iGMmw!W[12oC1UO(`x1]">
+<value name="IF0">
+<block type="logic_compare" id="4y?9NQq1?v@_IE=|5-am">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="variables_get" id="b14p0G+WH5E4f6Tli{u;">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+</block>
+</value>
+<value name="B">
+<block type="logic_boolean" id="MrZnvOz4d=#PV=mZC?p*">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="telemetry_addLine" id=":|]Tt7okAb|ws*Y6%W]!">
+<value name="TEXT">
+<shadow type="text" id="w#.k{l?aJE9+{lS6:.tB">
+<field name="TEXT">buttonPressedIsTrue</field>
+</shadow>
+</value>
+<next>
+<block type="controls_if" id="UOoZ_|a}sPB84Wtw:1By">
+<mutation elseif="2"/>
+<value name="IF0">
+<block type="logic_operation" id="i6yYi%0Wy:|tp;}CS;l.">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id=",X2b79fb6[DvbvMG2P=y">
+<field name="OP">LTE</field>
+<value name="A">
+<block type="variables_get" id="bflXMxwN.B?|mo-[:zQI">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<block type="math_arithmetic" id="h@_}xKCc`V5@Z$%?Ynr,">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="RMsCBXQ*/X4GT2k(HZXn">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id=";~{(L|ebNI68H4^vnt2J">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="logic_compare" id="6Z^9q`+Tvv@~,Cy$PrvS">
+<field name="OP">GTE</field>
+<value name="A">
+<block type="variables_get" id="1!~y-.d)a#6$zV5!.es}">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<block type="math_arithmetic" id="a#O[+wb8QOO_t8^9lI^h">
+<field name="OP">MINUS</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="6$=SmlYAI|N.={yB%nk6">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="u%Rf^0oi@)w#j;B83Q}A">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="zr.!!b-5GfSJs_N(I_9~">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
+<value name="VALUE">
+<block type="math_number" id="Plf1Wmrnpiznj@[%V8lC">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="RKMk2JBR_pYACx6gabFq">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="*g|op8UUD@wL$rbwjuTQ">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addLine" id="Hd5rF[WYpr+[WKN:mlg7">
+<value name="TEXT">
+<shadow type="text" id="R#SXM`Aik:3gs~D}jS^i">
+<field name="TEXT">reachedDestination</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="Fnojy31nAn@aOWJcU-K+">
+<field name="OP">GT</field>
+<value name="A">
+<block type="variables_get" id="b;J[6|!k10neLf+=JdN#">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="?ltf5KD2s9!MoVbSAjiU">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="yo,Fd64_wl^`|Nzn},Dj">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
+<value name="VALUE">
+<block type="math_single" id="p7QG^2c5fGB{oyRHf):,">
+<field name="OP">NEG</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="$M3CQIS]Hb8b09cxOChW">
+<field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="telemetry_addLine" id="]jF*@x.@q!8i)O~~QlD^">
+<value name="TEXT">
+<shadow type="text" id="ahg`SJ%P#O!9};+Y%[C0">
+<field name="TEXT">slideMovedDown</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</statement>
+<value name="IF2">
+<block type="logic_compare" id="MlQUQLBL{#*}R!,w)jjN">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="-;hn;_K2=/$T/]_ZO?~G">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="R$Klt?G-`nNzp.BikGNJ">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO2">
+<block type="variables_set" id="PDs=hsQ0F94$y/I^_vm[">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
+<value name="VALUE">
+<block type="variables_get" id="+DXF+_Jm#@gu-g.$73U!">
+<field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addLine" id="3b5cv[83iFbq7yyaE1++">
+<value name="TEXT">
+<shadow type="text" id="p[Au13JJVRhy/q/H0{(Q">
+<field name="TEXT">slideMovedUp</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="telemetry_addNumericData_Number" id=")zN$ywk%H@/x#dq#pmCy">
+<value name="KEY">
+<shadow type="text" id="Hb.LzQl8S{wtZFC`p,Zl">
+<field name="TEXT">currentHeight</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id=";-iID-G4!xzy+Pr4mOgK">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="s1kOD;uo}yu}%ZLc,84l">
+<value name="KEY">
+<shadow type="text" id="Epoa6UR;NbaoN)r9IMux">
+<field name="TEXT">targetHeight</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="9aJd4ZYi+u[*4aVcdm2c">
+<field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="!_#p-*Om0u:8xsw9Yu}s">
+<value name="KEY">
+<shadow type="text" id="N2CcWz{EYeGusI7CNrw|">
+<field name="TEXT">preSetSlideSpeed</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="HTIofXn*`2GSuNXu0Tz_">
+<field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="procedures_callnoreturn" id="G*QvWDYK.]6e{kQpNcXq">
+<mutation name="viperSlideHeightLimitation"/>
+<next>
+<block type="telemetry_addNumericData_Number" id="}*7MxRoCNvA(Ua0[m|Il">
+<value name="KEY">
+<shadow type="text" id="/rC/wYeD;DAJV^xU|1Cw">
+<field name="TEXT">encoderValue</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="rt7mzynF!Vd`cM_rsRc[">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="{]Bek=nSW]_p*(@24slW" x="521" y="358">
+<mutation>
+<arg name="forwardSpeed" varid="Shzx#2W=(F{^Afqnda]h"/>
+<arg name="turnSpeed" varid="9$#c=qd^u2zS_7WkH4w@"/>
+<arg name="strafeSpeed" varid="/oL(Kw1dzLP(d+XGhmD@"/>
+</mutation>
+<field name="NAME">movement2</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<data>{"commentPositionLeft":-190,"commentPositionTop":-20}</data>
+<statement name="STACK">
+<block type="variables_set" id="CU_]1^p38r0`N[K|MwW#">
+<field name="VAR" id="B#^Iq$-H)??CK(}xCNYt">clipScale</field>
+<value name="VALUE">
+<block type="math_on_list" id="J9(^{RbRm_5hPw+GSbDX">
+<mutation op="MAX"/>
+<field name="OP">MAX</field>
+<value name="LIST">
+<block type="lists_create_with" id="+r0P,pkTrXK!dXT%A5LP">
+<mutation items="2"/>
+<value name="ADD0">
+<block type="math_on_list" id="q[Y+Kj/e7{+Bbg{GoUY3">
+<mutation op="SUM"/>
+<field name="OP">SUM</field>
+<value name="LIST">
+<block type="lists_create_with" id="j;fO::_Va^#(Tx?8P/yN">
+<mutation items="3"/>
+<value name="ADD0">
+<block type="math_single" id="@RH~WcY4ZoZQw_-fH`f^">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="+cB+2.u?zj6U(j,$@f=T">
+<field name="VAR" id="Shzx#2W=(F{^Afqnda]h">forwardSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="ADD1">
+<block type="math_single" id="t)GV_]^#Rci)y-1|UCUS">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="z9,cp{O{b`kh?-sK)0HQ">
+<field name="VAR" id="9$#c=qd^u2zS_7WkH4w@">turnSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="ADD2">
+<block type="math_single" id="KJf#4iQ_g?UsU1_m%TD3">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="Smx})*5N`DBKU}Ij9nT(">
+<field name="VAR" id="/oL(Kw1dzLP(d+XGhmD@">strafeSpeed</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<value name="ADD1">
+<block type="math_number" id="MNOTl~e-D/xzsT4K}B|e">
+<field name="NUM">1</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="variables_set" id="MG$K4%)KVRp-G1^e~+;v">
+<field name="VAR" id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="h;oHmd[cH7}wo@QXdR^f">
+<field name="OP">DIVIDE</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="qNM.AWG@U9+9neQ#sYpF">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="r;uHtJI).1IZ?b@b?Vhc">
+<field name="OP">MINUS</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="lgiT?Lj1/|*_w[;e}:zo">
+<field name="OP">MINUS</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="(Wynk4u/D^60N$+|5sh8">
+<field name="VAR" id="Shzx#2W=(F{^Afqnda]h">forwardSpeed</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="|5t[!sqMS(VNJ9$5_xMB">
+<field name="VAR" id="9$#c=qd^u2zS_7WkH4w@">turnSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="Kg+se|OxAih`m}e/zkuu">
+<field name="VAR" id="/oL(Kw1dzLP(d+XGhmD@">strafeSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="ZW|m84zyULmlzjcrKQV0">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="r.]saWktn/},_hJ/x6!}">
+<field name="VAR" id="B#^Iq$-H)??CK(}xCNYt">clipScale</field>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="variables_set" id="};m(-2;][(CZg}ym+z9K">
+<field name="VAR" id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="Ma8#{oCe;wR$kGfM7B-~">
+<field name="OP">DIVIDE</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="0`VBw7YU6UzS+,yDef%q">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="v*N2o]pqdozP{8-w7pU|">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="lR@-]13?f%F[#lm_9+)$">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="t6SHt/A+/WpIfh_N`+ng">
+<field name="VAR" id="Shzx#2W=(F{^Afqnda]h">forwardSpeed</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="`H^Pz(cI#yvh|2AD,N$|">
+<field name="VAR" id="9$#c=qd^u2zS_7WkH4w@">turnSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="om]-_GiAP}4nzTU/V@k]">
+<field name="VAR" id="/oL(Kw1dzLP(d+XGhmD@">strafeSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id=";J3W[Y,Ja6r;$3(KbRec">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="D,hlOBO;3T%$].vA#;mv">
+<field name="VAR" id="B#^Iq$-H)??CK(}xCNYt">clipScale</field>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="variables_set" id=")z#E[ai7#50;s38ov)id">
+<field name="VAR" id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="u{*kJ?LjZj1*iF6z9tr^">
+<field name="OP">DIVIDE</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="wP^@_vHwX.WI`tGu9ghY">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="|6ZaC_jml?E7$xWl{V22">
+<field name="OP">MINUS</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="h;#R)FvQW[47Z[kg{g$6">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id=",lc!NzhEtfAk9KJ0%gL7">
+<field name="VAR" id="Shzx#2W=(F{^Afqnda]h">forwardSpeed</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="Su|8*#Y8_apuaBg6qc6R">
+<field name="VAR" id="9$#c=qd^u2zS_7WkH4w@">turnSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="OFXsvJep{s;{O8ayJyc`">
+<field name="VAR" id="/oL(Kw1dzLP(d+XGhmD@">strafeSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="viTcm5QHk97zK:Fr*!]H">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id=".aFFQwl1TpmStGBgHkJp">
+<field name="VAR" id="B#^Iq$-H)??CK(}xCNYt">clipScale</field>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="variables_set" id="D_{Y7.nEl2WTW_s](y/8">
+<field name="VAR" id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="(r#%Vxn6P$xV--oQB)ME">
+<field name="OP">DIVIDE</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="JB%Ec=WQe7QxB_NemHDJ">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="}VV9Uf2:OI}KExSq|#T^">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id=";cx@^r5*E1jX2:GY|}pn">
+<field name="OP">MINUS</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="%Q$dCBsNT0p$5;+}i7JP">
+<field name="VAR" id="Shzx#2W=(F{^Afqnda]h">forwardSpeed</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="Ef+cVrd?H{#kKP=urxG9">
+<field name="VAR" id="9$#c=qd^u2zS_7WkH4w@">turnSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="9G0KE.=B)jlv/q;QBxvu">
+<field name="VAR" id="/oL(Kw1dzLP(d+XGhmD@">strafeSpeed</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="yA.v8Mk]bRKlM|1-HVKl">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="jH5/2*-E}~xO!@)S$+^0">
+<field name="VAR" id="B#^Iq$-H)??CK(}xCNYt">clipScale</field>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="}VF,O1Jj|BCUCCEGmp)_">
+<value name="KEY">
+<shadow type="text" id=";h$1iQT9TyjFMWl4P0T*">
+<field name="TEXT">frontRight</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="7hAVa`QUI4m_r|iQ0V1c">
+<field name="VAR" id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="w1w;O:C86j5w`.:9z6gG">
+<value name="KEY">
+<shadow type="text" id=")itYT|2`zlrC@g}Fk*=:">
+<field name="TEXT">frontLeft</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="E2PY6|(5sRfJoJ~n8!|A">
+<field name="VAR" id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="-zBM`*kf.vE9lYB#:X?w">
+<value name="KEY">
+<shadow type="text" id=";-CTj4YbrD!F0Bt6~X!:">
+<field name="TEXT">backLeft</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="$|aT+LNB.BwqFz45WIit">
+<field name="VAR" id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="~5::~s3|z]rIyCXbGXy*">
+<value name="KEY">
+<shadow type="text" id="?:^8:Nhd?}P+oS5Yi8=S">
+<field name="TEXT">backRight</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="Tm2FR[#T7Y5*wOeL!rEC">
+<field name="VAR" id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</field>
+</block>
+</value>
+<next>
+<block type="crServo_setProperty_Number" id="-a.B,E?q[E?W]U-+CU_Q">
+<field name="IDENTIFIER">frontRightMotorAsCRServo</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"frontRightMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="tsGvxB=DYvF^l0]UNsAQ">
+<field name="VAR" id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</field>
+</block>
+</value>
+<next>
+<block type="crServo_setProperty_Number" id="pG[CK8C{`h|EZ11XM}t@">
+<field name="IDENTIFIER">frontLeftMotorAsCRServo</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"frontLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="q=Dz`f.JtDF:b/$YIkAr">
+<field name="VAR" id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</field>
+</block>
+</value>
+<next>
+<block type="dcMotor_setProperty_Number" id="$8/2k*_X3!pkt#fmr#Z8">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number">
+<field name="NUM">0.3</field>
+</shadow>
+<block type="variables_get" id="gg:eU|@2L]oK?`8u+-4(">
+<field name="VAR" id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</field>
+</block>
+</value>
+<next>
+<block type="dcMotor_setProperty_Number" id="kh8h?e9P}:9/go$to:}I">
+<field name="IDENTIFIER">backRightMotorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"backRightMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number">
+<field name="NUM">-0.3</field>
+</shadow>
+<block type="variables_get" id="@(]nHU]lw.8dB}v=[[fA">
+<field name="VAR" id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="McJ4kG5@@1L[tMR^*fOt" x="-2888" y="541">
+<field name="NAME">T2:2ToBasket</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="`OWDSY2[h~8Yrg_Qyo+:">
+<mutation name="turnLeft">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="Lj:CK]W:K4H6ULTVI-Fg">
+<field name="VAR" id="Fd9Hj2f9:*,7`8`2kQAW">secondRotation</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="cz0XW/Fh];pfTtAL:Zzb">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="n;2mQaTvt0Zxr$?w?D=z">
+<field name="VAR" id="kJIMlg3)-]l*OgyK3}n0">moveOneTile</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="{pTG`x2D)kpMx:SAy}E?">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="@a./$6O(CA`S9rS?$q}%">
+<mutation name="liftElevator"/>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="-Fxx$hwwG::IK58R(288" x="-2433" y="544">
+<field name="NAME">T3:1ToNetToSpikeToNet</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_whileUntil" id="[k,nc%z3h-DD1PoVO=hL">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_boolean" id="B*$1Z=xWRQeoDn)SdCL?">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<statement name="DO">
+<block type="procedures_callnoreturn" id="$@l-6uFi,YCR3;*4HEN[">
+<mutation name="T2:1ToT2:2"/>
+<next>
+<block type="procedures_callnoreturn" id="Tr7+Tsl}zfA|kL8iduqw">
+<mutation name="moveTile"/>
+<next>
+<block type="procedures_callnoreturn" id="3Mv=%IUn.LM?{W^#F*AW">
+<mutation name="T2:2ToBasket"/>
+<next>
+<block type="procedures_callnoreturn" id="MAnY4YMXf,t@v|hkkLA+">
+<mutation name="BasketToSpikeToBasket"/>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="2j]^TnzVc0]K$xK;VwN`" x="-1933" y="533">
+<field name="NAME">initialConfigViperslide</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="variables_set" id="F?aVCZ57%S)*ISE@5G[F">
+<field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
+<value name="VALUE">
+<block type="math_number" id="^YHZ/~A5#@7Z|}8KH4V6">
+<field name="NUM">1</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="nlS^RzT|GYuU-%:lUUL-">
+<field name="VAR" id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</field>
+<value name="VALUE">
+<block type="math_number" id="vc*h/o=Z?:SN@vVW9w~L">
+<field name="NUM">1402</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="ET}mZhTJwz.FT2DG$7[H">
+<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
+<value name="VALUE">
+<block type="math_number" id="J^(|2WUjtj)X=u(t2itt">
+<field name="NUM">5810</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="p7d(45k?@M/W]fdtL9bi">
+<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
+<value name="VALUE">
+<block type="math_number" id="Xk2MI?#.Ma$Am3zC=o|5">
+<field name="NUM">2</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="`/pAzAtmo_#:}3A]JF`h">
+<field name="VAR" id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="WUUsHm)e,h#;jk|+,+;=">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="Muz#}bNTWwMTg;r()f*{">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+<value name="VALUE">
+<block type="math_number" id="4OzhQirhH.?gNv6,Rv}C">
+<field name="NUM">200</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="~Xr4p`akhY^x[6K*Q7m_">
+<field name="VAR" id="$7;AFN?opO3E^lz-!V![">gamePad2B</field>
+<value name="VALUE">
+<block type="math_number" id="GW}K*AtfX_a/z2/(F3xO">
+<field name="NUM">27</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id=":dpu6FPpFRk5n6I-A=!U">
+<field name="VAR" id="fp?]#.)xaq[?0VHc)xko">gamePad2A</field>
+<value name="VALUE">
+<block type="math_number" id="lsPA@St;?[Erl,IR33_=">
+<field name="NUM">9</field>
+</block>
+</value>
+<next>
+<block type="dcMotor_setProperty_Direction" id="LO7zeb`;UYk?9uJYR3;B">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">Direction</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_direction" id="``=y8R!TOZuY}YI`9+x*">
+<field name="DIRECTION">REVERSE</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="S*s,c@s;wsRA=CR[jz=(">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="JkDv3b=9Z!.~s74!)WB`">
+<field name="RUN_MODE">STOP_AND_RESET_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="kTw[zO+4Ld|?:($SmmCN">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="Bc$~/T?lFmM8[Hmc[~@i">
+<field name="RUN_MODE">RUN_WITHOUT_ENCODER</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="^DoFL{HK,=T(A:ICf01I" x="-3269" y="676">
+<field name="NAME">ObvToSpike</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="ZY#,Tj)7LijQr/j]@)iv">
+<mutation name="turnRight">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="uYPZ5,oh9CW)dI6R{(vY">
+<field name="NUM">45</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="`$V`!+`31/^vVm#@C!@[">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="C(aMt,rYALZ6|8iZrxvk">
+<field name="VAR" id="=*!OfUo12rVzBY{u!g~w">forwardInch</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="Yf+xTI=onj!qM%t~o8pT">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="al85K{;PAle;`rIAWA/F" x="-2895" y="765">
+<field name="NAME">BasketToSpikeToBasket</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="YBs7[Pap!JA}(Pw$gD8S">
+<mutation name="turnRight">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="PyaK2Fc`FhG`D.8Qkns?">
+<field name="VAR" id="Eo@Big~Xq4^uE+]=dL5n">thirdRotation</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="@)s#M!pM8~GgH8?S$4/[">
+<mutation name="turnLeft">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="P[-Rc~L%cTP*c/Q|+[M5">
+<field name="VAR" id="qRJJ9!1F-NGPHQN^OcZL">rotationVal</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="B#tZ1HXpS=e!0N]}k5Cb">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="7}.ZPKTL?f0@MD#%k^N0">
+<field name="VAR" id="Q1q.K;7cdaCFAbDLQXL#">distanceCovered</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="Om+E#~l+.@bf9SdTe:i:">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="5o-PvDoyEfC!ku-i.n_D">
+<mutation name="turnRight">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="p@XxY5,iMyzun6%(O$$t">
+<field name="VAR" id="qRJJ9!1F-NGPHQN^OcZL">rotationVal</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="%2:HDN@}/pU.1tT=$hO~">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="2jqFhATTzax)y]Y;sn7/">
+<field name="VAR" id="Q1q.K;7cdaCFAbDLQXL#">distanceCovered</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="`r2H6d_bOipMo`:KfS%I">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="odU]O(-95@suVuU#qwZM">
+<mutation name="turnLeft">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="7AyM.z-#WixS%KrNO@WB">
+<field name="VAR" id="Eo@Big~Xq4^uE+]=dL5n">thirdRotation</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="eAWv1zX:d`LpjK[dGZb4">
+<mutation name="liftElevator"/>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="e*QNWVCOI=]xOj:YVUV," x="-3593" y="803">
+<field name="NAME">liftElevator</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="bB.o%BdDY}aE3emAoa43">
+<mutation name="runRotator">
+<arg name="rotatorLowButton"/>
+<arg name="rotatorHighButton"/>
+<arg name="rotatorStick"/>
+<arg name="rotatorRunDirect"/>
+</mutation>
+<value name="ARG0">
+<block type="logic_boolean" id="!I3`/Az1NxX/{XmP]QMo">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="logic_boolean" id="qRj9$P;.#T%vB37McheA">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<value name="ARG2">
+<block type="math_number" id="wE!eX:cKswzi7C!;bd!p">
+<field name="NUM">0</field>
+</block>
+</value>
+<value name="ARG3">
+<block type="math_number" id="6nWJpNB]B:~KZ*k,,7OG">
+<field name="NUM">90</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="u_Fg+Ee(n0u?uYb]Zt/0">
+<mutation name="runViperslide">
+<arg name="gamePad2A"/>
+<arg name="gamePad2B"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="z`{sR*)KRL[u-im=qsB4">
+<field name="VAR" id="fp?]#.)xaq[?0VHc)xko">gamePad2A</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="?exU6A{5}imTuX,S:Nj%">
+<field name="VAR" id="$7;AFN?opO3E^lz-!V![">gamePad2B</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="YI!$=gj_s@eu%Y:cZt~M">
+<mutation name="presetWrist">
+<arg name="gamepad1A"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="WkZTeo/+0G3d_?R#%{)i">
+<field name="VAR" id="Q0_0G_%LAT`v?rFi^LO=">gamepad1A</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="Qjp~X!t@E+2GmSjp`!T@">
+<mutation name="presetWrist">
+<arg name="gamepad1A"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="d+c|jX)AB!kxwd5).osT">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="g4ZjebAaFv,fHno#,C,n">
+<mutation name="runViperslide">
+<arg name="gamePad2A"/>
+<arg name="gamePad2B"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="8cluj|Bj[#Q?e5O$DO0z">
+<field name="VAR" id="fp?]#.)xaq[?0VHc)xko">gamePad2A</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="}iL];ej}BJB:DWk0}3K9">
+<field name="VAR" id="$7;AFN?opO3E^lz-!V![">gamePad2B</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="Ho=`[G)lK4+=Us{#=J#z">
+<mutation name="runRotator">
+<arg name="rotatorLowButton"/>
+<arg name="rotatorHighButton"/>
+<arg name="rotatorStick"/>
+<arg name="rotatorRunDirect"/>
+</mutation>
+<value name="ARG0">
+<block type="logic_boolean" id="!YKVcO5+q2qwCuOYos|k">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="logic_boolean" id="O0(?c@SLd;{%1@at(xSR">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<value name="ARG2">
+<block type="math_number" id="Y]8|Qes1i#|7@fZV!]_a">
+<field name="NUM">0</field>
+</block>
+</value>
+<value name="ARG3">
+<block type="math_number" id="^GlI8zF!r#g^BSfzTGEa">
+<field name="NUM">-90</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="V~n_x[w[QBi:EhH#t()F" x="-2429" y="815">
+<field name="NAME">T4:1ToNetToSpikeToNet</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_whileUntil" id="w+Jhv`w=]7D[`w%R@B6Q">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_boolean" id="h?V[z4Y*}IQ^nPxJKC=!">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<statement name="DO">
+<block type="procedures_callnoreturn" id="0a0;m,Ye{dC9R~IkLLvX">
+<mutation name="T2:1ToT2:2"/>
+<next>
+<block type="procedures_callnoreturn" id="X2yJ`C7FmtO,Rv;Il6TG">
+<mutation name="moveTile"/>
+<next>
+<block type="procedures_callnoreturn" id="hTeGT^DIj5The^@TJ$d5">
+<mutation name="moveTile"/>
+<next>
+<block type="procedures_callnoreturn" id="wJH]*(|@K7Tl,UPO+!H/">
+<mutation name="T2:2ToBasket"/>
+<next>
+<block type="procedures_callnoreturn" id="sML7zh2(YwPW6p)1uiiD">
+<mutation name="BasketToSpikeToBasket"/>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="+Q0sd0MxnCr*!4weJlh*" x="-3216" y="876">
+<mutation>
+<arg name="gamepad1A" varid="Q0_0G_%LAT`v?rFi^LO="/>
+</mutation>
+<field name="NAME">presetWrist</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_if" id="J7kJ!QJ5NQ{-JoEP;3Mv">
+<value name="IF0">
+<block type="variables_get" id="vR_weWGq34ro_k2WP#T%">
+<field name="VAR" id="Q0_0G_%LAT`v?rFi^LO=">gamepad1A</field>
+</block>
+</value>
+<statement name="DO0">
+<block type="servo_setProperty_Number" id="{h[2|$RF?Fm9V|YPjz:2">
+<field name="IDENTIFIER">wristAsServo</field>
+<field name="PROP">Position</field>
+<data>{"IDENTIFIER":"wrist"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="[j8-Trt5l1jMa2{iJZXU">
+<field name="NUM">0.6666</field>
+</shadow>
+</value>
+</block>
+</statement>
+<next>
+<block type="controls_whileUntil" id="XaTObYAx3GGm6i]T[_Yv">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_compare" id="kS;_mf^r(~pmylHR/3X:">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="servo_getProperty_Number" id="mqL6x8CY_J:9@rP*F;7Q">
+<field name="IDENTIFIER">wristAsServo</field>
+<field name="PROP">Position</field>
+<data>{"IDENTIFIER":"wrist"}</data>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="*T=r(qg:,]sbfDx!H9/%">
+<field name="NUM">0.6666</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="rqaxY!ei24%=s[8aF,:~" x="-4033" y="938">
+<field name="NAME">runOutake</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_if" id="nSW5^*#@s(r/^;4M?liw">
+<mutation else="1"/>
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="..4GAZIeoif|y71n0UGf">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">LeftBumper</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="controls_if" id="}M!M[Bk(hE@n.)p2fvQ$">
+<value name="IF0">
+<block type="logic_compare" id="2J:0]S/#8{PU+}Hr@Fj^">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="variables_get" id="X^+^2BXU-:P)KEv[kBON">
+<field name="VAR" id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</field>
+</block>
+</value>
+<value name="B">
+<block type="logic_boolean" id="]1[(G_l8hc7Y3h;Pm(}{">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="math_change" id="|ofJdoEJ;8fAak_qi|,w">
+<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
+<value name="DELTA">
+<shadow type="math_number" id="B5m,y`=LHc}.#Iqs^y=-">
+<field name="NUM">1</field>
+</shadow>
+</value>
+<next>
+<block type="variables_set" id="bMzYWe!T$-l:~sV?w?PJ">
+<field name="VAR" id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</field>
+<value name="VALUE">
+<block type="logic_boolean" id="2!s-y^!0EXs|On,r4FJt">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<next>
+<block type="controls_if" id="mlXC$C?de!q/^|7ogL$t">
+<mutation elseif="1"/>
+<value name="IF0">
+<block type="logic_compare" id="BwO)os$CdUb{_}FOC,KA">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="variables_get" id="V7!TK=F2^V^VvO59YhDe">
+<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="4^P{`jcS9:rVCX:Vy0X5">
+<field name="NUM">1</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="servo_setProperty_Number" id="9MeY7jgEwZ8kh$1_`wby">
+<field name="IDENTIFIER">IntakeAsServo</field>
+<field name="PROP">Position</field>
+<data>{"IDENTIFIER":"Intake","block_warning_hidden":false,"block_warning_text":"There is no Servo named \"Intake\" in the current robot configuration.\nPlease activate the configuration that contains the Servo named \"Intake\",\nor select a device that is in the current robot configuration."}</data>
+<value name="VALUE">
+<shadow type="math_number" id="?~eo{}7Z70J1V%L-YH/y">
+<field name="NUM">0</field>
+</shadow>
+</value>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="u_Mt[@$O~aXWUR5avz}A">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="variables_get" id="$+1#d#g=+fY{(Km9mJoj">
+<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="Do4BRI]F%k}#{t4eA06;">
+<field name="NUM">2</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="n%]oNrBxY$urv~a?FQqA">
+<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
+<value name="VALUE">
+<block type="math_number" id="}_Z5xKkLOBn{J-z,aM:7">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="servo_setProperty_Number" id="tvXkcc5p8#V||Z/;u5us">
+<field name="IDENTIFIER">IntakeAsServo</field>
+<field name="PROP">Position</field>
+<data>{"IDENTIFIER":"Intake","block_warning_hidden":false,"block_warning_text":"There is no Servo named \"Intake\" in the current robot configuration.\nPlease activate the configuration that contains the Servo named \"Intake\",\nor select a device that is in the current robot configuration."}</data>
+<value name="VALUE">
+<shadow type="math_number" id="%6Wjr|lnGh|Zgk+d?1e)">
+<field name="NUM">0.5</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="variables_set" id="QDw2rj][Yo6YqC3Uwujt">
+<field name="VAR" id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</field>
+<value name="VALUE">
+<block type="logic_boolean" id="/WElGkQLLu)a:HWbY]5w">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="vdy$GI/=jE1=x{~m9OO2" x="-1940" y="892">
+<field name="NAME">initialConfigIntake</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="servo_setProperty_Number" id="iD+N+)0=b{--0Vthzi9_">
+<field name="IDENTIFIER">intakeAsServo</field>
+<field name="PROP">Position</field>
+<data>{"IDENTIFIER":"intake"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="p#Yt$X+i0EMQeQphGg$Y">
+<field name="NUM">0.5</field>
+</shadow>
+</value>
+<next>
+<block type="variables_set" id="C+0,?xw5;*fykNOoR3*V">
+<field name="VAR" id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</field>
+<value name="VALUE">
+<block type="logic_boolean" id="+KZ]%.ryM%L9a2/[%ga@">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="NBctvZM-b9VP0E{xIx^j">
+<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
+<value name="VALUE">
+<block type="math_number" id="l?N}qzrM7m+(hu6f}sH$">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="7i`d8E6(,gA!}iet07Kl">
+<field name="VAR" id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</field>
+<value name="VALUE">
+<block type="logic_boolean" id="SFb@B9gXx.t_7}rhf.?]">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="YTZuT#X7.WV=9)VcAVFk">
+<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
+<value name="VALUE">
+<block type="math_number" id=".AlNfMIMMuc4iUlgIJ8{">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="#xr(1)_fFc}KY4O?.(-n" x="-3195" y="1091">
+<field name="NAME">T5:2ToObv</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id=";G+*}hYns!)H4#^iS*|k">
+<mutation name="turnLeft">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="/@y=]B??aQJ4pJ=DTg89">
+<field name="NUM">45</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="AJiT+J*.fJg,c($wxg2A">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="v+JWRfB%E?L^lV7RLl)D">
+<field name="NUM">15</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="e1.?5Yz3$X+[ze]wkV+i">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="D#R%?TLk5:6{*i4CMj{T">
+<mutation name="liftElevator"/>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="}L/j@O[wRdAFYqC+#K`X" x="-2128" y="1140">
+<field name="NAME">initialConfigDrivebase</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="crServo_setProperty_Direction" id="v;fmm*R5^g*qe]-ybT?V">
+<field name="IDENTIFIER">frontRightMotorAsCRServo</field>
+<field name="PROP">Direction</field>
+<data>{"IDENTIFIER":"frontRightMotor"}</data>
+<value name="VALUE">
+<shadow type="crServo_typedEnum_direction" id="J%`o}JX4kVn#*mCJIZ4z">
+<field name="DIRECTION">REVERSE</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_Direction" id="xKGn)4uxhT5CLLlB)mZ6">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">Direction</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_direction" id="`V(hnSmH*88/.HGcv=Z_">
+<field name="DIRECTION">REVERSE</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="cWQXijt%oY^zh8JVfIi0">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="U^i0d~SY?H^^Rec-2j,P">
+<field name="RUN_MODE">STOP_AND_RESET_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="J_TSP)j8t]MTC+b^pD6K">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="h]AFk4zah}X(N#GsEzaj">
+<field name="RUN_MODE">RUN_WITHOUT_ENCODER</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_ZeroPowerBehavior" id="v`lsJkm}dHwrl7pF;@Q6">
+<field name="IDENTIFIER">backRightMotorAsDcMotor</field>
+<field name="PROP">ZeroPowerBehavior</field>
+<data>{"IDENTIFIER":"backRightMotor"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_zeroPowerBehavior" id="+1k9gNK,%A+,:M0,FE!E">
+<field name="ZERO_POWER_BEHAVIOR">BRAKE</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_ZeroPowerBehavior" id="RSxy!N9%O?%M)vJFW$hp">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">ZeroPowerBehavior</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_zeroPowerBehavior" id="C.Nsbj)?r6L6{Q~TzFZm">
+<field name="ZERO_POWER_BEHAVIOR">BRAKE</field>
+</shadow>
+</value>
+<next>
+<block type="variables_set" id="TRf92xPS_l+/ivmdnQ`L">
+<field name="VAR" id="nv^HGhpb?a$gaCyLKb$~">speedScaleButtonState</field>
+<value name="VALUE">
+<block type="logic_boolean" id="*($f!0SCrp_fPFRp9NZy">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="E/*sX4k0_(p!G7ss~i?l">
+<field name="VAR" id="B-dChE?L5C%Ls5uF6cMZ">speedScalePressCount</field>
+<value name="VALUE">
+<block type="math_number" id="Y3G)RwtEOyZrvZ/jRR:{">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="})Q6ndNSjtU#(@D2ETdt">
+<field name="VAR" id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</field>
+<value name="VALUE">
+<block type="math_number" id="5++V8.G=@mpjs(xPnV0y">
+<field name="NUM">4.75</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="dB{;8(TX5C!;AoEX{yZ,">
+<field name="VAR" id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</field>
+<value name="VALUE">
+<block type="math_number" id="Lgk,N;)ELwp{2RAzsP*P">
+<field name="NUM">384.5</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="1x|L{]9A$YgfH{UY3#;M">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+<value name="VALUE">
+<block type="math_number" id="~h,Itr5g.jkk}-OF{d^7">
+<field name="NUM">1</field>
+</block>
+</value>
+<next>
+<block type="imu_resetYaw" id="D+pWr[kK|wD.WHIdRGi$">
+<field name="IDENTIFIER">imuAsIMU</field>
+<data>{"IDENTIFIER":"imu"}</data>
+<next>
+<block type="imu_initialize" id="{.hSF[3%W^mbTBwId%?/">
+<field name="IDENTIFIER">imuAsIMU</field>
+<data>{"IDENTIFIER":"imu"}</data>
+<value name="PARAMETERS">
+<block type="imuParameters_create" id="IRSz?+cP^H]a(~(6=y2g">
+<value name="IMU_ORIENTATION_ON_ROBOT">
+<block type="rev9AxisImuOrientationOnRobot_create1" id="/3Di+JoYxpVc_@,.J8f3">
+<comment pinned="false" h="150" w="325">Create a Rev9AxisImuOrientationOnRobot object for use with a REV 9-Axis IMU, specifying the IMU's orientation on the robot via the direction that the REV logo on the IMU is facing and the direction that the I2C port on the IMU is facing.</comment>
+<value name="LOGO_FACING_DIRECTION">
+<shadow type="rev9AxisImuOrientationOnRobot_typedEnum_logoFacingDirection" id="k2t/]xyOL]PosU30wIe^">
+<field name="LOGO_FACING_DIRECTION">UP</field>
+</shadow>
+</value>
+<value name="I2C_PORT_FACING_DIRECTION">
+<shadow type="rev9AxisImuOrientationOnRobot_typedEnum_i2cPortFacingDirection" id="fC=]an8KGkm1W=wB}sZP">
+<field name="I2C_PORT_FACING_DIRECTION">FORWARD</field>
+</shadow>
+</value>
+</block>
+</value>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="4`njdHvguS+JZDRn#(dp" x="-1291" y="1102">
+<mutation>
+<arg name="distance" varid="|%d}C)SKt37gDc;NwhUD"/>
+<arg name="speed" varid="|*FRyn7rVpJgKK62S)%j"/>
+</mutation>
+<field name="NAME">moveForward</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="T6q51056nKAiN.#hzc%o">
+<mutation name="driveWithEncoder">
+<arg name="targetDistanceIn"/>
+<arg name="wheelCircumfrenceIn"/>
+<arg name="ticksPerRotation"/>
+<arg name="driveWithEncoderSpeed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="N(3g=R#lwUup!xN9TM%g">
+<field name="VAR" id="|%d}C)SKt37gDc;NwhUD">distance</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="~POo-N}KX%]2Ef.q`v~c">
+<field name="VAR" id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</field>
+</block>
+</value>
+<value name="ARG2">
+<block type="variables_get" id="[B{5{+aGw?Z2U)W8Spet">
+<field name="VAR" id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</field>
+</block>
+</value>
+<value name="ARG3">
+<block type="variables_get" id="Kk3^G!Xxp^y$Vdg(|Hj#">
+<field name="VAR" id="|*FRyn7rVpJgKK62S)%j">speed</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="9xjQ?Q0Dx4VTlv,$8?$+" x="-2826" y="1221">
+<field name="NAME">T2:1ToObvToSpikeToObv</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_whileUntil" id="J[efD$OWTo3@0V`v-?E|">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_boolean" id="w2MueH$?Id|[,w#kO+~z">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<statement name="DO">
+<block type="procedures_callnoreturn" id="v!-3;.556Dn}y2@04%*8">
+<mutation name="T2:1ToT2:2Obv"/>
+<next>
+<block type="procedures_callnoreturn" id="^SykD6Dc!w(kWx%~agK~">
+<mutation name="moveTile"/>
+<next>
+<block type="procedures_callnoreturn" id="}F5/*KQEE)Y{aR:yKs:E">
+<mutation name="moveTile"/>
+<next>
+<block type="procedures_callnoreturn" id="kG}2#I=/V!YR#+`$3*R(">
+<mutation name="moveTile"/>
+<next>
+<block type="procedures_callnoreturn" id=".p_+jFy%KRocndIWsdlg">
+<mutation name="T5:2ToObv"/>
+<next>
+<block type="procedures_callnoreturn" id="]WOa3Veqd69Dl+88bTfj">
+<mutation name="ObvToSpike"/>
+<next>
+<block type="procedures_callnoreturn" id="C^e1(oL}6P!q`UWG{_-K">
+<mutation name="SpikestoObv"/>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="[GEi#;$rt.jz1]^W!k?I" x="-3194" y="1355">
+<field name="NAME">SpikestoObv</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="#|+o.D_~ytLW^]?)HtDh">
+<mutation name="turnLeft">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="oG-GF`Y/X9}+OOAlvH:V">
+<field name="NUM">180</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="0oKSC6mTNmk+4^!zYSx0">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="%EFThUMH*rAD-g$~w]0c">
+<field name="VAR" id="kJIMlg3)-]l*OgyK3}n0">moveOneTile</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="o9O0OK?-1s5BmkZXGnmY">
+<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="sn,HM?J-]L4+~n!fIHO5" x="656" y="1205">
+<mutation>
+<arg name="degree" varid="fNSN|omh?|#[Y(A/t)]z"/>
+<arg name="turnSpeedAutonInput" varid="YNhjMRdKsewYK)J{z.+Y"/>
+</mutation>
+<field name="NAME">turn</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="imu_resetYaw" id=":HbZg)CRF*9zBxWD:9(y">
+<field name="IDENTIFIER">imuAsIMU</field>
+<data>{"IDENTIFIER":"imu"}</data>
+<next>
+<block type="variables_set" id="Ts*-ZW1mnS3zOh5JUxV-">
+<field name="VAR" id="q_H6`b?rp]a0MIoyc0/,">currentYaw</field>
+<value name="VALUE">
+<block type="yawPitchRollAngles_getPropertyWithAngleUnit_Number" id="YDKkKWaECktfRwB4Pcmc">
+<field name="PROP">Yaw</field>
+<value name="YAW_PITCH_ROLL_ANGLES">
+<block type="imu_getProperty_YawPitchRollAngles" id="JE3vOLEg|(}$$bnzXYb^">
+<field name="IDENTIFIER">imuAsIMU</field>
+<field name="PROP">RobotYawPitchRollAngles</field>
+<data>{"IDENTIFIER":"imu"}</data>
+</block>
+</value>
+<value name="ANGLE_UNIT">
+<shadow type="navigation_typedEnum_angleUnit" id="1oL{QjMz*zz#wj2fgM}E">
+<field name="ANGLE_UNIT">DEGREES</field>
+</shadow>
+</value>
+</block>
+</value>
+<next>
+<block type="controls_whileUntil" id="/mlr]x|pIn*fO=09f{FR">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_operation" id="E#L4uVUrR+z5y81L5*UK">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id="qNa8a%/lM,62d_+yt%/N">
+<field name="OP">LT</field>
+<value name="A">
+<block type="math_single" id="v%kiDS:|MQFJM.So4GyH">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number" id=".^7Z5R+]^b9-^c!ol%f}">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="+%_.i+VJQj*clr8XwN#J">
+<field name="VAR" id="q_H6`b?rp]a0MIoyc0/,">currentYaw</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="math_single" id="K:vlTp~Xi@lABrLU@kAR">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number" id="U~du(Ls|IhD49-vSAqEn">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="E/pM5xv%ARG@(*Q,.!Jv">
+<field name="VAR" id="fNSN|omh?|#[Y(A/t)]z">degree</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="linearOpMode_opModeIsActive" id="T0htE[]KNK.=q]y2hStt"/>
+</value>
+</block>
+</value>
+<statement name="DO">
+<block type="telemetry_addNumericData_Number" id="i^R+Q:/?DU@|Q,*Q:D~g">
+<value name="KEY">
+<shadow type="text" id="|QXb@TYHW!xsb`J2X49S">
+<field name="TEXT">currentYaw</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="XpB8G3JBjWutJ-hQl()}">
+<field name="NUM">123</field>
+</shadow>
+<block type="math_single" id="7:$%FZ#5WZ|yA*cSN@([">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number" id="[s{S?fu?s_,fMlRDraEp">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="ke,J*T;jW(kf?)c*~D`F">
+<field name="VAR" id="q_H6`b?rp]a0MIoyc0/,">currentYaw</field>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="^zIub(f7lgw}?}XtR]N9">
+<value name="KEY">
+<shadow type="text" id="o*DI(kCC}A.V_6#{RjX/">
+<field name="TEXT">targetYaw</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="cZP!#|f)xKw;~b?PX()b">
+<field name="NUM">123</field>
+</shadow>
+<block type="math_single" id="zIgF#BfMu`mTy?G^a64K">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="FPmt)c:/IF)jN2*eWoOt">
+<field name="VAR" id="fNSN|omh?|#[Y(A/t)]z">degree</field>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="V.Ip{TdRD)sms]w~gSB$">
+<value name="KEY">
+<shadow type="text" id="PV2)N7}mU_-I_GWglEg7">
+<field name="TEXT">Yaw</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="=_q/K%bY?;lV/f|2o5/0">
+<field name="VAR" id="q_H6`b?rp]a0MIoyc0/,">currentYaw</field>
+</block>
+</value>
+<next>
+<block type="telemetry_update" id="uWIl~y.$fFHdhD|=756E">
+<next>
+<block type="variables_set" id=":$#kw8DD9m;KG9C)B$nY">
+<field name="VAR" id="q_H6`b?rp]a0MIoyc0/,">currentYaw</field>
+<value name="VALUE">
+<block type="yawPitchRollAngles_getPropertyWithAngleUnit_Number" id="WYsyN,8ZM[kVbTv*WVfR">
+<field name="PROP">Yaw</field>
+<value name="YAW_PITCH_ROLL_ANGLES">
+<block type="imu_getProperty_YawPitchRollAngles" id="g$Q~i1FFHRhvKp#arYmj">
+<field name="IDENTIFIER">imuAsIMU</field>
+<field name="PROP">RobotYawPitchRollAngles</field>
+<data>{"IDENTIFIER":"imu"}</data>
+</block>
+</value>
+<value name="ANGLE_UNIT">
+<shadow type="navigation_typedEnum_angleUnit" id="yi]7+RQ#28qcpRhm6-n}">
+<field name="ANGLE_UNIT">DEGREES</field>
+</shadow>
+</value>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="telemetry_addNumericData_Number" id="Gka=cWSUGDn*TG$3M,1a">
+<value name="KEY">
+<shadow type="text" id="IVbcWyeIcqfl,Ga8[#vd">
+<field name="TEXT">Yaw</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="kR9}[mifOdn{mv/BAhLM">
+<field name="VAR" id="q_H6`b?rp]a0MIoyc0/,">currentYaw</field>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="rg2vBIn|Z#SIH]9]16Q}">
+<mutation name="stop"/>
+<next>
+<block type="telemetry_addLine" id=";NZ!z9j/Z/bz#XR^[X!/">
+<value name="TEXT">
+<shadow type="text" id="As/9l^7Rbc+*w?v#z=BK">
+<field name="TEXT">finished angle</field>
+</shadow>
+</value>
+<next>
+<block type="telemetry_update" id="qhmRpAy0:LNqMe{GW*1!"/>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="fPGJBXnh=:s+Prw95F5Q" x="1458" y="1174">
+<mutation>
+<arg name="degrees" varid="WW@^#9CT5Wu%]%F,0!Fz"/>
+</mutation>
+<field name="NAME">turnRight</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="Ju6RiAK/iFov_t#`sF!k">
+<mutation name="turn">
+<arg name="degree"/>
+<arg name="turnSpeedAutonInput"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="p4Y{`7TU[P4Z8w5kPx#}">
+<field name="VAR" id="WW@^#9CT5Wu%]%F,0!Fz">degrees</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="math_number" id="zritkN3ngd:w0r:|;/J`">
+<field name="NUM">0.2</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="Zo{RA`GpcoR%X`.0EFWZ" x="1806" y="1174">
+<mutation>
+<arg name="degrees" varid="WW@^#9CT5Wu%]%F,0!Fz"/>
+</mutation>
+<field name="NAME">turnLeft</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="EFyOg23T6A}B|~T0*2O~">
+<mutation name="turn">
+<arg name="degree"/>
+<arg name="turnSpeedAutonInput"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="tkbSJD}F*_@0`v5QR(sO">
+<field name="VAR" id="WW@^#9CT5Wu%]%F,0!Fz">degrees</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="math_single" id="Y]emGEhoCLU#Y[C,OR|*">
+<field name="OP">NEG</field>
+<value name="NUM">
+<shadow type="math_number" id="zkS5^9k~AAVHP2qpm0~Y">
+<field name="NUM">9</field>
+</shadow>
+<block type="math_number" id="4`ejiaP4d$q+]xkcs$|0">
+<field name="NUM">0.2</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="]uJNToT^D^#)=z6F{Ny2" x="-1455" y="1396">
+<field name="NAME">halfSpeedScale</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_if" id="-pH?Uc;;S_W[*tw!J-3V">
+<mutation else="1"/>
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="tRh]%x^2`LXb_EQKjR`a">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">RightBumper</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="ecXqjGNpI@f?$Q;Q{_fy">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+<value name="VALUE">
+<block type="math_number" id="+k#D}f*)-9=3;8_p=b7@">
+<field name="NUM">0.5</field>
+</block>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="variables_set" id="nvc=G!eSw(3|gz|1dUAM">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+<value name="VALUE">
+<block type="math_number" id="5+8gR,g|M+JBa^9f*juz">
+<field name="NUM">1</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="uEhkz#sY~)}4,j]_=iPB" x="-826" y="1405">
+<mutation>
+<arg name="distance" varid="|%d}C)SKt37gDc;NwhUD"/>
+<arg name="speed" varid="|*FRyn7rVpJgKK62S)%j"/>
+</mutation>
+<field name="NAME">moveBack</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="^#~q3Vcx]D0QajFyZKr4">
+<mutation name="driveWithEncoder">
+<arg name="targetDistanceIn"/>
+<arg name="wheelCircumfrenceIn"/>
+<arg name="ticksPerRotation"/>
+<arg name="driveWithEncoderSpeed"/>
+</mutation>
+<value name="ARG0">
+<block type="math_single" id="X$o~~C)^l#+kPHn/d]8z">
+<field name="OP">NEG</field>
+<value name="NUM">
+<shadow type="math_number" id="DA;K-vef7H?b=ttRevON">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id=".84GbtHx*bvDi^}~Mm#8">
+<field name="VAR" id="|%d}C)SKt37gDc;NwhUD">distance</field>
+</block>
+</value>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="$0cxvd}8~CXZ7@x!+P5?">
+<field name="VAR" id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</field>
+</block>
+</value>
+<value name="ARG2">
+<block type="variables_get" id="+Ex2I`I!|WN;^we+N?}`">
+<field name="VAR" id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</field>
+</block>
+</value>
+<value name="ARG3">
+<block type="math_single" id="$l:5*`%IUPY2SQ`aST[P">
+<field name="OP">NEG</field>
+<value name="NUM">
+<shadow type="math_number" id="4+-0tUFZaf:Y(Y|ZXJK:">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="VOQB?DD1*1r_#Xy!-{]i">
+<field name="VAR" id="|*FRyn7rVpJgKK62S)%j">speed</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="E5*gLA]{(f|mG]i1p_Z$" x="-199" y="1374">
+<mutation>
+<arg name="targetDistanceIn" varid="rr9ac3ICXaTW)-N(f;yN"/>
+<arg name="wheelCircumfrenceIn" varid="oR@J=yNfc.Tci^lu]MKW"/>
+<arg name="ticksPerRotation" varid="G1f1#2@2_Ou(.vC|vn^["/>
+<arg name="driveWithEncoderSpeed" varid="jVqR{N:_s}~sO+.7bCc}"/>
+</mutation>
+<field name="NAME">driveWithEncoder</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<data>{"commentPositionLeft":-40,"commentPositionTop":-105}</data>
+<statement name="STACK">
+<block type="variables_set" id="r!i6qAk{:m)2y2@=PH{P">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="9,g~F$63yW33}TvN.gzp">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number" id="7z`a=)H~L8*:N0Rtk,zM">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="[!fi`]0/*t*3`VadBD6W">
+<field name="OP">DIVIDE</field>
+<value name="A">
+<shadow type="math_number" id=",[YPXr;x%)6ENM[RClbj">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="b%D.An$`PBz2MYunOU[;">
+<field name="VAR" id="rr9ac3ICXaTW)-N(f;yN">targetDistanceIn</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="PeZ{f$-vc_ImjR%42tx*">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="lk.Y3J6ws=.^C+/6~O-m">
+<field name="VAR" id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="096bS])+7)OKSAp|h(x,">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="U`q]$}mGdA?2=Ja2?hjU">
+<field name="VAR" id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</field>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="controls_whileUntil" id="dqlWK1(-ip!syB6LZene">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_operation" id="3O-Gvo!,}Oj4Snl?#s0p">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id="#YV?{VOoK`ono7Lqm@PB">
+<field name="OP">LT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id="5aXev*J~U/K5SKqJUlc+">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="?5q^o+xb7cKE]]~exKQT">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="linearOpMode_opModeIsActive" id="U#iI7L]_#Iy2+f|QT%r)"/>
+</value>
+</block>
+</value>
+<statement name="DO">
+<block type="telemetry_addNumericData_Number" id="rxC|g6~ob*eN.w18_?-q">
+<value name="KEY">
+<shadow type="text" id="o0xS@pI2XSWu9WN:=q|q">
+<field name="TEXT">backLeftEncoder</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id=")y,|e{:9!qtp,U24k(%O">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="S.!qcG(Cs]G#hTV.QRg=">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="c1l(xkLouC!iEOd7..fF">
+<value name="KEY">
+<shadow type="text" id="}d-y~mSa;$]d],P]Y0c{">
+<field name="TEXT">targetposition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="uh7{?CX1C|!/[mSHNtt.">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+<next>
+<block type="telemetry_update" id="I0Wt;9MU8d2q.FKZ/X}$"/>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="zkNX)N.1LIPQ8mZ{_Ud5" x="-2810" y="1516">
+<field name="NAME">T3:1ToObvToSpikeToObv</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_whileUntil" id="a$~Q(u{!eofx-=v,U5{L">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_boolean" id="G(TszsM[X6aR4qbI_pU,">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<statement name="DO">
+<block type="procedures_callnoreturn" id="EV}a3}b#mk3s#ROkB2G]">
+<mutation name="T2:1ToT2:2Obv"/>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="/3~ty1xy*}}(.5NrEIsc" x="-751" y="1645">
+<field name="NAME">stop</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+</block>
+<block type="procedures_defnoreturn" id="bG7hD.zau/tw#(/]#VQ`" x="1486" y="1674">
+<mutation>
+<arg name="rotatorLowButton" varid="b0(GSHYaEg$OM{D(C:,-"/>
+<arg name="rotatorHighButton" varid="xY[%V7UAtl,11_J-PBH^"/>
+<arg name="rotatorStick" varid="4oUYqhnnOa8l7;Wyd#}_"/>
+<arg name="rotatorRunDirect" varid="34!;}4BSyu;Kp~-$aLfC"/>
+</mutation>
+<field name="NAME">runRotator</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="variables_set" id="XEYL,nbs/R[G5{IsyD_g">
+<field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
+<value name="VALUE">
+<block type="dcMotor_getProperty_Number" id="a+COQu`OtZgDy,`00-CQ">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+</block>
+</value>
+<next>
+<block type="variables_set" id="}tWhug2$JES]d3A2AS,|">
+<field name="VAR" id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</field>
+<value name="VALUE">
+<block type="dcMotor_getProperty_Number" id="]aKsTZhW0$Y;r$f@#+5r">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">TargetPosition</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+</block>
+</value>
+<next>
+<block type="variables_set" id=",i_fTJYK7Ui0KxET#;|7">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="F_ki-nhu$k.?s*zgO*=H">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="RKTH|}z!T-+R=XkP-sNI">
+<field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="sbg9SEnW*k+(yUc/W[?f">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="c=V+-(D]#iSZw{%oZtML">
+<field name="VAR" id="34!;}4BSyu;Kp~-$aLfC">rotatorRunDirect</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="M$63=Atm%HrH;QeN/H3U">
+<field name="VAR" id="sKi7z-1YC[,j#twF*s|A">rotatorTicksPerRotation</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="controls_if" id="qU6Q_nvuXG-S^rodZIVH">
+<value name="IF0">
+<block type="variables_get" id="cjf]_VGuj$O_zTuyjdu8">
+<field name="VAR" id="b0(GSHYaEg$OM{D(C:,-">rotatorLowButton</field>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="EFPR#lP+#mB29+ck8ckK">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="variables_get" id="3nVr0T4u)]2UHhQvhh^V">
+<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="`SVLuQc9nO:HZ+:7|8=1">
+<field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="2r2q,5L!K7~KTNLP*Jc:">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="PteHDO~;:?[L)f{G{?j4">
+<value name="IF0">
+<block type="variables_get" id="|z/d;6jd={0)tN5l$XyH">
+<field name="VAR" id="xY[%V7UAtl,11_J-PBH^">rotatorHighButton</field>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="X:VdagqAWQtPi@~PZny%">
+<field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="@1m3|Vy[9s2L#+YLKzO#">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="-QzS(W!xk#q8CE(-s9l3">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="variables_get" id="|k$@a8f{1[d{g)jRMz@;">
+<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id=".}wOcZTb.|3y6*B%,kgu">
+<value name="IF0">
+<block type="logic_operation" id="5:IUEnhWS,csxJ/W)4PB">
+<field name="OP">OR</field>
+<value name="A">
+<block type="logic_compare" id="V1cLVt8La?=,ipy27C9w">
+<field name="OP">GT</field>
+<value name="A">
+<block type="variables_get" id="Y9v~q%i/,0TSRZzy`w@U">
+<field name="VAR" id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="^LCl9Ve,Zs6JCRy-.Mh=">
+<field name="NUM">0.05</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="logic_compare" id="6!s=(Gbr@h[MEvr|Za2]">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="^M3Cp]NO_]gsc1O-.{k(">
+<field name="VAR" id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="9uNAR9c=37H4W/zU?)@b">
+<field name="NUM">-0.05</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="(cz$.1Xi{HMKdN@Pui[+">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="_`t?VZ9Df;?+WK:RdZIy">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="[.}F|WyHuQ_ltYogQSoA">
+<field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="/*a2TQP$nxYOX$A.+i:_">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="[u3XnRquap2ToaQbk#,@">
+<field name="VAR" id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="jLhS[F?uQ1#sBScO;D^u">
+<field name="NUM">50</field>
+</shadow>
+</value>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="variables_set" id="R4BP*:eB76*WO98/xN{K">
+<field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
+<value name="VALUE">
+<block type="logic_boolean" id="=a0)u(4|2%Lq+`d!,:ja">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="4$RHn?P:BgqV}-n^/$4t">
+<mutation elseif="1"/>
+<value name="IF0">
+<block type="logic_compare" id="qoDVe}?Ta2A-5d_=*lsw">
+<field name="OP">GT</field>
+<value name="A">
+<block type="variables_get" id="asvXz^^W2Fx.BN}%Pf2q">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="lnNaPBD!/(oTd_RY1cdl">
+<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="I}k:5?EB2cjOqdq$##zi">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="variables_get" id=";Ql1i~sW*XQ_aCjiydK?">
+<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
+</block>
+</value>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="zX6{ll:ve%46/jM/Vkm}">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="g#i6aH|13;4$v~Yl1^XO">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id=";YZ[i.]+wp6wl()#oSlg">
+<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="Fm#f1o/`i2EUP2R+nqA)">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="variables_get" id="8?sI=bAl+cjxuoB8$uAl">
+<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
+</block>
+</value>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="W-8HOv8vIHjlE$=(SUDc">
+<mutation else="1"/>
+<value name="IF0">
+<block type="logic_compare" id="c@Mrk)w]~IelKY[:l6##">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="*lJ$?e(C1OLSRTk5U6hu">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="zqGVb(*X7/M+dg19H;z5">
+<field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="*R8j$WheGpR/;rN@*7lC">
+<field name="VAR" id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</field>
+<value name="VALUE">
+<block type="math_number" id="x*|J!W`O(sYMzjFc.:Bh">
+<field name="NUM">0.5</field>
+</block>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="variables_set" id="]MfT7oJF:8)VLC!Vc(9Q">
+<field name="VAR" id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</field>
+<value name="VALUE">
+<block type="math_number" id="T=Nm@KbBz8q7URnk8Ox.">
+<field name="NUM">0.3</field>
+</block>
+</value>
+</block>
+</statement>
+<next>
+<block type="dcMotor_setProperty_Number" id="h?o0TrMUD`X_5ju8R0{y">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">TargetPosition</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="math_number">
+<field name="NUM">0</field>
+</shadow>
+<block type="variables_get" id="xGFn%YtrPB`}N)7daJd+">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+</block>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="$t%.uFcst7]?z~j66=N@">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="-}52[xC2KN=pFMbltN3$">
+<field name="RUN_MODE">RUN_TO_POSITION</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_Number" id="g-W$Ap68ydSAZ;zB?@HA">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="math_number">
+<field name="NUM">0.2</field>
+</shadow>
+<block type="variables_get" id="Xca_Y0fCzJErcD{R;G)3">
+<field name="VAR" id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="fXtNJLqU=d{[0,*op@YT">
+<value name="KEY">
+<shadow type="text" id="2DR_dYE?%VvSTUAlN~^|">
+<field name="TEXT">rotatorCurrentPosition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id=",gB#3!:Eb{/FQluvqH.k">
+<field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="a+2DCRB`b]BjJN),{zn9">
+<value name="KEY">
+<shadow type="text" id="Azf4.s$sK5_O%`mpQz)S">
+<field name="TEXT">rotatorTarget</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="H~2!;^!Z!{mM=dN)ma11">
+<field name="VAR" id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</field>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="Q_1LkJN9-1yw,Z@8]Gc|" x="-649" y="1880">
+<field name="NAME">viperSlideHeightLimitation</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+</block>
+</xml>
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Extra>
+<OpModeMeta flavor="AUTONOMOUS" group="" autoTransition="2024TeleOp" />
+<Enabled value="true" />
+</Extra>
