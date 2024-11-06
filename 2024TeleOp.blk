@@ -8,39 +8,40 @@
 <variable id="b0(GSHYaEg$OM{D(C:,-">rotatorLowButton</variable>
 <variable id="xY[%V7UAtl,11_J-PBH^">rotatorHighButton</variable>
 <variable id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</variable>
-<variable id="V9XUv`jb4jq3q2dS[5=j">RotatorStickInput</variable>
+<variable id="34!;}4BSyu;Kp~-$aLfC">rotatorRunDirect</variable>
+<variable id="_V;4.uAz^X4@UWlL`|i7">viperPosition</variable>
 <variable id="B#^Iq$-H)??CK(}xCNYt">clipScale</variable>
-<variable id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</variable>
+<variable id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</variable>
 <variable id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</variable>
-<variable id="RB+g#ML3E(`]2h;}@l2/">rotatorManualTarget</variable>
 <variable id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</variable>
 <variable id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</variable>
 <variable id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</variable>
 <variable id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</variable>
 <variable id="bJUB|L9Ad:!GI:huC!aX">manualScaling</variable>
-<variable id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</variable>
+<variable id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</variable>
 <variable id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</variable>
+<variable id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</variable>
 <variable id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</variable>
 <variable id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</variable>
 <variable id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</variable>
 <variable id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</variable>
 <variable id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</variable>
-<variable id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</variable>
-<variable id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</variable>
+<variable id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</variable>
+<variable id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</variable>
 <variable id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</variable>
 <variable id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</variable>
 <variable id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</variable>
 <variable id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</variable>
-<variable id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</variable>
+<variable id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</variable>
 <variable id="#+)!gjvm6[Zkck_}8:@F">leftStickY</variable>
-<variable id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</variable>
 <variable id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</variable>
-<variable id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</variable>
 <variable id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</variable>
+<variable id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</variable>
+<variable id="sKi7z-1YC[,j#twF*s|A">rotatorTicksPerRotation</variable>
 <variable id="nv^HGhpb?a$gaCyLKb$~">speedScaleButtonState</variable>
 <variable id="B0TR%]+l}_jx=YHJ)o)M">rotatorScaling</variable>
-<variable id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</variable>
 <variable id="B-dChE?L5C%Ls5uF6cMZ">speedScalePressCount</variable>
+<variable id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</variable>
 <variable id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</variable>
 <variable id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</variable>
 <variable id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</variable>
@@ -48,6 +49,7 @@
 <variable id="1EISY^,GT/(.7vVxA=+M">G2RightStickY</variable>
 <variable id="qxKw0u;S{D22ZW@hI$[*">rotatorButtonX</variable>
 <variable id="!KOa#tJY0{[^*Kud4)`|">rotatorButtonY</variable>
+<variable id="V9XUv`jb4jq3q2dS[5=j">RotatorStickInput</variable>
 </variables>
 <block type="procedures_defnoreturn" id="Wkc%ry078m)yB:EZGz}]" x="-85" y="-1000">
 <mutation>
@@ -416,66 +418,6 @@
 </block>
 </value>
 <next>
-<block type="telemetry_addNumericData_Number" id="BuDtZJ)F@M(uWE1uH/Yc">
-<value name="KEY">
-<shadow type="text" id="5:pKq^CE$st9e_O-EnEU">
-<field name="TEXT">frontRight</field>
-</shadow>
-</value>
-<value name="NUMBER">
-<shadow type="math_number" id="dHINg9BkP$P*6#9K;1m.">
-<field name="NUM">123</field>
-</shadow>
-<block type="variables_get" id="E;]R_:v=h(XITNNOVa;1">
-<field name="VAR" id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</field>
-</block>
-</value>
-<next>
-<block type="telemetry_addNumericData_Number" id="P8/pQy2QW@*+#uN6GMs=">
-<value name="KEY">
-<shadow type="text" id="I{*DO.8^G$F{^lKMyJzJ">
-<field name="TEXT">frontLeft</field>
-</shadow>
-</value>
-<value name="NUMBER">
-<shadow type="math_number" id="e0um)b@.#IdF@V*;_vb*">
-<field name="NUM">123</field>
-</shadow>
-<block type="variables_get" id="gY3LsVa{!GXf}MIg,N=m">
-<field name="VAR" id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</field>
-</block>
-</value>
-<next>
-<block type="telemetry_addNumericData_Number" id="*5O3xFpp;5o_fH{++Q(f">
-<value name="KEY">
-<shadow type="text" id="lqfxD55/~%8(3`%1xxcL">
-<field name="TEXT">backLeft</field>
-</shadow>
-</value>
-<value name="NUMBER">
-<shadow type="math_number" id="[i=)^8u,84*+AF7O^fVZ">
-<field name="NUM">123</field>
-</shadow>
-<block type="variables_get" id="/.tUotn31RjYp0KL$8-b">
-<field name="VAR" id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</field>
-</block>
-</value>
-<next>
-<block type="telemetry_addNumericData_Number" id="rHbeUajQ#7n-]]jzegjj">
-<value name="KEY">
-<shadow type="text" id="=g1BOtEmu}p1?n?LqZc*">
-<field name="TEXT">backRight</field>
-</shadow>
-</value>
-<value name="NUMBER">
-<shadow type="math_number" id="lTjFv);C)Q^(|$#U*GMl">
-<field name="NUM">123</field>
-</shadow>
-<block type="variables_get" id="I/f.eS1sE[Hu`d]~1al{">
-<field name="VAR" id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</field>
-</block>
-</value>
-<next>
 <block type="crServo_setProperty_Number" id="=:Ri]FuNr96=Y|`83RN-">
 <field name="IDENTIFIER">frontRightMotorAsCRServo</field>
 <field name="PROP">Power</field>
@@ -527,14 +469,6 @@
 <field name="VAR" id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</field>
 </block>
 </value>
-</block>
-</next>
-</block>
-</next>
-</block>
-</next>
-</block>
-</next>
 </block>
 </next>
 </block>
@@ -736,14 +670,14 @@ Stopped).</comment>
 <block type="procedures_callnoreturn" id="%ol{}ySMArL+i.*v.W0#">
 <mutation name="initialConfigDrivebase"/>
 <next>
+<block type="procedures_callnoreturn" id="7uJHQE{-#{Z|`Gj08S0(">
+<mutation name="initialConfigRotator"/>
+<next>
 <block type="procedures_callnoreturn" id="I3ou_,Z=KuX;+S%.@$)8">
 <mutation name="initialConfigIntake"/>
 <next>
 <block type="procedures_callnoreturn" id="^e3`wag1|wc_CgC-?m@2">
 <mutation name="initialConfigViperslide"/>
-<next>
-<block type="procedures_callnoreturn" id="*?l0,T$Wpv*Pc`+lEvlN">
-<mutation name="initialConfigRotator"/>
 <next>
 <block type="linearOpMode_waitForStart" id=":`$wN_ci`O;o6P0~.(+g">
 <next>
@@ -875,16 +809,6 @@ Stopped).</comment>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id="ko_KgZVZU|T(o?-dnSl2">
-<mutation name="rotatorManual">
-<arg name="RotatorStickInput"/>
-</mutation>
-<value name="ARG0">
-<block type="variables_get" id="?7j5~thw|@xvjN/eB^?/">
-<field name="VAR" id="1EISY^,GT/(.7vVxA=+M">G2RightStickY</field>
-</block>
-</value>
-<next>
 <block type="procedures_callnoreturn" id="9Aq0/58VE8j,b*0tRX^[">
 <mutation name="halfSpeedScale"/>
 <next>
@@ -919,51 +843,48 @@ Stopped).</comment>
 <block type="procedures_callnoreturn" id="s?O-ZR.#ct@f`XuwSI#@">
 <mutation name="runViperslide"/>
 <next>
-<block type="procedures_callnoreturn" id="zF+VZ!uER#bT)a82d54I">
+<block type="procedures_callnoreturn" id="!U1Pk*nyS2ouhZEwaZ-R">
+<mutation name="presetWrist"/>
+<next>
+<block type="procedures_callnoreturn" id="F!NBu(r-Ni2t02*!srQ8">
 <mutation name="runRotator">
 <arg name="rotatorLowButton"/>
 <arg name="rotatorHighButton"/>
 <arg name="rotatorStick"/>
+<arg name="rotatorRunDirect"/>
 </mutation>
 <value name="ARG0">
-<block type="variables_get" id="AeHvV}MXL0i47SMpICj-">
+<block type="variables_get" id="q1G}$}{(hypFWYM7jv+b">
 <field name="VAR" id="qxKw0u;S{D22ZW@hI$[*">rotatorButtonX</field>
 </block>
 </value>
 <value name="ARG1">
-<block type="variables_get" id="(ap6?h-RaT,vA$TYt$G6">
+<block type="variables_get" id="6C.1UjK@40b%1jXw{2{r">
 <field name="VAR" id="!KOa#tJY0{[^*Kud4)`|">rotatorButtonY</field>
 </block>
 </value>
 <value name="ARG2">
-<block type="variables_get" id="o2e~jO0YRkW{@(u^.PP2">
+<block type="variables_get" id="{jpv9+._2Wv*?+)n1Cxq">
 <field name="VAR" id="V9XUv`jb4jq3q2dS[5=j">RotatorStickInput</field>
 </block>
 </value>
-<next>
-<block type="procedures_callnoreturn" id="!U1Pk*nyS2ouhZEwaZ-R">
-<mutation name="presetWrist"/>
-<next>
-<block type="telemetry_addNumericData_Number" id="h~*MTiaJMg^B,Go2YL/W">
-<value name="KEY">
-<shadow type="text" id="t,4-Ch4QZ.6t!;89`H/Q">
-<field name="TEXT">backLeftEncoder</field>
-</shadow>
+<value name="ARG3">
+<block type="math_number" id="_TWlel23;FxZ1@R;B1n%">
+<field name="NUM">0</field>
+</block>
 </value>
-<value name="NUMBER">
-<shadow type="math_number" id="i+t+2sLyqiZ4O2[RR4Qg">
-<field name="NUM">123</field>
-</shadow>
-<block type="dcMotor_getProperty_Number" id=":ueow7mryeLjRJ|nO-E=">
-<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
-<field name="PROP">CurrentPosition</field>
-<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<next>
+<block type="procedures_callnoreturn" id="7(qC1bkE(-p.=iJPY388">
+<mutation name="changeRotatorMin">
+<arg name="viperPosition"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="UnthRm1#K/9`OjY?~{Uu">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
 </block>
 </value>
 <next>
 <block type="telemetry_update" id="E)2PUguQHoIF=nKR6L0!"/>
-</next>
-</block>
 </next>
 </block>
 </next>
@@ -1193,15 +1114,6 @@ Stopped).</comment>
 <field name="VAR" id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</field>
 </block>
 </value>
-<next>
-<block type="telemetry_addLine" id="F%mMrwTAp2Y*IOwwSS45">
-<value name="TEXT">
-<shadow type="text" id="$=*3PrPx)fAejNym3nyg">
-<field name="TEXT">buttonAPressed</field>
-</shadow>
-</value>
-</block>
-</next>
 </block>
 </next>
 </block>
@@ -1231,15 +1143,6 @@ Stopped).</comment>
 <field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
 </block>
 </value>
-<next>
-<block type="telemetry_addLine" id="ihX#[6]9K8H)+kSBVy2f">
-<value name="TEXT">
-<shadow type="text" id="DnVqrODvOJId~yQqbg/!">
-<field name="TEXT">buttonBPressed</field>
-</shadow>
-</value>
-</block>
-</next>
 </block>
 </next>
 </block>
@@ -1283,21 +1186,6 @@ Stopped).</comment>
 </block>
 </value>
 <statement name="DO0">
-<block type="telemetry_addNumericData_Number" id="Rj$[_Frtl}j3d4)c5+n@">
-<value name="KEY">
-<shadow type="text" id="=/~9AooAk?:;Ykbn6-0q">
-<field name="TEXT">yValueExists</field>
-</shadow>
-</value>
-<value name="NUMBER">
-<shadow type="math_number">
-<field name="NUM">123</field>
-</shadow>
-<block type="variables_get" id="#uTQ*%%yYq4`z5V7{lcl">
-<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</field>
-</block>
-</value>
-<next>
 <block type="variables_set" id="k)/}):PL9U3!,w],hE|O">
 <field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
 <value name="VALUE">
@@ -1316,25 +1204,8 @@ Stopped).</comment>
 </block>
 </next>
 </block>
-</next>
-</block>
 </statement>
 <statement name="ELSE">
-<block type="telemetry_addNumericData_Number" id="|ROM7b3i),!@4ncWVlB(">
-<value name="KEY">
-<shadow type="text" id="8YM+/{2s=CaMOVm4:dU+">
-<field name="TEXT">stopped</field>
-</shadow>
-</value>
-<value name="NUMBER">
-<shadow type="math_number">
-<field name="NUM">123</field>
-</shadow>
-<block type="variables_get" id="TJap1zQv7CqkR^!gz0oN">
-<field name="VAR" id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</field>
-</block>
-</value>
-<next>
 <block type="variables_set" id="E,YT;{{=(K[R7:t/II~m">
 <field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
 <value name="VALUE">
@@ -1342,8 +1213,6 @@ Stopped).</comment>
 <field name="NUM">0</field>
 </block>
 </value>
-</block>
-</next>
 </block>
 </statement>
 <next>
@@ -1364,13 +1233,6 @@ Stopped).</comment>
 </block>
 </value>
 <statement name="DO0">
-<block type="telemetry_addLine" id="kpM7Yv7hf*EIU]r[~!yU">
-<value name="TEXT">
-<shadow type="text" id="k`[LI2+lw}@:;Fj5eg_`">
-<field name="TEXT">buttonPressedIsTrue</field>
-</shadow>
-</value>
-<next>
 <block type="controls_if" id="@NHSF}@vUe~?u=NVfc^i">
 <mutation elseif="2"/>
 <value name="IF0">
@@ -1456,15 +1318,6 @@ Stopped).</comment>
 <field name="BOOL">FALSE</field>
 </block>
 </value>
-<next>
-<block type="telemetry_addLine" id="vu9y!@7Ow`Ic(eQyPn3D">
-<value name="TEXT">
-<shadow type="text" id="IZhaa1a[Z|kRJB{OJT5@">
-<field name="TEXT">reachedDestination</field>
-</shadow>
-</value>
-</block>
-</next>
 </block>
 </next>
 </block>
@@ -1500,15 +1353,6 @@ Stopped).</comment>
 </value>
 </block>
 </value>
-<next>
-<block type="telemetry_addLine" id="lr4ElTVzez~;hg|=9Fw(">
-<value name="TEXT">
-<shadow type="text" id="U]f2*`g,U*c+i92wK,03">
-<field name="TEXT">slideMovedDown</field>
-</shadow>
-</value>
-</block>
-</next>
 </block>
 </statement>
 <value name="IF2">
@@ -1534,22 +1378,13 @@ Stopped).</comment>
 <field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
 </block>
 </value>
-<next>
-<block type="telemetry_addLine" id="{dHH%;Kb6{CfC:ASc@)P">
-<value name="TEXT">
-<shadow type="text" id="9{Xi{R$6x[IV0Z0U,%Zi">
-<field name="TEXT">slideMovedUp</field>
-</shadow>
-</value>
-</block>
-</next>
 </block>
 </statement>
 <next>
 <block type="telemetry_addNumericData_Number" id="X5}$$TMVMZ5QD}Uc}4#w">
 <value name="KEY">
 <shadow type="text" id="Hv=mf!yDz#@@XK9=${ZZ">
-<field name="TEXT">currentHeight</field>
+<field name="TEXT">viperSlideCurrentPosition</field>
 </shadow>
 </value>
 <value name="NUMBER">
@@ -1597,11 +1432,9 @@ Stopped).</comment>
 </block>
 </next>
 </block>
-</next>
-</block>
 </statement>
 <next>
-<block type="procedures_callnoreturn" id="$4u|;S(;[kXL*};6u[V2">
+<block type="procedures_callnoreturn" id="15(90w+Fc:4v:*hj*scM">
 <mutation name="viperSlideHeightLimitation"/>
 <next>
 <block type="telemetry_addNumericData_Number" id="pdrxAV2,n`51J:+%sITO">
@@ -1633,79 +1466,87 @@ Stopped).</comment>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="7]Rx$6)P1n@u~:rR`Yj|" x="-1991" y="-159">
+<block type="procedures_defnoreturn" id="__5#]wI]x3R3gq7wqoH#" x="-2167" y="-201">
 <field name="NAME">initialConfigRotator</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
-<block type="dcMotor_setProperty_RunMode" id=".RH~RrQhdom=81LEi9Yo">
+<block type="dcMotor_setProperty_RunMode" id="Ocvba[t!z#0Rga4a]php">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">Mode</field>
 <data>{"IDENTIFIER":"rotator"}</data>
 <value name="VALUE">
-<shadow type="dcMotor_typedEnum_runMode" id="SIF2?!:*1DNA!k}XeQ}S">
+<shadow type="dcMotor_typedEnum_runMode" id="a|6,pfU$82=p+fWz0I3$">
 <field name="RUN_MODE">STOP_AND_RESET_ENCODER</field>
 </shadow>
 </value>
 <next>
-<block type="dcMotor_setProperty_ZeroPowerBehavior" id="(rL+KR.mdnw8L^7ojETt">
+<block type="dcMotor_setProperty_ZeroPowerBehavior" id="rF}2X3AU^R~X+e6(!G6.">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">ZeroPowerBehavior</field>
 <data>{"IDENTIFIER":"rotator"}</data>
 <value name="VALUE">
-<shadow type="dcMotor_typedEnum_zeroPowerBehavior" id="*ZkMdX1.U@0O81eiU@0w">
+<shadow type="dcMotor_typedEnum_zeroPowerBehavior" id="%t|y]{/*}9HKkn$Y2tJD">
 <field name="ZERO_POWER_BEHAVIOR">BRAKE</field>
 </shadow>
 </value>
 <next>
-<block type="variables_set" id="Z@tx)2nGWPhku|?pzx3+">
+<block type="variables_set" id="3=|?n7z;a1B$|oR]z$OI">
 <field name="VAR" id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</field>
 <value name="VALUE">
-<block type="math_number" id="o7,_GS4B~zBXFUC9wA%W">
+<block type="math_number" id=",EDbG(kf/nv(gBAyE/fT">
 <field name="NUM">0</field>
 </block>
 </value>
 <next>
-<block type="variables_set" id=".q^sNHEvcHYr3nJ`N`AS">
+<block type="variables_set" id="pVSJ^(@3g]]#7r-Ecy).">
 <field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
 <value name="VALUE">
-<block type="math_number" id="v-)puI|@k5752{Kw-`!*">
+<block type="math_number" id="s%$VsDB9rF@Z:,Io2Yub">
 <field name="NUM">1288</field>
 </block>
 </value>
 <next>
-<block type="variables_set" id="]nX:s1(MfT*nKM8|`sey">
+<block type="variables_set" id="A_nkG*;S??+S9(4cWm;]">
 <field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
 <value name="VALUE">
-<block type="math_number" id="=NbfuyOv@u0oIRYs+;[5">
+<block type="math_number" id="]vRo.R7koauYxu6nx~1B">
 <field name="NUM">-225</field>
 </block>
 </value>
 <next>
-<block type="variables_set" id="o)3MSY{]F~NW_LVY:0^*">
+<block type="variables_set" id="#(8)k%y#sKzxOTh!o*T~">
 <field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
 <value name="VALUE">
-<block type="logic_boolean" id="Au;I@0Wxrt_t{E*3XNVf">
+<block type="logic_boolean" id="1B2GdsZe{z|~N9}Jdriu">
 <field name="BOOL">FALSE</field>
 </block>
 </value>
 <next>
-<block type="variables_set" id="eXbhjh_Q]QqY[z:/]Z@m">
+<block type="variables_set" id="O/.f6M*1sstAgQr?o4K%">
 <field name="VAR" id="B0TR%]+l}_jx=YHJ)o)M">rotatorScaling</field>
 <value name="VALUE">
-<block type="math_number" id="3G$M,O@gM*j4JWua|t#`">
+<block type="math_number" id="-XY,_J$4B3#-IZ,z*fi(">
 <field name="NUM">0</field>
 </block>
 </value>
 <next>
-<block type="variables_set" id="W1-ckm4MjAnrg-{-^qen">
+<block type="variables_set" id=";2kFbxp13]B6HMgMjfz{">
 <field name="VAR" id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</field>
 <value name="VALUE">
-<block type="math_number" id="i*R?bk)D)Y7lC~GQh%Pe">
+<block type="math_number" id="#hvx=V=,fIjnF}(E,|@)">
 <field name="NUM">0.3</field>
 </block>
 </value>
 <next>
-<block type="dcMotor_setProperty_Number" id="8W+si[C`%Yjrvsf,.:sl">
+<block type="variables_set" id="rllAbOT$detB|B2CUNVp">
+<field name="VAR" id="sKi7z-1YC[,j#twF*s|A">rotatorTicksPerRotation</field>
+<value name="VALUE">
+<block type="math_number" id="Tq-d`vZRYE9^pKMSQg^v">
+<field name="NUM">5281.1</field>
+</block>
+</value>
+<next>
+<block type="dcMotor_setProperty_Number" id="q(fc$^!%djn/UsXT$@fr">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">TargetPosition</field>
 <data>{"IDENTIFIER":"rotator"}</data>
@@ -1713,20 +1554,22 @@ Stopped).</comment>
 <shadow type="math_number">
 <field name="NUM">0</field>
 </shadow>
-<block type="variables_get" id="W,)=P#z%{0i-Q1Bv2nCM">
+<block type="variables_get" id="nJ280!bQRp_CsI%d)DHB">
 <field name="VAR" id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</field>
 </block>
 </value>
 <next>
-<block type="dcMotor_setProperty_RunMode" id="{*Oja[m[p^Bk8QBm4YBL">
+<block type="dcMotor_setProperty_RunMode" id="AjENAKT%k!y_uBg0OSNg">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">Mode</field>
 <data>{"IDENTIFIER":"rotator"}</data>
 <value name="VALUE">
-<shadow type="dcMotor_typedEnum_runMode" id="i3K~2j,oO%vsc#@;4pwm">
+<shadow type="dcMotor_typedEnum_runMode" id="v~)r13h7P!yofc~0q)!N">
 <field name="RUN_MODE">RUN_TO_POSITION</field>
 </shadow>
 </value>
+</block>
+</next>
 </block>
 </next>
 </block>
@@ -1910,43 +1753,7 @@ Stopped).</comment>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="]uJNToT^D^#)=z6F{Ny2" x="-65" y="-136">
-<field name="NAME">halfSpeedScale</field>
-<comment pinned="false" h="80" w="160">Describe this function...</comment>
-<statement name="STACK">
-<block type="controls_if" id="-pH?Uc;;S_W[*tw!J-3V">
-<mutation else="1"/>
-<value name="IF0">
-<block type="gamepad_getProperty_Boolean" id="tRh]%x^2`LXb_EQKjR`a">
-<field name="IDENTIFIER">gamepad1</field>
-<field name="PROP">RightBumper</field>
-<data>{"IDENTIFIER":"gamepad1"}</data>
-</block>
-</value>
-<statement name="DO0">
-<block type="variables_set" id="ecXqjGNpI@f?$Q;Q{_fy">
-<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
-<value name="VALUE">
-<block type="math_number" id="+k#D}f*)-9=3;8_p=b7@">
-<field name="NUM">0.5</field>
-</block>
-</value>
-</block>
-</statement>
-<statement name="ELSE">
-<block type="variables_set" id="nvc=G!eSw(3|gz|1dUAM">
-<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
-<value name="VALUE">
-<block type="math_number" id="5+8gR,g|M+JBa^9f*juz">
-<field name="NUM">1</field>
-</block>
-</value>
-</block>
-</statement>
-</block>
-</statement>
-</block>
-<block type="procedures_defnoreturn" id="4)0#fQ:TTsju|f5B*w32" x="-2052" y="39">
+<block type="procedures_defnoreturn" id="4)0#fQ:TTsju|f5B*w32" x="-2669" y="-1">
 <field name="NAME">initialConfigIntake</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
@@ -2002,10 +1809,56 @@ Stopped).</comment>
 </block>
 </statement>
 </block>
+<block type="procedures_defnoreturn" id="]uJNToT^D^#)=z6F{Ny2" x="-65" y="-136">
+<field name="NAME">halfSpeedScale</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_if" id="-pH?Uc;;S_W[*tw!J-3V">
+<mutation else="1"/>
+<value name="IF0">
+<block type="gamepad_getProperty_Boolean" id="tRh]%x^2`LXb_EQKjR`a">
+<field name="IDENTIFIER">gamepad1</field>
+<field name="PROP">RightBumper</field>
+<data>{"IDENTIFIER":"gamepad1"}</data>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="ecXqjGNpI@f?$Q;Q{_fy">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+<value name="VALUE">
+<block type="math_number" id="+k#D}f*)-9=3;8_p=b7@">
+<field name="NUM">0.5</field>
+</block>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="variables_set" id="nvc=G!eSw(3|gz|1dUAM">
+<field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
+<value name="VALUE">
+<block type="math_number" id="5+8gR,g|M+JBa^9f*juz">
+<field name="NUM">1</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+</statement>
+</block>
 <block type="procedures_defnoreturn" id="Yyfgjl[PF3q|(X]T]%4=" x="-2138" y="214">
 <field name="NAME">initialConfigViperslide</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
+<block type="variables_set" id="mt]~1p#FA;p$y#aoh{1{">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+<value name="VALUE">
+<block type="dcMotor_getProperty_Number" id="`hcq(n(3IAZ9sgwhz=J)">
+<field name="IDENTIFIER">viperSlideAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"viperSlide"}</data>
+</block>
+</value>
+<next>
 <block type="variables_set" id="*nSE`1X6kf4N2`xYt%+D">
 <field name="VAR" id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</field>
 <value name="VALUE">
@@ -2026,7 +1879,7 @@ Stopped).</comment>
 <field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
 <value name="VALUE">
 <block type="math_number" id="1xQ2IVh3T4wEU8_e2}~(">
-<field name="NUM">5810</field>
+<field name="NUM">5320</field>
 </block>
 </value>
 <next>
@@ -2100,6 +1953,8 @@ Stopped).</comment>
 </block>
 </next>
 </block>
+</next>
+</block>
 </statement>
 </block>
 <block type="procedures_defnoreturn" id="PM{$SiNDb|RN%)HrBXes" x="1465" y="176">
@@ -2138,74 +1993,98 @@ Stopped).</comment>
 </value>
 </block>
 </value>
-<next>
-<block type="telemetry_addNumericData_Number" id="):Noa3$tMtkykD?de+P9">
-<value name="KEY">
-<shadow type="text" id="X5.G+$O-u{a!p^RBq#Pz">
-<field name="TEXT">slideSpeedValue</field>
-</shadow>
-</value>
-<value name="NUMBER">
-<shadow type="math_number">
-<field name="NUM">123</field>
-</shadow>
-<block type="variables_get" id="qDRra/HG%.?PQml%ee%G">
-<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
-</block>
-</value>
-</block>
-</next>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="1GgL4[V*:vi3-HbbgE:." x="-1193" y="326">
+<block type="procedures_defnoreturn" id="H9KtGP|6j{!P(%lMgz-5" x="-1657" y="534">
 <mutation>
 <arg name="rotatorLowButton" varid="b0(GSHYaEg$OM{D(C:,-"/>
 <arg name="rotatorHighButton" varid="xY[%V7UAtl,11_J-PBH^"/>
 <arg name="rotatorStick" varid="4oUYqhnnOa8l7;Wyd#}_"/>
+<arg name="rotatorRunDirect" varid="34!;}4BSyu;Kp~-$aLfC"/>
 </mutation>
 <field name="NAME">runRotator</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
-<block type="variables_set" id="zoaD)?~2$}6MY4Y5Yp86">
+<block type="variables_set" id="D4u7+X1SoVCB1(DPoG^]">
 <field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
 <value name="VALUE">
-<block type="dcMotor_getProperty_Number" id="ve8yk[`=WWCW~PJKF@Be">
+<block type="dcMotor_getProperty_Number" id="0RP`Z=i[P%Gp}CbQa_:j">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">CurrentPosition</field>
 <data>{"IDENTIFIER":"rotator"}</data>
 </block>
 </value>
 <next>
-<block type="variables_set" id=",Y7`v%=%`Cly/se8CwfG">
+<block type="variables_set" id="=$$sp,8!XW8)|zFK!Ry;">
 <field name="VAR" id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</field>
 <value name="VALUE">
-<block type="dcMotor_getProperty_Number" id="wjThh.*sE.9wST8^!+/A">
+<block type="dcMotor_getProperty_Number" id="BtX?Aa(ln-R[oE#4+gS8">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">TargetPosition</field>
 <data>{"IDENTIFIER":"rotator"}</data>
 </block>
 </value>
 <next>
-<block type="controls_if" id="i(M9.B|h,#kO{c4yc`yc">
+<block type="variables_set" id="1qw2vKyJtQw:s6Klh{mb">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="math_arithmetic" id=")^o8oW-fW~|-GVCShbvT">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="XC,;V^UTD_D8O!e*l}ZX">
+<field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="k54!AxV~]7cMFiKt^XI|">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="dRekghSM*3$Fs8%m]+bI">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number" id=")PuzSv{2(-hGpd+@B$b:">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="v.m==U6oL0r*{]81?9bf">
+<field name="VAR" id="34!;}4BSyu;Kp~-$aLfC">rotatorRunDirect</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="E4$#OmGl;[cY:^s#;^S=">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="K{~Ta8Xiza-)*lJ@|,]~">
+<field name="VAR" id="sKi7z-1YC[,j#twF*s|A">rotatorTicksPerRotation</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="controls_if" id="E!r8?~ouuB,{dzgLvwZc">
 <value name="IF0">
-<block type="variables_get" id="(c8G}r^D0Xde)e$!hjWe">
+<block type="variables_get" id="w8Rb^PY]fO!K.I3X)GMn">
 <field name="VAR" id="b0(GSHYaEg$OM{D(C:,-">rotatorLowButton</field>
 </block>
 </value>
 <statement name="DO0">
-<block type="variables_set" id="Shr9!*iJ/0`:-HJ5^j0e">
+<block type="variables_set" id="7*OU*K9H}Y0O(b1n*zDr">
 <field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
 <value name="VALUE">
-<block type="variables_get" id="l^$|G7;Rlkce=6F#qDjb">
+<block type="variables_get" id="$~{b%NF71)7Ep4~Z|i7*">
 <field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
 </block>
 </value>
 <next>
-<block type="variables_set" id="x`5L2Wd5ok_=GahFXeen">
+<block type="variables_set" id="^BColqW:;N`W5v6~5F0}">
 <field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
 <value name="VALUE">
-<block type="logic_boolean" id="~!~-Vo+@mkxqPGMza7MR">
+<block type="logic_boolean" id="XGyK9_vg||so.UTuhxye">
 <field name="BOOL">TRUE</field>
 </block>
 </value>
@@ -2214,25 +2093,25 @@ Stopped).</comment>
 </block>
 </statement>
 <next>
-<block type="controls_if" id="I3y#c|xw)Qu#ZV7xYd[!">
+<block type="controls_if" id="Wje(XWY3Lv,Dq1aSGN(E">
 <value name="IF0">
-<block type="variables_get" id="bJp#xni#*]*N8uIO8:!7">
+<block type="variables_get" id=",lP)|~EwpO$E7h1;,C7(">
 <field name="VAR" id="xY[%V7UAtl,11_J-PBH^">rotatorHighButton</field>
 </block>
 </value>
 <statement name="DO0">
-<block type="variables_set" id="Hr71p2p:[P85^q6JmY6k">
+<block type="variables_set" id="2^5!8R4M_CJ:{*QaNMv[">
 <field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
 <value name="VALUE">
-<block type="logic_boolean" id="$O7[{azbT?=(O)NXc+au">
+<block type="logic_boolean" id="Qgk$8-Od!^I**y!E`d.^">
 <field name="BOOL">TRUE</field>
 </block>
 </value>
 <next>
-<block type="variables_set" id="rS/=YvO#JUO*s_DfhsZ@">
+<block type="variables_set" id=",E?d57hH%*e6KFE#?F6,">
 <field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
 <value name="VALUE">
-<block type="variables_get" id="6g!n;!UCNa/DycaGSX7.">
+<block type="variables_get" id="H3).5;n7x2r1c91|D;5`">
 <field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
 </block>
 </value>
@@ -2241,35 +2120,35 @@ Stopped).</comment>
 </block>
 </statement>
 <next>
-<block type="controls_if" id="KPRxU{ukY=xHk@Qg2sdn">
+<block type="controls_if" id="{@*SZvrYFTmbT3~~!u*x">
 <value name="IF0">
-<block type="logic_operation" id="#Pg;P-zMjxS4^|z_*w7*">
+<block type="logic_operation" id="{du=,PZ72U3#RTW5~Chl">
 <field name="OP">OR</field>
 <value name="A">
-<block type="logic_compare" id="6`rK7GJ!N5_C3DkeFmrV">
+<block type="logic_compare" id="S=)=_(8R8,-j*A$1*4K[">
 <field name="OP">GT</field>
 <value name="A">
-<block type="variables_get" id="Y7%C]NGP#*zTcbh2*_j:">
+<block type="variables_get" id="U,2i%b1VU|rAtYf}X=Ko">
 <field name="VAR" id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</field>
 </block>
 </value>
 <value name="B">
-<block type="math_number" id="mbN{^BVKhFfH~3yoQGsf">
+<block type="math_number" id="+E0ro?N~[q6d612CFC{p">
 <field name="NUM">0.05</field>
 </block>
 </value>
 </block>
 </value>
 <value name="B">
-<block type="logic_compare" id="xb8V{#y,l:l2]_UMM(V+">
+<block type="logic_compare" id="liLggUd:lBq./_]Oo+%s">
 <field name="OP">LT</field>
 <value name="A">
-<block type="variables_get" id="kXK,[wNL2`]!J1ck;:bA">
+<block type="variables_get" id="`WBnDA*WHNUK?t,g/yM~">
 <field name="VAR" id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</field>
 </block>
 </value>
 <value name="B">
-<block type="math_number" id="Ot53`m5w;%Pa;Qu0[7e0">
+<block type="math_number" id="`ZdDqNfZ1o/]$a$zILBu">
 <field name="NUM">-0.05</field>
 </block>
 </value>
@@ -2278,16 +2157,16 @@ Stopped).</comment>
 </block>
 </value>
 <statement name="DO0">
-<block type="variables_set" id="$Jc55CB/yhHm;n0W:8`I">
+<block type="variables_set" id="6vj?+*31W|UE(D6k6Q,A">
 <field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
 <value name="VALUE">
-<block type="math_arithmetic" id="@weV-]_WR9(/1*mq7jEt">
+<block type="math_arithmetic" id=";Qv5u8V1]Db^+3_hyCR*">
 <field name="OP">ADD</field>
 <value name="A">
 <shadow type="math_number">
 <field name="NUM">1</field>
 </shadow>
-<block type="variables_get" id="1d@i]L=vW}4@`yho!Q/E">
+<block type="variables_get" id="+dgqC:E*?b+nP_ESjuPf">
 <field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
 </block>
 </value>
@@ -2295,18 +2174,18 @@ Stopped).</comment>
 <shadow type="math_number">
 <field name="NUM">1</field>
 </shadow>
-<block type="math_arithmetic" id="xe]K3yla:bBL:W+,4~[7">
+<block type="math_arithmetic" id=").|P-FbT5rGRC+2fdOtt">
 <field name="OP">MULTIPLY</field>
 <value name="A">
-<shadow type="math_number" id="a{~}+mumHm~^|`*AF74m">
+<shadow type="math_number">
 <field name="NUM">1</field>
 </shadow>
-<block type="variables_get" id="!h!ubN}]]pmk@,q~RA9K">
+<block type="variables_get" id="{~EzcnYip4qrnOYYA`o^">
 <field name="VAR" id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</field>
 </block>
 </value>
 <value name="B">
-<shadow type="math_number" id="E{]`Fl=eN(r;P/wC9PRv">
+<shadow type="math_number" id="Iw%uSgmU]Aj)dw={1}|w">
 <field name="NUM">50</field>
 </shadow>
 </value>
@@ -2315,112 +2194,110 @@ Stopped).</comment>
 </block>
 </value>
 <next>
-<block type="controls_if" id="Lt]c`wJ(UbE+k4Ya0Q1o">
-<mutation elseif="1"/>
-<value name="IF0">
-<block type="logic_compare" id="KoV5=zUAVkax(veF#wmC">
-<field name="OP">GT</field>
-<value name="A">
-<block type="variables_get" id="9.PFccI)np?)YTm{([EP">
-<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
-</block>
-</value>
-<value name="B">
-<block type="variables_get" id="MEn#)jE1(fX3M*dWP;S+">
-<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
-<block type="variables_set" id="qlWoD+mN{d}t);:$zd3#">
-<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
-<value name="VALUE">
-<block type="variables_get" id="gU[!Zz}:6exXiLEmjbUs">
-<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
-</block>
-</value>
-</block>
-</statement>
-<value name="IF1">
-<block type="logic_compare" id="Q]]wOeLn1-7@xu-HE)c+">
-<field name="OP">LT</field>
-<value name="A">
-<block type="variables_get" id="nQaZm+LP^ma.ea|yLALZ">
-<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
-</block>
-</value>
-<value name="B">
-<block type="variables_get" id="t=`B;a9j1k/o$Wbyahv.">
-<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO1">
-<block type="variables_set" id=".p:~,H=iQW0E1^zco1Gl">
-<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
-<value name="VALUE">
-<block type="variables_get" id="-sW~k1k*UY,28MJ9.pj-">
-<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
-</block>
-</value>
-</block>
-</statement>
-<next>
-<block type="variables_set" id="FVaR~i#+ze)7QZSg{sz2">
+<block type="variables_set" id="$WG=L8tEcP+UC!Fvv%rn">
 <field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
 <value name="VALUE">
-<block type="logic_boolean" id="o;Hc=*+tQ5/_$1NWsHu)">
+<block type="logic_boolean" id="VJq{ATf||rmz#xF`5Oj)">
 <field name="BOOL">FALSE</field>
 </block>
 </value>
 </block>
 </next>
 </block>
-</next>
-</block>
 </statement>
 <next>
-<block type="controls_if" id="=@X@iYajV*?ATxdp(MxR">
-<mutation else="1"/>
+<block type="controls_if" id="SCEpv=(1GE[N}X/-khPT">
+<mutation elseif="1"/>
 <value name="IF0">
-<block type="logic_compare" id="DG49r7FCzzq`Unt(WbPE">
-<field name="OP">LT</field>
+<block type="logic_compare" id="RDk9lm4m)+b6yTBuV?lo">
+<field name="OP">GT</field>
 <value name="A">
-<block type="variables_get" id="LB2^2hlSpS2D3OQjSinO">
+<block type="variables_get" id="2YM6kG]_N#+os/we8^.z">
 <field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
 </block>
 </value>
 <value name="B">
-<block type="variables_get" id="l]965XO-mx;b%1^_M@e1">
+<block type="variables_get" id="/r0(HjoW*V,06H+cIFaX">
+<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="=AUcVWYig}2Sax)^54;2">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="variables_get" id="A,g}f#@WcD_;eTe0c[ua">
+<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
+</block>
+</value>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="w!]Psg#j%,;y!-Y`wvew">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="E^IozukPbOMTE.Zs!tBz">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="w5:oa*t-,ga:`y6+d!k@">
+<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="@`aG?HKmgnRgh6DOKnw)">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+<value name="VALUE">
+<block type="variables_get" id="j|+@-T**lKeHxC`DI+ld">
+<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
+</block>
+</value>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="i*`E1]h=9Or31?(#?9#]">
+<mutation else="1"/>
+<value name="IF0">
+<block type="logic_compare" id=";zhDrd/%_1jbb)J5U$(W">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="xcXR/IrDo%orqNs_-gS*">
+<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="$8}w00Z%:xgm[*;:Vsm:">
 <field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
 </block>
 </value>
 </block>
 </value>
 <statement name="DO0">
-<block type="variables_set" id="Zg7vTg@(FLfdh]uIRe4j">
+<block type="variables_set" id="_s^AZXx:g3rk7w*Rc{^0">
 <field name="VAR" id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</field>
 <value name="VALUE">
-<block type="math_number" id="ZX[VVmao1*:42QfwqLu+">
+<block type="math_number" id="y7LNCB%:#7$Kg_g/YY]-">
 <field name="NUM">0.5</field>
 </block>
 </value>
 </block>
 </statement>
 <statement name="ELSE">
-<block type="variables_set" id="}v5MzaTqV?#a_X*^B1h#">
+<block type="variables_set" id="es5/uBsPN@lzkF)M^o_!">
 <field name="VAR" id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</field>
 <value name="VALUE">
-<block type="math_number" id="eBS$-TDL%DzN1?XbbA7C">
+<block type="math_number" id="7]jWS(@(MI~$3^4/L`XV">
 <field name="NUM">0.3</field>
 </block>
 </value>
 </block>
 </statement>
 <next>
-<block type="dcMotor_setProperty_Number" id="6z5j!pE[Cxq1L8nxP!9W">
+<block type="dcMotor_setProperty_Number" id="?/_o8uv?L(ZQu=!/m^8R">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">TargetPosition</field>
 <data>{"IDENTIFIER":"rotator"}</data>
@@ -2428,22 +2305,22 @@ Stopped).</comment>
 <shadow type="math_number">
 <field name="NUM">0</field>
 </shadow>
-<block type="variables_get" id="OfC]Ybx:T?B;dN5*V]I_">
+<block type="variables_get" id="l%IJ,9.JLY_daD=uiE?)">
 <field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
 </block>
 </value>
 <next>
-<block type="dcMotor_setProperty_RunMode" id="-xrlc8xA,)LNj{8E8]4s">
+<block type="dcMotor_setProperty_RunMode" id="q#!XEyhrWF);O3how`4N">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">Mode</field>
 <data>{"IDENTIFIER":"rotator"}</data>
 <value name="VALUE">
-<shadow type="dcMotor_typedEnum_runMode" id="4j-;W+9NNmy(u*Z:%EZQ">
+<shadow type="dcMotor_typedEnum_runMode" id="+hgRmr|7]jod3wsmz+.$">
 <field name="RUN_MODE">RUN_TO_POSITION</field>
 </shadow>
 </value>
 <next>
-<block type="dcMotor_setProperty_Number" id=".VZ65Ul[#4s7ZDfN(=)2">
+<block type="dcMotor_setProperty_Number" id="7;Jt)f!I!7Dhu**[ym|%">
 <field name="IDENTIFIER">rotatorAsDcMotor</field>
 <field name="PROP">Power</field>
 <data>{"IDENTIFIER":"rotator"}</data>
@@ -2451,14 +2328,14 @@ Stopped).</comment>
 <shadow type="math_number">
 <field name="NUM">0.2</field>
 </shadow>
-<block type="variables_get" id="ps2ZB:^X%$)w:X4;{f~^">
+<block type="variables_get" id="evcswJwp/jQeRNHr=^MU">
 <field name="VAR" id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</field>
 </block>
 </value>
 <next>
-<block type="telemetry_addNumericData_Number" id="57CNID,IM.({3r0A!;08">
+<block type="telemetry_addNumericData_Number" id="{dWnQFZeK1DwdB:q:*K%">
 <value name="KEY">
-<shadow type="text" id="[j9xD,.]py-6N9G`{Drp">
+<shadow type="text" id="Gk%a39*u:SgBGb+``6yM">
 <field name="TEXT">rotatorCurrentPosition</field>
 </shadow>
 </value>
@@ -2466,14 +2343,14 @@ Stopped).</comment>
 <shadow type="math_number">
 <field name="NUM">123</field>
 </shadow>
-<block type="variables_get" id="[qxf69z(Nm^=*C|%H93o">
+<block type="variables_get" id="KParlwfSUY,=p]ie*0Ua">
 <field name="VAR" id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</field>
 </block>
 </value>
 <next>
-<block type="telemetry_addNumericData_Number" id="9B:[L[.22oHVfBP$1g~V">
+<block type="telemetry_addNumericData_Number" id="zM],[ziM[Fv@dWyUs2s,">
 <value name="KEY">
-<shadow type="text" id="oSTH#1RHfEfJw|VZ%B2d">
+<shadow type="text" id="YbQErTR:6{n%K:4Xga`W">
 <field name="TEXT">rotatorTarget</field>
 </shadow>
 </value>
@@ -2481,7 +2358,7 @@ Stopped).</comment>
 <shadow type="math_number">
 <field name="NUM">123</field>
 </shadow>
-<block type="variables_get" id="RC~.QmYz)5h0Kg@K$Uj;">
+<block type="variables_get" id="!xfRyW)4zKL1WJXe+3Fc">
 <field name="VAR" id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</field>
 </block>
 </value>
@@ -2505,6 +2382,261 @@ Stopped).</comment>
 </next>
 </block>
 </next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="Wm`JS,$,H}sUHJ;R}ifT" x="2934" y="307">
+<field name="NAME">viperSlideHeightLimitation</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_if" id="$h2mltFXlqT]u5QGzVP]">
+<mutation elseif="1" else="1"/>
+<value name="IF0">
+<block type="logic_operation" id="G1Z_j^y6b^c{bxnLIVdP">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id="p3~o,FpYv4cTtfAl(xt5">
+<field name="OP">LTE</field>
+<value name="A">
+<block type="variables_get" id="mJmtnH/Gh$,c?tUSzq(?">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<block type="math_arithmetic" id="(lM#*jM{UINFEUo.UK(7">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="/$r,(,f_o`-iNMB[RNQm">
+<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="G(!nRF#:C7CtlOmU!:^U">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="logic_compare" id="?z/ZNNRFNyxMn(L#MaLW">
+<field name="OP">GTE</field>
+<value name="A">
+<block type="variables_get" id=",]g]c.q0nd]jED%2;L{d">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<block type="math_arithmetic" id="DVHY2MR$r-^IK1cRQYIm">
+<field name="OP">MINUS</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="V64U6u1uSXOX8xvb!z=9">
+<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="n?~x06wfvmq`~Pn*29*`">
+<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="controls_if" id="oOcrCKhObPk@og!zG:Nh">
+<mutation elseif="1"/>
+<value name="IF0">
+<block type="logic_compare" id="Fa?cKJ5UIET~gb;gXrY$">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="9=:VNYhxWroW+31TdA|(">
+<field name="VAR" id="#+)!gjvm6[Zkck_}8:@F">leftStickY</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="k{F]6#2l!+~4Qx:x9ZSf">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="procedures_callnoreturn" id="RtU]{kBYho7h%W,8o10t">
+<mutation name="viperSlideControl">
+<arg name="viperslideSpeed"/>
+<arg name="viperslideScalingFactor"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="ia$;1S%93FzhW$L.3q=H">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="}W?@HY*nFKYo$J,r,GsS">
+<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
+</block>
+</value>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="{-/M)+bkugU1WLEr3`:E">
+<field name="OP">GT</field>
+<value name="A">
+<block type="variables_get" id="j/)Sh7HaA#m0iy9TgnHg">
+<field name="VAR" id="#+)!gjvm6[Zkck_}8:@F">leftStickY</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="MRs004yNa12[FCe#=h8%">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="procedures_callnoreturn" id="DGs4AEPYhlCY.=gaKiba">
+<mutation name="viperSlideControl">
+<arg name="viperslideSpeed"/>
+<arg name="viperslideScalingFactor"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="O3(!Ug)|*=YsT,T(ui1:">
+<field name="NUM">0</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="9SGv$5t!raiJx=`+vyL8">
+<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="HSgwy{u10whNC~(~(W.o">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="cM;#Rzd0y?9xys`#H^i8">
+<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="ka/0bCZtkR-8#7__MS|@">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="controls_if" id="t+7G1hvjzZ$U8h##V~bP">
+<mutation elseif="1"/>
+<value name="IF0">
+<block type="logic_compare" id="+`VJKzp}}?9:;1a:_m.S">
+<field name="OP">GT</field>
+<value name="A">
+<block type="variables_get" id="h]^$AXRs3q}H@6536A^Z">
+<field name="VAR" id="#+)!gjvm6[Zkck_}8:@F">leftStickY</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="^tJ/sX/zmxhu:bJ4Oh2_">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="procedures_callnoreturn" id="8JglD6/(*Vv.z$(EOyoZ">
+<mutation name="viperSlideControl">
+<arg name="viperslideSpeed"/>
+<arg name="viperslideScalingFactor"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="B[j^f|;per0.,G61X`FS">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="X*ag,)2}?Hi`,)T:q0U5">
+<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
+</block>
+</value>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="pPEq484_Y6RAfh[2X.1|">
+<field name="OP">LT</field>
+<value name="A">
+<block type="variables_get" id="u8n+m{41nPX`48`wus38">
+<field name="VAR" id="#+)!gjvm6[Zkck_}8:@F">leftStickY</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="+AA8SITu_KnHvKT!^/ct">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="procedures_callnoreturn" id="*}cedD?ld)?biY;8y1=$">
+<mutation name="viperSlideControl">
+<arg name="viperslideSpeed"/>
+<arg name="viperslideScalingFactor"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="Kxy9!l?Jz_p}?VF`(wm.">
+<field name="NUM">0</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id=",XcE/;DJBtPIT33:N/t#">
+<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="procedures_callnoreturn" id="Jb$oC]eQ-|d]J,Oqd-N*">
+<mutation name="viperSlideControl">
+<arg name="viperslideSpeed"/>
+<arg name="viperslideScalingFactor"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="0@?#wbE]l7R!jp=W[l2d">
+<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id=")A!!@T*O+6KL*jm|W6x2">
+<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
+</block>
+</value>
+</block>
+</statement>
 </block>
 </statement>
 </block>
@@ -2552,419 +2684,68 @@ Stopped).</comment>
 </value>
 </block>
 </statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="I0twq-Gl:5+7Zs6X~3SH" x="-762" y="556">
+<mutation>
+<arg name="viperPosition" varid="_V;4.uAz^X4@UWlL`|i7"/>
+</mutation>
+<field name="NAME">changeRotatorMin</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_if" id="Tz-q2p(e.%!r{s10gMnX">
+<mutation else="1"/>
+<value name="IF0">
+<block type="logic_compare" id="GwMab82%9G3A28C~vx]b">
+<field name="OP">GTE</field>
+<value name="A">
+<block type="variables_get" id="rO0pf.*@S,5I3c_0!VKx">
+<field name="VAR" id="_V;4.uAz^X4@UWlL`|i7">viperPosition</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="BY#.?_ms-sC;^P$Z1(4s">
+<field name="NUM">2500</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="2c2u8rp?runq;V2.C!d,">
+<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
+<value name="VALUE">
+<block type="math_number" id="nJ3mtt]fsw2,A5YvEP[b">
+<field name="NUM">-250</field>
+</block>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="variables_set" id="xZ#y5oq,Lokmd/(SMkGT">
+<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
+<value name="VALUE">
+<block type="math_number" id="%H#XtUs}U7z^*QbF[=!O">
+<field name="NUM">-225</field>
+</block>
+</value>
+</block>
+</statement>
 <next>
-<block type="telemetry_addNumericData_Number" id="-TS8A(4|%wj)t?~x8C$,">
+<block type="telemetry_addNumericData_Number" id="yNxXHY1N,(2t1=wwzcj0">
 <value name="KEY">
-<shadow type="text" id="vU%.1k1lqISszM%PI)IS">
-<field name="TEXT">wristCurrentPosition</field>
+<shadow type="text" id="Byw4V43[05kONmb!g,hd">
+<field name="TEXT">viperCurrentPosition</field>
 </shadow>
 </value>
 <value name="NUMBER">
 <shadow type="math_number">
 <field name="NUM">123</field>
 </shadow>
-<block type="servo_getProperty_Number" id="sFmBPhADTu!^F#`u6;99">
-<field name="IDENTIFIER">wristAsServo</field>
-<field name="PROP">Position</field>
-<data>{"IDENTIFIER":"wrist"}</data>
+<block type="variables_get" id="b]AlwaL/.]16(/k~?0He">
+<field name="VAR" id="_V;4.uAz^X4@UWlL`|i7">viperPosition</field>
 </block>
 </value>
-<next>
-<block type="telemetry_update" id="o8$8jF3$5@!wt1tA.=ZY"/>
-</next>
-</block>
-</next>
-</block>
-</statement>
-</block>
-<block type="procedures_defnoreturn" id="j8m6z/iSCbQ[x1YQ#D^*" x="2962" y="401">
-<field name="NAME">viperSlideHeightLimitation</field>
-<comment pinned="false" h="80" w="160">Describe this function...</comment>
-<statement name="STACK">
-<block type="controls_if" id="!8|C-/5Gj4~^}y*Hbb?^">
-<mutation elseif="1" else="1"/>
-<value name="IF0">
-<block type="logic_operation" id="Z!Mv?/1gsZ0mm1$}H*]H">
-<field name="OP">AND</field>
-<value name="A">
-<block type="logic_compare" id="htTpm=L+La0+N6qlQi4:">
-<field name="OP">LT</field>
-<value name="A">
-<block type="variables_get" id="Wp]=-pZV5r0O!+G,hJ0#">
-<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
-</block>
-</value>
-<value name="B">
-<block type="math_arithmetic" id="VFCw-zg:}QAz$`Hdtz3q">
-<field name="OP">ADD</field>
-<value name="A">
-<shadow type="math_number">
-<field name="NUM">1</field>
-</shadow>
-<block type="variables_get" id="I(wskoV8qO19whmvolBk">
-<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
-</block>
-</value>
-<value name="B">
-<shadow type="math_number">
-<field name="NUM">1</field>
-</shadow>
-<block type="variables_get" id="1?:cS^l$^R=1,36Y#ry7">
-<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
-</block>
-</value>
-</block>
-</value>
-</block>
-</value>
-<value name="B">
-<block type="logic_compare" id="RFC*N(9Gbbg*3:Cwqle-">
-<field name="OP">GT</field>
-<value name="A">
-<block type="variables_get" id="=y2_bpOWX6Vm**S{*)nR">
-<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
-</block>
-</value>
-<value name="B">
-<block type="math_arithmetic" id="]Gdk~.T/Bm%Zv4V~]bc,">
-<field name="OP">MINUS</field>
-<value name="A">
-<shadow type="math_number">
-<field name="NUM">1</field>
-</shadow>
-<block type="variables_get" id="FK8}=smW,PnU1`XDLTIU">
-<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
-</block>
-</value>
-<value name="B">
-<shadow type="math_number">
-<field name="NUM">1</field>
-</shadow>
-<block type="variables_get" id="5KJfpl|ET_0JUQmzcjW%">
-<field name="VAR" id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</field>
-</block>
-</value>
-</block>
-</value>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
-<block type="controls_if" id="xA?D!eSF7W2dsGYZU2?S">
-<mutation elseif="1"/>
-<value name="IF0">
-<block type="logic_compare" id="r,-6`08HMzXpDjl4u5-F">
-<field name="OP">LT</field>
-<value name="A">
-<block type="variables_get" id="C1MyGq$VS3N[+f^E1]fU">
-<field name="VAR" id="#+)!gjvm6[Zkck_}8:@F">leftStickY</field>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="`%nHiIXFbMTWzg,m]|6]">
-<field name="NUM">0</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
-<block type="procedures_callnoreturn" id="N~m9HEMp?-MEJf}@=Xc2">
-<mutation name="viperSlideControl">
-<arg name="viperslideSpeed"/>
-<arg name="viperslideScalingFactor"/>
-</mutation>
-<value name="ARG0">
-<block type="variables_get" id="Tw!IrYvLx~DHS,}QHkIO">
-<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="variables_get" id=";oguJ73/,9M?K1vcYI8Z">
-<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
-</block>
-</value>
-</block>
-</statement>
-<value name="IF1">
-<block type="logic_compare" id="90]b^.KE`Qs}1Uh+~-,L">
-<field name="OP">GT</field>
-<value name="A">
-<block type="variables_get" id="(vrW4dE3ZiZ/(=XaB!SC">
-<field name="VAR" id="#+)!gjvm6[Zkck_}8:@F">leftStickY</field>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="pOchz(-R`C)N7bGDOrhs">
-<field name="NUM">0</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO1">
-<block type="procedures_callnoreturn" id="[AO4QTW+}B|!C7vUG2dg">
-<mutation name="viperSlideControl">
-<arg name="viperslideSpeed"/>
-<arg name="viperslideScalingFactor"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id="7?]ag}).C-Q2,-u.9U#n">
-<field name="NUM">0</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="variables_get" id="Az96,UuK.j}[QV9hAU{J">
-<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
-</block>
-</value>
-</block>
-</statement>
-</block>
-</statement>
-<value name="IF1">
-<block type="logic_compare" id=":U9/Pd3.sPFMxmRX!:J;">
-<field name="OP">LT</field>
-<value name="A">
-<block type="variables_get" id=".Xqe/Uw+[2h-TMC4rgZi">
-<field name="VAR" id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</field>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="a/2DD#O$k!PfaGfn[%Y.">
-<field name="NUM">0</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO1">
-<block type="controls_if" id="i-5Z1Db8,6[:ruOfNWwL">
-<mutation elseif="1"/>
-<value name="IF0">
-<block type="logic_compare" id="`FH`Z_|1722mn4%0m,XL">
-<field name="OP">GTE</field>
-<value name="A">
-<block type="variables_get" id="wbRe*AZ3z`DrMRls|`8y">
-<field name="VAR" id="#+)!gjvm6[Zkck_}8:@F">leftStickY</field>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="h|of^,.6XfN?q_?m=$3~">
-<field name="NUM">0</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
-<block type="procedures_callnoreturn" id="}54xC+fy,5O!RBD)Kz.8">
-<mutation name="viperSlideControl">
-<arg name="viperslideSpeed"/>
-<arg name="viperslideScalingFactor"/>
-</mutation>
-<value name="ARG0">
-<block type="variables_get" id="U0ziI,hwHU5dQ-gH:PnX">
-<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="variables_get" id="%wLCPB%Zfd?ukY@nF_|t">
-<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
-</block>
-</value>
-</block>
-</statement>
-<value name="IF1">
-<block type="logic_compare" id="V%=hHN#(4TS*6|#_{Af6">
-<field name="OP">LT</field>
-<value name="A">
-<block type="variables_get" id="KF{DR9MRA=;=(XLOY^jj">
-<field name="VAR" id="#+)!gjvm6[Zkck_}8:@F">leftStickY</field>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="*i+TD1A3?/%~jJbebv](">
-<field name="NUM">0</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO1">
-<block type="procedures_callnoreturn" id="5UKI=Smi9U]A^S6(IX8{">
-<mutation name="viperSlideControl">
-<arg name="viperslideSpeed"/>
-<arg name="viperslideScalingFactor"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id=".jm_:K2s/`MpldR/U?~5">
-<field name="NUM">0</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="variables_get" id="SM49uXG{LWl$.7t9(NaL">
-<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
-</block>
-</value>
-</block>
-</statement>
-</block>
-</statement>
-<statement name="ELSE">
-<block type="procedures_callnoreturn" id="=?!0Yz?|@Nz(eLV`PVL4">
-<mutation name="viperSlideControl">
-<arg name="viperslideSpeed"/>
-<arg name="viperslideScalingFactor"/>
-</mutation>
-<value name="ARG0">
-<block type="variables_get" id="40`?!?37!B6RL%3;wJ#~">
-<field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="variables_get" id="WcE[{3@]Vla!6sjK;blE">
-<field name="VAR" id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</field>
-</block>
-</value>
-</block>
-</statement>
-</block>
-</statement>
-</block>
-<block type="procedures_defnoreturn" id="m-Y2H?x3;7~cLQ2v7j4R" x="-260" y="844">
-<mutation>
-<arg name="RotatorStickInput" varid="V9XUv`jb4jq3q2dS[5=j"/>
-</mutation>
-<field name="NAME">rotatorManual</field>
-<comment pinned="false" h="80" w="160">Describe this function...</comment>
-<statement name="STACK">
-<block type="variables_set" id="rmZaMYmqaZ($Y}?@3tJd">
-<field name="VAR" id="RB+g#ML3E(`]2h;}@l2/">rotatorManualTarget</field>
-<value name="VALUE">
-<block type="math_arithmetic" id="DWr3t|Xb!t@kX5I80qzf">
-<field name="OP">ADD</field>
-<value name="A">
-<shadow type="math_number" id="y9NG.Rp9Iu?B5IPC).MW">
-<field name="NUM">1</field>
-</shadow>
-<block type="dcMotor_getProperty_Number" id="Av/hU~cjv[z%N;!BBeY.">
-<field name="IDENTIFIER">rotatorAsDcMotor</field>
-<field name="PROP">CurrentPosition</field>
-<data>{"IDENTIFIER":"rotator"}</data>
-</block>
-</value>
-<value name="B">
-<shadow type="math_number" id="+.*r3Ug79}`P3teuj[U|">
-<field name="NUM">1</field>
-</shadow>
-<block type="math_arithmetic" id="S4Bj}xvQ|A$IhmEV}/g4">
-<field name="OP">MULTIPLY</field>
-<value name="A">
-<shadow type="math_number" id="`gVr@9`F[]0Kvq%;e?Oy">
-<field name="NUM">1</field>
-</shadow>
-<block type="variables_get" id="q}z2|o9Uj^1^h]0HX*/e">
-<field name="VAR" id="V9XUv`jb4jq3q2dS[5=j">RotatorStickInput</field>
-</block>
-</value>
-<value name="B">
-<shadow type="math_number" id="sdK$62r(=4s6hy)Jrpt[">
-<field name="NUM">50</field>
-</shadow>
-</value>
-</block>
-</value>
-</block>
-</value>
-<next>
-<block type="controls_if" id="HDaj+ShT:I}tayMmIr:~">
-<mutation elseif="1"/>
-<value name="IF0">
-<block type="logic_compare" id="kR!Qiw%y[hf;J18m0VS}">
-<field name="OP">GT</field>
-<value name="A">
-<block type="variables_get" id="Dn#`xazfl-^{LXCDV1r@">
-<field name="VAR" id="RB+g#ML3E(`]2h;}@l2/">rotatorManualTarget</field>
-</block>
-</value>
-<value name="B">
-<block type="variables_get" id="RqGVLA8HMF[MP,{w0_$x">
-<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
-<block type="variables_set" id="~`*X`MfqkZL3Pw^f2Iqj">
-<field name="VAR" id="RB+g#ML3E(`]2h;}@l2/">rotatorManualTarget</field>
-<value name="VALUE">
-<block type="variables_get" id="8%!nj1=uAwMog+O(Ay=0">
-<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
-</block>
-</value>
-</block>
-</statement>
-<value name="IF1">
-<block type="logic_compare" id="[D6%e]b%s^|ZcTEK!(^i">
-<field name="OP">LT</field>
-<value name="A">
-<block type="variables_get" id="9ieII}N*i?~2Xrtw}`=d">
-<field name="VAR" id="RB+g#ML3E(`]2h;}@l2/">rotatorManualTarget</field>
-</block>
-</value>
-<value name="B">
-<block type="variables_get" id="/8g-#Gh:HhwN]F_H?vXm">
-<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO1">
-<block type="variables_set" id="BBKgpE)R=~XV.7Ee4,-O">
-<field name="VAR" id="RB+g#ML3E(`]2h;}@l2/">rotatorManualTarget</field>
-<value name="VALUE">
-<block type="variables_get" id="M_k0qPMF6dDj0ZCgF9hi">
-<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
-</block>
-</value>
-</block>
-</statement>
-<next>
-<block type="dcMotor_setProperty_Number" id="clag00@wq05Uie;~BPPP">
-<field name="IDENTIFIER">rotatorAsDcMotor</field>
-<field name="PROP">TargetPosition</field>
-<data>{"IDENTIFIER":"rotator"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="[Aa,A~s(SXuIAdl%Kpj]">
-<field name="NUM">0</field>
-</shadow>
-<block type="variables_get" id="]!ig2o9sqnFW`)h0y]a=">
-<field name="VAR" id="RB+g#ML3E(`]2h;}@l2/">rotatorManualTarget</field>
-</block>
-</value>
-<next>
-<block type="dcMotor_setProperty_RunMode" id="{6%vHEjY$Jwp`4xory@2">
-<field name="IDENTIFIER">rotatorAsDcMotor</field>
-<field name="PROP">Mode</field>
-<data>{"IDENTIFIER":"rotator"}</data>
-<value name="VALUE">
-<shadow type="dcMotor_typedEnum_runMode" id="Q4^zq)7Z9taSh-_O!/in">
-<field name="RUN_MODE">RUN_TO_POSITION</field>
-</shadow>
-</value>
-<next>
-<block type="dcMotor_setProperty_Number" id="H.Qz15g4$J8QEx*jYnIu">
-<field name="IDENTIFIER">rotatorAsDcMotor</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"rotator"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="!~2:r-qtHcB1Ah#r_5s{">
-<field name="NUM">0.2</field>
-</shadow>
-</value>
-</block>
-</next>
-</block>
-</next>
-</block>
-</next>
 </block>
 </next>
 </block>
