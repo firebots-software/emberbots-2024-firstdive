@@ -14,6 +14,7 @@
 <variable id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</variable>
 <variable id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</variable>
 <variable id="o0U|r*$pX,txAmW.Zh0J">turnSpeedFinalInput</variable>
+<variable id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</variable>
 <variable id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</variable>
 <variable id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</variable>
 <variable id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</variable>
@@ -24,7 +25,7 @@
 <variable id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</variable>
 <variable id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</variable>
 <variable id="5R|eN.*BEtJCRMPfEnbN">rightStickX</variable>
-<variable id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</variable>
+<variable id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</variable>
 <variable id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</variable>
 <variable id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</variable>
 <variable id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</variable>
@@ -36,6 +37,8 @@
 <variable id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</variable>
 <variable id="}zKE^_X%A=[`HWyh%)C/">viperSlideMinValue</variable>
 <variable id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</variable>
+<variable id="#rP+ooiiTEeP+!+)~md7">g2rightStickX</variable>
+<variable id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</variable>
 <variable id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</variable>
 <variable id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</variable>
 <variable id="1pz[#)Z`lAPnZ2Xkll2{">wristIncrementMin</variable>
@@ -52,14 +55,13 @@
 <variable id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</variable>
 <variable id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</variable>
 <variable id="#+)!gjvm6[Zkck_}8:@F">leftStickY</variable>
-<variable id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</variable>
 <variable id="1EISY^,GT/(.7vVxA=+M">G2RightStickY</variable>
 <variable id="qxKw0u;S{D22ZW@hI$[*">rotatorButtonX</variable>
 <variable id="!KOa#tJY0{[^*Kud4)`|">rotatorButtonY</variable>
 <variable id="V9XUv`jb4jq3q2dS[5=j">RotatorStickInput</variable>
 </variables>
-<block type="procedures_defnoreturn" id="~ukkKjOVG%#42Q_(XmGE" x="-657" y="-793">
-<field name="NAME">rotatorDecide</field>
+<block type="procedures_defnoreturn" id="~ukkKjOVG%#42Q_(XmGE" x="-1023" y="-973">
+<field name="NAME">rotateDecide</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
 <block type="controls_if" id=").I0]1t,ajw*ZrLG`-:Q">
@@ -88,7 +90,7 @@
 <field name="NUM">9</field>
 </shadow>
 <block type="variables_get" id=";3th=hd75DRF~2HgF/Co">
-<field name="VAR" id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</field>
+<field name="VAR" id="#rP+ooiiTEeP+!+)~md7">g2rightStickX</field>
 </block>
 </value>
 </block>
@@ -129,7 +131,7 @@
 <field name="NUM">9</field>
 </shadow>
 <block type="variables_get" id="2ggd7`Raik}j2/vNU%B;">
-<field name="VAR" id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</field>
+<field name="VAR" id="#rP+ooiiTEeP+!+)~md7">g2rightStickX</field>
 </block>
 </value>
 </block>
@@ -140,8 +142,21 @@
 <block type="variables_set" id="Qo44_9QJ[~%DtTS?B$5O">
 <field name="VAR" id="o0U|r*$pX,txAmW.Zh0J">turnSpeedFinalInput</field>
 <value name="VALUE">
+<block type="math_arithmetic" id=":RQd,jaZOTxfmJ%1L!4G">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number" id="x!_W)s{VyF~Pmm$gU[b/">
+<field name="NUM">1</field>
+</shadow>
 <block type="variables_get" id="XbZPl2R7z!!3M5Ri6;_+">
-<field name="VAR" id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</field>
+<field name="VAR" id="#rP+ooiiTEeP+!+)~md7">g2rightStickX</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="[rBIi#VeI;[eE}4)J2XK">
+<field name="NUM">0.5</field>
+</shadow>
+</value>
 </block>
 </value>
 </block>
@@ -149,11 +164,115 @@
 <statement name="ELSE">
 <block type="variables_set" id="+d=k|3!A)_.flVBH*qyo">
 <field name="VAR" id="o0U|r*$pX,txAmW.Zh0J">turnSpeedFinalInput</field>
-<value name="VALUE">
-<block type="math_number" id="v5p+^Xa4s?ZC1o1@}~1f">
-<field name="NUM">0</field>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="-[T5B6_%8}.;~CKC,h_S" x="-329" y="-971">
+<field name="NAME">strafeDecide</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="controls_if" id="0zt0bI54+}%:skTEF=WD">
+<mutation elseif="1" else="1"/>
+<value name="IF0">
+<block type="logic_compare" id="Dbynwm[$gag_H{aebH?D">
+<field name="OP">GT</field>
+<value name="A">
+<block type="math_single" id="ssD7lU[IGest_enlh2Q,">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="Od#7_Fssm77eABvqK:|E">
+<field name="VAR" id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</field>
 </block>
 </value>
+</block>
+</value>
+<value name="B">
+<block type="math_single" id="WK#.:lzUt5etL[mhY4f1">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="Rq7@ZeYS,tK8w5hTVFwM">
+<field name="VAR" id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="a.,SHddYrJ;;+dJ%uoF{">
+<field name="VAR" id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</field>
+<value name="VALUE">
+<block type="variables_get" id="Y=6m$6_qai9!ML@x:3i?">
+<field name="VAR" id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</field>
+</block>
+</value>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="l{ttMi6mV:D4`=^H{XKa">
+<field name="OP">LT</field>
+<value name="A">
+<block type="math_single" id="4Rm,=KR*tHg]z=/`Zi3a">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="+75Jsvc1I)-JUz^Gib]1">
+<field name="VAR" id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="math_single" id="Z5}kKB{qwP6DoI[v`a#f">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="X}dS0+[f2@m,LORtY0E2">
+<field name="VAR" id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</field>
+</block>
+</value>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="moSa`8_wFAOZhfN}3UA-">
+<field name="VAR" id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="46%X`A_~GKcjU9taqu][">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number" id="kzV1r,hTS^^)x(Gvmmsk">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="OpS-V?E)doHaWcD%bG`i">
+<field name="VAR" id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</field>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number" id="EY2Y7P|9rl-~s~Z`w$#D">
+<field name="NUM">0.5</field>
+</shadow>
+</value>
+</block>
+</value>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="variables_set" id="AH~527G+0%fk#q7]V-wS">
+<field name="VAR" id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</field>
 </block>
 </statement>
 </block>
@@ -409,6 +528,16 @@ Stopped).</comment>
 </block>
 </value>
 <next>
+<block type="variables_set" id="|lI,^sU`:8jZN!^JN3XW">
+<field name="VAR" id="#rP+ooiiTEeP+!+)~md7">g2rightStickX</field>
+<value name="VALUE">
+<block type="gamepad_getProperty_Number" id="y7k!q6=V%[}ou|jl8D.g">
+<field name="IDENTIFIER">gamepad2</field>
+<field name="PROP">RightStickX</field>
+<data>{"IDENTIFIER":"gamepad2"}</data>
+</block>
+</value>
+<next>
 <block type="variables_set" id="aRKTMmA3EQk*-8a$7`rV">
 <field name="VAR" id="1EISY^,GT/(.7vVxA=+M">G2RightStickY</field>
 <value name="VALUE">
@@ -494,7 +623,10 @@ Stopped).</comment>
 </value>
 <next>
 <block type="procedures_callnoreturn" id="y5-Sd.4)OeYLKq9xaM`*">
-<mutation name="rotatorDecide"/>
+<mutation name="rotateDecide"/>
+<next>
+<block type="procedures_callnoreturn" id="xS#2F`-b!P?nmE0g[]-~">
+<mutation name="strafeDecide"/>
 <next>
 <block type="procedures_callnoreturn" id="9Aq0/58VE8j,b*0tRX^[">
 <mutation name="halfSpeedScale"/>
@@ -516,8 +648,8 @@ Stopped).</comment>
 </block>
 </value>
 <value name="ARG2">
-<block type="variables_get" id="(|i+?rW21X;cQ0U|%U$,">
-<field name="VAR" id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</field>
+<block type="variables_get" id="9Y{KXc5}*m=fi5Id`cu9">
+<field name="VAR" id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</field>
 </block>
 </value>
 <next>
@@ -572,6 +704,10 @@ Stopped).</comment>
 </value>
 <next>
 <block type="telemetry_update" id="E)2PUguQHoIF=nKR6L0!"/>
+</next>
+</block>
+</next>
+</block>
 </next>
 </block>
 </next>
@@ -2020,7 +2156,7 @@ Stopped).</comment>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="]uJNToT^D^#)=z6F{Ny2" x="-65" y="-136">
+<block type="procedures_defnoreturn" id="]uJNToT^D^#)=z6F{Ny2" x="-89" y="33">
 <field name="NAME">halfSpeedScale</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">

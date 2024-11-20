@@ -32,7 +32,6 @@
 <variable id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</variable>
 <variable id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</variable>
 <variable id="83zPLvxz$jMdjC[uR~bC">g2LeftStickYValue</variable>
-<variable id="Fd9Hj2f9:*,7`8`2kQAW">secondRotation</variable>
 <variable id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</variable>
 <variable id="bJUB|L9Ad:!GI:huC!aX">manualScaling</variable>
 <variable id="q_H6`b?rp]a0MIoyc0/,">currentYaw</variable>
@@ -159,6 +158,79 @@ Stopped).</comment>
 </block>
 </statement>
 </block>
+<block type="procedures_defnoreturn" id="fH5GPrHWcsiy/CK5Bd?A" x="-2824" y="305">
+<field name="NAME">T2:1ToT2:2</field>
+<comment pinned="false" h="80" w="160">Describe this function...</comment>
+<statement name="STACK">
+<block type="procedures_callnoreturn" id="J%fEm*]xXpTt,Un4/6HB">
+<mutation name="moveForward">
+<arg name="distance"/>
+<arg name="speed"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="sNV`@WNX%hws{lF5*OjJ">
+<field name="NUM">26</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="math_number" id="{;@NYUXujz?(]SCx.e,|">
+<field name="NUM">0.25</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addLine" id="m_kO(FQ]r;Q7dS8|Y?wy">
+<value name="TEXT">
+<shadow type="text" id="cB7JQ4JzH/tzo|xNv=JM">
+<field name="TEXT">Moved Forward</field>
+</shadow>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="JwEad_:VooeGwUu,_.*|">
+<mutation name="turnLeft">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="+t*l0247uVuL~jKB]e#E">
+<field name="NUM">90</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addLine" id="P+4n]m@bm{79m$,XV8B@">
+<value name="TEXT">
+<shadow type="text" id="c,F)U#r/oL-:(4yJ1Mz5">
+<field name="TEXT">Turned 90 degrees</field>
+</shadow>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="),3oQp*0Q!pylJ?E!1UI">
+<mutation name="turnLeft">
+<arg name="degrees"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="34UX-qD#K[ngx#TsjEK8">
+<field name="NUM">40</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addLine" id="DG+E~sy;8,u0@7P!%i~k">
+<value name="TEXT">
+<shadow type="text" id="Y8Fs~,2r(;-_qRfyNRhA">
+<field name="TEXT">Turned 30 degrees</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
 <block type="procedures_defnoreturn" id="1?(A|}z4b+LEu)0-x@uR" x="-3264" y="475">
 <field name="NAME">moveTile</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
@@ -178,40 +250,6 @@ Stopped).</comment>
 <field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
 </block>
 </value>
-</block>
-</statement>
-</block>
-<block type="procedures_defnoreturn" id="fH5GPrHWcsiy/CK5Bd?A" x="-2728" y="478">
-<field name="NAME">T2:1ToT2:2</field>
-<comment pinned="false" h="80" w="160">Describe this function...</comment>
-<statement name="STACK">
-<block type="procedures_callnoreturn" id="J%fEm*]xXpTt,Un4/6HB">
-<mutation name="moveForward">
-<arg name="distance"/>
-<arg name="speed"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id="sNV`@WNX%hws{lF5*OjJ">
-<field name="NUM">10</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="math_number" id="{;@NYUXujz?(]SCx.e,|">
-<field name="NUM">0.5</field>
-</block>
-</value>
-<next>
-<block type="procedures_callnoreturn" id="?0(k~,?ucZiKoL@P!A2;">
-<mutation name="turnLeft">
-<arg name="degrees"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id="3CQAxhOPxIL+Z{s0IPMu">
-<field name="NUM">90</field>
-</block>
-</value>
-</block>
-</next>
 </block>
 </statement>
 </block>
@@ -724,13 +762,8 @@ Stopped).</comment>
 <field name="NAME">T2:1ToNet</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
-<block type="procedures_callnoreturn" id="0KlGmbQn=Yo*p!nR$Z?f">
-<mutation name="T2:1ToT2:2"/>
-<next>
-<block type="procedures_callnoreturn" id="P8c::JTiLeKYgY.{wFc^">
-<mutation name="T2:2ToBasket"/>
-</block>
-</next>
+<block type="procedures_callnoreturn" id=",~$7|6DV@vM:*=}p,pgl">
+<mutation name="liftElevator"/>
 </block>
 </statement>
 </block>
@@ -1593,40 +1626,40 @@ Stopped).</comment>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="McJ4kG5@@1L[tMR^*fOt" x="-2712" y="698">
+<block type="procedures_callnoreturn" id="0KlGmbQn=Yo*p!nR$Z?f" x="-2346" y="688">
+<mutation name="T2:1ToT2:2"/>
+<next>
+<block type="procedures_callnoreturn" id="P8c::JTiLeKYgY.{wFc^">
+<mutation name="T2:2ToBasket"/>
+</block>
+</next>
+</block>
+<block type="procedures_defnoreturn" id="McJ4kG5@@1L[tMR^*fOt" x="-2734" y="729">
 <field name="NAME">T2:2ToBasket</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
-<block type="procedures_callnoreturn" id="`OWDSY2[h~8Yrg_Qyo+:">
-<mutation name="turnLeft">
-<arg name="degrees"/>
-</mutation>
-<value name="ARG0">
-<block type="variables_get" id="Lj:CK]W:K4H6ULTVI-Fg">
-<field name="VAR" id="Fd9Hj2f9:*,7`8`2kQAW">secondRotation</field>
-</block>
-</value>
-<next>
 <block type="procedures_callnoreturn" id="cz0XW/Fh];pfTtAL:Zzb">
 <mutation name="moveForward">
 <arg name="distance"/>
 <arg name="speed"/>
 </mutation>
 <value name="ARG0">
-<block type="variables_get" id="n;2mQaTvt0Zxr$?w?D=z">
-<field name="VAR" id="kJIMlg3)-]l*OgyK3}n0">moveOneTile</field>
+<block type="math_number" id="%40sQrXT$Xeb][W=?|Rs">
+<field name="NUM">19</field>
 </block>
 </value>
 <value name="ARG1">
-<block type="variables_get" id="{pTG`x2D)kpMx:SAy}E?">
-<field name="VAR" id="p)KXl2QV}$[W}boo;maD">moveSpeed</field>
+<block type="math_number" id="(wbEDnH-8Ovnh(_B6LOq">
+<field name="NUM">0.25</field>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id="@a./$6O(CA`S9rS?$q}%">
-<mutation name="liftElevator"/>
-</block>
-</next>
+<block type="telemetry_addLine" id="1U-]Z|:+rFx4jgPxDCGA">
+<value name="TEXT">
+<shadow type="text" id="u0#^@d)mcoFN*S2/._n@">
+<field name="TEXT">Forward 24 inches</field>
+</shadow>
+</value>
 </block>
 </next>
 </block>
@@ -1660,11 +1693,30 @@ Stopped).</comment>
 </value>
 <value name="ARG3">
 <block type="math_number" id="6nWJpNB]B:~KZ*k,,7OG">
-<field name="NUM">90</field>
+<field name="NUM">0</field>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id="u_Fg+Ee(n0u?uYb]Zt/0">
+<block type="telemetry_addNumericData_Number" id="Gb*LcjJIh8r@9*Oz]WRp" disabled="true">
+<value name="KEY">
+<shadow type="text" id="Q#c0m[D5!Ct39yHFak=a">
+<field name="TEXT">Encoder value</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="x(U#r^[M1c2c~cH0_3kC">
+<field name="NUM">123</field>
+</shadow>
+</value>
+<next>
+<block type="telemetry_addLine" id="]yU#j6jXWF9wn%wXc6%J">
+<value name="TEXT">
+<shadow type="text" id="vvL)0p_[lT43|M`(Cmu~">
+<field name="TEXT">Elevator worked</field>
+</shadow>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="u_Fg+Ee(n0u?uYb]Zt/0" disabled="true">
 <mutation name="runViperslide">
 <arg name="gamePad2A"/>
 <arg name="gamePad2B"/>
@@ -1680,7 +1732,7 @@ Stopped).</comment>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id="YI!$=gj_s@eu%Y:cZt~M">
+<block type="procedures_callnoreturn" id="YI!$=gj_s@eu%Y:cZt~M" disabled="true">
 <mutation name="presetWrist">
 <arg name="gamepad2X"/>
 <arg name="gamepad2Y"/>
@@ -1696,7 +1748,7 @@ Stopped).</comment>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id=":9N#=iyaYLkPivak-bq@">
+<block type="procedures_callnoreturn" id=":9N#=iyaYLkPivak-bq@" disabled="true">
 <mutation name="runOuttake">
 <arg name="gamePad2LeftBumper"/>
 </mutation>
@@ -1706,7 +1758,7 @@ Stopped).</comment>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id="Qjp~X!t@E+2GmSjp`!T@">
+<block type="procedures_callnoreturn" id="Qjp~X!t@E+2GmSjp`!T@" disabled="true">
 <mutation name="presetWrist">
 <arg name="gamepad2X"/>
 <arg name="gamepad2Y"/>
@@ -1722,7 +1774,7 @@ Stopped).</comment>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id="g4ZjebAaFv,fHno#,C,n">
+<block type="procedures_callnoreturn" id="g4ZjebAaFv,fHno#,C,n" disabled="true">
 <mutation name="runViperslide">
 <arg name="gamePad2A"/>
 <arg name="gamePad2B"/>
@@ -1738,7 +1790,7 @@ Stopped).</comment>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id="Ho=`[G)lK4+=Us{#=J#z">
+<block type="procedures_callnoreturn" id="Ho=`[G)lK4+=Us{#=J#z" disabled="true">
 <mutation name="runRotator">
 <arg name="rotatorLowButton"/>
 <arg name="rotatorHighButton"/>
@@ -1765,6 +1817,10 @@ Stopped).</comment>
 <field name="NUM">-90</field>
 </block>
 </value>
+</block>
+</next>
+</block>
+</next>
 </block>
 </next>
 </block>
@@ -2168,7 +2224,7 @@ Stopped).</comment>
 <field name="VAR" id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</field>
 <value name="VALUE">
 <block type="math_number" id="5++V8.G=@mpjs(xPnV0y">
-<field name="NUM">4.75</field>
+<field name="NUM">12.8</field>
 </block>
 </value>
 <next>
@@ -2176,7 +2232,7 @@ Stopped).</comment>
 <field name="VAR" id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</field>
 <value name="VALUE">
 <block type="math_number" id="Lgk,N;)ELwp{2RAzsP*P">
-<field name="NUM">384.5</field>
+<field name="NUM">537.7</field>
 </block>
 </value>
 <next>
@@ -2683,18 +2739,6 @@ Stopped).</comment>
 </block>
 </value>
 <statement name="DO">
-<block type="telemetry_addNumericData_Number" id="rxC|g6~ob*eN.w18_?-q">
-<value name="KEY">
-<shadow type="text" id="o0xS@pI2XSWu9WN:=q|q">
-<field name="TEXT">backLeftEncoder</field>
-</shadow>
-</value>
-<value name="NUMBER">
-<shadow type="math_number" id=")y,|e{:9!qtp,U24k(%O">
-<field name="NUM">123</field>
-</shadow>
-</value>
-<next>
 <block type="procedures_callnoreturn" id="9DX._,d/01gw9IH~Xf)^">
 <mutation name="movement2">
 <arg name="forwardSpeed"/>
@@ -2729,6 +2773,23 @@ Stopped).</comment>
 </shadow>
 <block type="variables_get" id="uh7{?CX1C|!/[mSHNtt.">
 <field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="e[3%T6GfpKHuTkm.i7+M">
+<value name="KEY">
+<shadow type="text" id="W_5).Dh=A=9(#b0CS/ZA">
+<field name="TEXT">currentPosition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="MuDghMAIG)fg%-C_q[DN">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="ERBcvPx|wwGgK.AU52x+">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
 </block>
 </value>
 <next>
@@ -3140,6 +3201,23 @@ Stopped).</comment>
 </block>
 </value>
 <next>
+<block type="telemetry_addNumericData_Number" id="gaETj66qeBBp!e0]+LCO">
+<value name="KEY">
+<shadow type="text" id="oQ{IsaaGLIwlWk]]`z+C">
+<field name="TEXT">EncoderValue</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="MZaydDnL9KGj/3K}[1l[">
+<field name="NUM">0</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="u.QksVXH0sZL`1Hq/Yu(">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+<next>
 <block type="telemetry_addNumericData_Number" id="fXtNJLqU=d{[0,*op@YT">
 <value name="KEY">
 <shadow type="text" id="2DR_dYE?%VvSTUAlN~^|">
@@ -3169,6 +3247,8 @@ Stopped).</comment>
 <field name="VAR" id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</field>
 </block>
 </value>
+</block>
+</next>
 </block>
 </next>
 </block>
