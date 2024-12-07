@@ -1,5 +1,6 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
 <variables>
+<variable id="5R|eN.*BEtJCRMPfEnbN">rightStickX</variable>
 <variable id="Shzx#2W=(F{^Afqnda]h">forwardSpeed</variable>
 <variable id="9$#c=qd^u2zS_7WkH4w@">turnSpeed</variable>
 <variable id="/oL(Kw1dzLP(d+XGhmD@">strafeSpeed</variable>
@@ -23,7 +24,6 @@
 <variable id="bJUB|L9Ad:!GI:huC!aX">manualScaling</variable>
 <variable id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</variable>
 <variable id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</variable>
-<variable id="5R|eN.*BEtJCRMPfEnbN">rightStickX</variable>
 <variable id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</variable>
 <variable id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</variable>
 <variable id="0-Tje/STOJ~2V~.LD4]$">wristIncrementValue</variable>
@@ -144,6 +144,32 @@
 </block>
 </value>
 <statement name="DO1">
+<block type="controls_if" id="b*cxp#/LR,Cyi}r|UdN3">
+<mutation else="1"/>
+<value name="IF0">
+<block type="logic_compare" id="7o:]I?!e{$aoA]+J:SB%">
+<field name="OP">GT</field>
+<value name="A">
+<block type="math_single" id="$S3Yc0^c+vQ(__$z9I4m">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="$E2(V76OGOm7w0W[7{{+">
+<field name="VAR" id="#rP+ooiiTEeP+!+)~md7">g2rightStickX</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="D7Y?9+zfSsqcXf`AW:)6">
+<field name="NUM">0.25</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
 <block type="variables_set" id="Qo44_9QJ[~%DtTS?B$5O">
 <field name="VAR" id="o0U|r*$pX,txAmW.Zh0J">turnSpeedFinalInput</field>
 <value name="VALUE">
@@ -159,7 +185,7 @@
 </value>
 <value name="B">
 <shadow type="math_number" id="[rBIi#VeI;[eE}4)J2XK">
-<field name="NUM">0.5</field>
+<field name="NUM">0.3</field>
 </shadow>
 </value>
 </block>
@@ -167,8 +193,25 @@
 </block>
 </statement>
 <statement name="ELSE">
+<block type="variables_set" id="}_n+ec[KF,qZ@)mx8Jg~">
+<field name="VAR" id="o0U|r*$pX,txAmW.Zh0J">turnSpeedFinalInput</field>
+<value name="VALUE">
+<block type="math_number" id="paoAhI*?XHf5AR6E9=^_">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+</statement>
+<statement name="ELSE">
 <block type="variables_set" id="+d=k|3!A)_.flVBH*qyo">
 <field name="VAR" id="o0U|r*$pX,txAmW.Zh0J">turnSpeedFinalInput</field>
+<value name="VALUE">
+<block type="math_number" id="uK-cF+!2dqfz1~0voHYG">
+<field name="NUM">0</field>
+</block>
+</value>
 </block>
 </statement>
 </block>
@@ -253,6 +296,32 @@
 </block>
 </value>
 <statement name="DO1">
+<block type="controls_if" id="k]|3VssvaDYGonke?`(A">
+<mutation else="1"/>
+<value name="IF0">
+<block type="logic_compare" id="?IWAnp*O*laB7Z7D|I]9">
+<field name="OP">GT</field>
+<value name="A">
+<block type="math_single" id="KQ-88qismg16+fnwW8E3">
+<field name="OP">ABS</field>
+<value name="NUM">
+<shadow type="math_number" id="Ir=x4@7:GM*EW:4I#A$B">
+<field name="NUM">9</field>
+</shadow>
+<block type="variables_get" id="L!Z/9ES?(lc*k{[]:_U{">
+<field name="VAR" id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="cc[.N!VSKOw0@;xNa|lK">
+<field name="NUM">0.25</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
 <block type="variables_set" id="moSa`8_wFAOZhfN}3UA-">
 <field name="VAR" id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</field>
 <value name="VALUE">
@@ -268,7 +337,7 @@
 </value>
 <value name="B">
 <shadow type="math_number" id="EY2Y7P|9rl-~s~Z`w$#D">
-<field name="NUM">0.5</field>
+<field name="NUM">0.4</field>
 </shadow>
 </value>
 </block>
@@ -276,12 +345,32 @@
 </block>
 </statement>
 <statement name="ELSE">
+<block type="variables_set" id="NIJF9^ADG][KIx];4w)C">
+<field name="VAR" id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</field>
+<value name="VALUE">
+<block type="math_number" id="goqVEB=5#w[`%t(xE|KS">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</statement>
+</block>
+</statement>
+<statement name="ELSE">
 <block type="variables_set" id="AH~527G+0%fk#q7]V-wS">
 <field name="VAR" id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</field>
+<value name="VALUE">
+<block type="math_number" id="Ix|d{1LNSUWX+@St*b7W">
+<field name="NUM">0</field>
+</block>
+</value>
 </block>
 </statement>
 </block>
 </statement>
+</block>
+<block type="variables_get" id="@4lP8-4L]}4)g0(KJ%bc" x="-744" y="-804">
+<field name="VAR" id="5R|eN.*BEtJCRMPfEnbN">rightStickX</field>
 </block>
 <block type="procedures_defnoreturn" id="LJWovAyNn24r*GY@)aq@" x="-2140" y="-693">
 <field name="NAME">initialConfigDrivebase</field>
@@ -1451,7 +1540,7 @@ Stopped).</comment>
 </value>
 <value name="B">
 <shadow type="math_number" id="?e)EdO:Qu[Y?ckucS55b">
-<field name="NUM">100</field>
+<field name="NUM">500</field>
 </shadow>
 </value>
 </block>
@@ -1596,10 +1685,10 @@ Stopped).</comment>
 <field name="PROP">Power</field>
 <data>{"IDENTIFIER":"viperSlide"}</data>
 <value name="VALUE">
-<shadow type="math_number">
-<field name="NUM">0.2</field>
+<shadow type="math_number" id="IWM-wnJo?k84onD@xHSc">
+<field name="NUM">1</field>
 </shadow>
-<block type="variables_get" id=".i9NMD)BftR/+|?h+0Ij">
+<block type="variables_get" id="e4G=Kf6dxWaRQDBYZZ/v">
 <field name="VAR" id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</field>
 </block>
 </value>
@@ -1670,7 +1759,7 @@ Stopped).</comment>
 <data>{"IDENTIFIER":"wrist"}</data>
 <value name="VALUE">
 <shadow type="math_number" id="g3Z=ZoEkCD)3XpH`~PuM">
-<field name="NUM">0</field>
+<field name="NUM">1</field>
 </shadow>
 </value>
 <next>
@@ -1696,7 +1785,7 @@ Stopped).</comment>
 <field name="VAR" id="1pz[#)Z`lAPnZ2Xkll2{">wristIncrementMin</field>
 <value name="VALUE">
 <block type="math_number" id="F+7yX@tVI:ZziW+O|TX-">
-<field name="NUM">0.185</field>
+<field name="NUM">0.475</field>
 </block>
 </value>
 <next>
@@ -1704,7 +1793,7 @@ Stopped).</comment>
 <field name="VAR" id="LIM9P2(CP7Fi74|8v`%M">wristIncrementMax</field>
 <value name="VALUE">
 <block type="math_number" id="|vRLK}PUfeJFn+XH1q_p">
-<field name="NUM">0.4</field>
+<field name="NUM">0.85</field>
 </block>
 </value>
 </block>
