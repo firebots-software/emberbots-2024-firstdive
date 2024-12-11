@@ -185,7 +185,7 @@
 </value>
 <value name="B">
 <shadow type="math_number" id="[rBIi#VeI;[eE}4)J2XK">
-<field name="NUM">0.3</field>
+<field name="NUM">0.2</field>
 </shadow>
 </value>
 </block>
@@ -337,7 +337,7 @@
 </value>
 <value name="B">
 <shadow type="math_number" id="EY2Y7P|9rl-~s~Z`w$#D">
-<field name="NUM">0.4</field>
+<field name="NUM">0.2</field>
 </shadow>
 </value>
 </block>
@@ -721,7 +721,7 @@ Stopped).</comment>
 <value name="VALUE">
 <block type="gamepad_getProperty_Boolean" id="DD*}@5Kb:N4+exzpEEhk">
 <field name="IDENTIFIER">gamepad2</field>
-<field name="PROP">B</field>
+<field name="PROP">A</field>
 <data>{"IDENTIFIER":"gamepad2"}</data>
 </block>
 </value>
@@ -731,7 +731,7 @@ Stopped).</comment>
 <value name="VALUE">
 <block type="gamepad_getProperty_Boolean" id=",D?(;UgK+E9kz2/MYjF-">
 <field name="IDENTIFIER">gamepad2</field>
-<field name="PROP">A</field>
+<field name="PROP">B</field>
 <data>{"IDENTIFIER":"gamepad2"}</data>
 </block>
 </value>
@@ -1540,7 +1540,7 @@ Stopped).</comment>
 </value>
 <value name="B">
 <shadow type="math_number" id="?e)EdO:Qu[Y?ckucS55b">
-<field name="NUM">500</field>
+<field name="NUM">750</field>
 </shadow>
 </value>
 </block>
@@ -2259,7 +2259,7 @@ Stopped).</comment>
 <field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
 <value name="VALUE">
 <block type="math_number" id="qe$%D!I|Qth/kHZJr_na">
-<field name="NUM">-5300</field>
+<field name="NUM">-5650</field>
 </block>
 </value>
 <next>
@@ -2707,7 +2707,7 @@ Stopped).</comment>
 </value>
 <value name="B">
 <shadow type="math_number" id="Iw%uSgmU]Aj)dw={1}|w">
-<field name="NUM">150</field>
+<field name="NUM">90</field>
 </shadow>
 </value>
 </block>

@@ -24,6 +24,7 @@
 <variable id="B#^Iq$-H)??CK(}xCNYt">clipScale</variable>
 <variable id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</variable>
 <variable id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</variable>
+<variable id="PQ_Te0iaBHt$|X[{2QP7">wristPosition</variable>
 <variable id="kJIMlg3)-]l*OgyK3}n0">moveOneTile</variable>
 <variable id="p)KXl2QV}$[W}boo;maD">moveSpeed</variable>
 <variable id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</variable>
@@ -35,7 +36,7 @@
 <variable id="bJUB|L9Ad:!GI:huC!aX">manualScaling</variable>
 <variable id="q_H6`b?rp]a0MIoyc0/,">currentYaw</variable>
 <variable id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</variable>
-<variable id="PQ_Te0iaBHt$|X[{2QP7">wristPosition</variable>
+<variable id="0-Tje/STOJ~2V~.LD4]$">wristIncrementValue</variable>
 <variable id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</variable>
 <variable id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</variable>
 <variable id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</variable>
@@ -44,16 +45,15 @@
 <variable id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</variable>
 <variable id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</variable>
 <variable id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</variable>
-<variable id="0-Tje/STOJ~2V~.LD4]$">wristIncrementValue</variable>
+<variable id="1pz[#)Z`lAPnZ2Xkll2{">wristIncrementMin</variable>
 <variable id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</variable>
 <variable id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</variable>
 <variable id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</variable>
-<variable id="1pz[#)Z`lAPnZ2Xkll2{">wristIncrementMin</variable>
+<variable id="LIM9P2(CP7Fi74|8v`%M">wristIncrementMax</variable>
 <variable id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</variable>
 <variable id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</variable>
 <variable id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</variable>
 <variable id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</variable>
-<variable id="LIM9P2(CP7Fi74|8v`%M">wristIncrementMax</variable>
 <variable id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</variable>
 <variable id="sKi7z-1YC[,j#twF*s|A">rotatorTicksPerRotation</variable>
 <variable id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</variable>
@@ -160,7 +160,7 @@ Stopped).</comment>
 </mutation>
 <value name="ARG0">
 <block type="math_number" id="(5k.s*wY($eu/K`~INbu">
-<field name="NUM">5</field>
+<field name="NUM">9</field>
 </block>
 </value>
 <value name="ARG1">
