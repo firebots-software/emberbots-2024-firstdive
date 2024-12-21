@@ -3,18 +3,16 @@
 <variable id="Shzx#2W=(F{^Afqnda]h">forwardSpeed</variable>
 <variable id="9$#c=qd^u2zS_7WkH4w@">turnSpeed</variable>
 <variable id="/oL(Kw1dzLP(d+XGhmD@">strafeSpeed</variable>
-<variable id="|%d}C)SKt37gDc;NwhUD">distance</variable>
-<variable id="|*FRyn7rVpJgKK62S)%j">speed</variable>
 <variable id="TihksMtfY3|3=*^$#%!s">targetDistanceIn</variable>
 <variable id="q)w)WgR[*$L5o8JRJ#71">wheelCircumfrenceIn</variable>
 <variable id="G-wba5-Z@[rc8YO`n}a{">ticksPerRotation</variable>
 <variable id="@+/}O6j;iVU16c1C5YgQ">driveWithEncoderSpeed</variable>
-<variable id="l)/,LjA`jR!1Nc@Z:`l!">myAprilTagDetections</variable>
 <variable id="3.)/eLHm(iRl1^Qsq;Hb">USE_WEBCAM</variable>
+<variable id="l)/,LjA`jR!1Nc@Z:`l!">myAprilTagDetections</variable>
 <variable id="B#^Iq$-H)??CK(}xCNYt">clipScale</variable>
 <variable id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</variable>
-<variable type="AprilTagProcessor.Builder" id="NYqOu)Ei(Q{C!f;y!a^O">myAprilTagProcessorBuilder</variable>
 <variable id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</variable>
+<variable type="AprilTagProcessor.Builder" id="NYqOu)Ei(Q{C!f;y!a^O">myAprilTagProcessorBuilder</variable>
 <variable id="?.?jAjDXaP~!^(jq/Ls_">myAprilTagProcessor</variable>
 <variable id="vP~n9zf$lW%hYD/C.j_-">myAprilTagDetection</variable>
 <variable id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</variable>
@@ -657,22 +655,6 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </statement>
 <statement name="ELSE">
-<block type="procedures_callnoreturn" id="@hVBw;W}:h4=@.fTgC-s">
-<mutation name="moveBack">
-<arg name="distance"/>
-<arg name="speed"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id="_;)UUtO5$GvBR,uz,.Bm">
-<field name="NUM">0</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="math_number" id="Bca*cH-^d@oB7DR7ULjc">
-<field name="NUM">0.25</field>
-</block>
-</value>
-<next>
 <block type="telemetry_addLine" id=".k7)ZU|.JU[vLM%.9oWH">
 <value name="TEXT">
 <shadow type="text" id="hqwM9[:8R6P;nJWo`z$@">
@@ -781,8 +763,6 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </value>
 </block>
 </value>
-</block>
-</next>
 </block>
 </next>
 </block>
@@ -1452,243 +1432,6 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="o2Zs=bylc84kLYguqLi," x="1284" y="2740">
-<field name="NAME">moveAlignment</field>
-<comment pinned="false" h="80" w="160">Describe this function...</comment>
-<statement name="STACK">
-<block type="telemetry_addTextData_All" id="SWZ^3{}fiej$dov($f@%">
-<value name="KEY">
-<shadow type="text" id="G|:j(ir#U/NzmK/TyW3h">
-<field name="TEXT">distanceFunction</field>
-</shadow>
-</value>
-<value name="TEXT">
-<shadow type="text" id="AVN3nLc?[V-m2j3v{fWL">
-<field name="TEXT">Running</field>
-</shadow>
-</value>
-<next>
-<block type="controls_if" id="YmIz+n]%.aGD26cOv.?:">
-<mutation elseif="1" else="1"/>
-<value name="IF0">
-<block type="logic_compare" id=")T7DkSCb0rYY^tNfd$B]">
-<field name="OP">GTE</field>
-<value name="A">
-<block type="aprilTagDetection_getProperty_Number" id="RG*qAdgS$wkzBf9#+cj7">
-<field name="PROP">ftcPose.bearing</field>
-<value name="APRIL_TAG_DETECTION">
-<block type="variables_get" id="KJa!2r!IK!.#g+V]@G={">
-<field name="VAR" id="vP~n9zf$lW%hYD/C.j_-">myAprilTagDetection</field>
-</block>
-</value>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="woaJqAw[eR/t@_^C,H,c">
-<field name="NUM">1</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
-<block type="procedures_callnoreturn" id="(5sd{aKzm~v{~G+:X5so">
-<mutation name="moveBack">
-<arg name="distance"/>
-<arg name="speed"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id="3J)|z7c0T6tTT#H53$f!">
-<field name="NUM">0.01</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="math_number" id="^9P0:f-+5)W42J-F5VEu">
-<field name="NUM">0.1</field>
-</block>
-</value>
-<next>
-<block type="telemetry_addTextData_All" id="[mV)rA@o%usM?-)rHtSB">
-<value name="KEY">
-<shadow type="text" id="rW!bxqt7tO+?nrS]Rb~5">
-<field name="TEXT">distanceFunction</field>
-</shadow>
-</value>
-<value name="TEXT">
-<shadow type="text" id="b@s}~hA1+}t1;DfxSq~O">
-<field name="TEXT">moveBack</field>
-</shadow>
-</value>
-</block>
-</next>
-</block>
-</statement>
-<value name="IF1">
-<block type="logic_compare" id="e49^+gSFG#.$y|=d]M/9">
-<field name="OP">LTE</field>
-<value name="A">
-<block type="aprilTagDetection_getProperty_Number" id="G6A!{~Gy.3O.VS/8}3%Y">
-<field name="PROP">ftcPose.bearing</field>
-<value name="APRIL_TAG_DETECTION">
-<block type="variables_get" id="qJXziVdP#.Kv2l*V`Qmh">
-<field name="VAR" id="vP~n9zf$lW%hYD/C.j_-">myAprilTagDetection</field>
-</block>
-</value>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="f$U2XxkD,/mA^n@Mbip;">
-<field name="NUM">-1</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO1">
-<block type="procedures_callnoreturn" id="~jxfT8cOZI/HWSFKhq_7">
-<mutation name="moveForward">
-<arg name="distance"/>
-<arg name="speed"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id="x=lnmv9rT+IvP~;-:hnX">
-<field name="NUM">0.01</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="math_number" id="vYqiB#{cK)B{D[F:ij0?">
-<field name="NUM">0.1</field>
-</block>
-</value>
-<next>
-<block type="telemetry_addTextData_All" id="]lX$N@jP^`:qYcj,Jpep">
-<value name="KEY">
-<shadow type="text" id="mr%8Urg(s^}$efut*j(H">
-<field name="TEXT">distanceFunction</field>
-</shadow>
-</value>
-<value name="TEXT">
-<shadow type="text" id="!RnIuh;qya5XvoLS~^bs">
-<field name="TEXT">moveForward</field>
-</shadow>
-</value>
-</block>
-</next>
-</block>
-</statement>
-<statement name="ELSE">
-<block type="dcMotor_setProperty_Number" id="M}HKsv52?5a[JC`8izo3">
-<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"backLeftMotor"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="]#wis~3Ung+~Xj$rleUj">
-<field name="NUM">0</field>
-</shadow>
-</value>
-<next>
-<block type="dcMotor_setProperty_Number" id="D+qWj9d{r8zyOZP!8m%4">
-<field name="IDENTIFIER">backRightMotorAsDcMotor</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"backRightMotor"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="1?E@ufxorB%8JR4fT=df">
-<field name="NUM">0</field>
-</shadow>
-</value>
-<next>
-<block type="crServo_setProperty_Number" id="haDaQ%}Sj]krv#Ha7lSq">
-<field name="IDENTIFIER">frontLeftMotorAsCRServo</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"frontLeftMotor"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="v~|Js1`Dm{,3-b[ciyQ0">
-<field name="NUM">0</field>
-</shadow>
-</value>
-<next>
-<block type="crServo_setProperty_Number" id="z,;0LmzDx|p.Do=%yjs3">
-<field name="IDENTIFIER">frontRightMotorAsCRServo</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"frontRightMotor"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="9_~zB}uf35}}G}{4%I1*">
-<field name="NUM">0</field>
-</shadow>
-</value>
-<next>
-<block type="telemetry_addTextData_All" id="lb##e)C2azOjy0zx~O_G">
-<value name="KEY">
-<shadow type="text" id="4!I2HM4W~vb9_X[JSJf!">
-<field name="TEXT">distanceFunction</field>
-</shadow>
-</value>
-<value name="TEXT">
-<shadow type="text" id="[2cw.$qxX?1gq^C$],il">
-<field name="TEXT">Skipped</field>
-</shadow>
-</value>
-</block>
-</next>
-</block>
-</next>
-</block>
-</next>
-</block>
-</next>
-</block>
-</statement>
-<next>
-<block type="controls_if" id="I+o$B58]+g05@IQ::U!/" disabled="true">
-<value name="IF0">
-<block type="logic_compare" id="G}x(4hXEw24DG9kDC;q@">
-<field name="OP">GTE</field>
-<value name="A">
-<block type="aprilTagDetection_getProperty_Number" id="/enw4R{P!*io-pF2`TN~">
-<field name="PROP">ftcPose.z</field>
-<value name="APRIL_TAG_DETECTION">
-<block type="variables_get" id="5Y3VAr@3O}FZc=}-eRo6">
-<field name="VAR" id="vP~n9zf$lW%hYD/C.j_-">myAprilTagDetection</field>
-</block>
-</value>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id=";t=.Zx(F[i*h_`{(fdq`">
-<field name="NUM">300</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
-<block type="dcMotor_setProperty_Number" id="*Zm8avzei1T}KQxI3Vkz">
-<field name="IDENTIFIER">backRightMotorAsDcMotor</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"backRightMotor"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="J?5kwQn!FLH:2J71eOy$">
-<field name="NUM">1</field>
-</shadow>
-</value>
-<next>
-<block type="dcMotor_setProperty_Number" id="1_skovYRw0pQ*anW(0-I">
-<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"backLeftMotor"}</data>
-<value name="VALUE">
-<shadow type="math_number" id="B3m8QT;Wtg^L}%4iM/hU">
-<field name="NUM">1</field>
-</shadow>
-</value>
-</block>
-</next>
-</block>
-</statement>
-</block>
-</next>
-</block>
-</next>
-</block>
-</statement>
-</block>
 <block type="procedures_defnoreturn" id="9fAqOD7p4p-$2AWO96Dh" x="-1174" y="2930">
 <field name="NAME">initialConfigDrivebase</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
@@ -1846,51 +1589,516 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="$n-?(FcSe!8)tY%*=SMW" x="-1180" y="3553">
-<mutation>
-<arg name="distance" varid="|%d}C)SKt37gDc;NwhUD"/>
-<arg name="speed" varid="|*FRyn7rVpJgKK62S)%j"/>
-</mutation>
-<field name="NAME">moveForward</field>
+<block type="procedures_defnoreturn" id="o2Zs=bylc84kLYguqLi," x="1249" y="2804">
+<field name="NAME">moveAlignment</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
-<block type="procedures_callnoreturn" id="/vE+hFBTM/%AgbqR[B1|">
-<mutation name="driveWithEncoder">
-<arg name="targetDistanceIn"/>
-<arg name="wheelCircumfrenceIn"/>
-<arg name="ticksPerRotation"/>
-<arg name="driveWithEncoderSpeed"/>
-</mutation>
-<value name="ARG0">
-<block type="variables_get" id="]o9_)Q~2!tvTFmW!R=}#">
-<field name="VAR" id="|%d}C)SKt37gDc;NwhUD">distance</field>
-</block>
-</value>
-<value name="ARG1">
-<block type="variables_get" id="=}@COyzcq8MP~@:M6Klr">
-<field name="VAR" id="q)w)WgR[*$L5o8JRJ#71">wheelCircumfrenceIn</field>
-</block>
-</value>
-<value name="ARG2">
-<block type="variables_get" id="ZiWSMLg1L8U/j*tSvthR">
-<field name="VAR" id="G-wba5-Z@[rc8YO`n}a{">ticksPerRotation</field>
-</block>
-</value>
-<value name="ARG3">
-<block type="variables_get" id="]LO0kTRI4q[PavtFICde">
-<field name="VAR" id="|*FRyn7rVpJgKK62S)%j">speed</field>
-</block>
-</value>
-<next>
-<block type="telemetry_addTextData_All" id="jj,!Zk5P1u[l1hhkYgNG">
+<block type="telemetry_addTextData_All" id="SWZ^3{}fiej$dov($f@%">
 <value name="KEY">
-<shadow type="text" id="-8TjEa4r:}{jP?iK6SZ2">
-<field name="TEXT">moveForward Function</field>
+<shadow type="text" id="G|:j(ir#U/NzmK/TyW3h">
+<field name="TEXT">distanceFunction</field>
 </shadow>
 </value>
 <value name="TEXT">
-<shadow type="text" id="3:EqNS9^@{_%cp$PX(hq">
-<field name="TEXT">moving foward</field>
+<shadow type="text" id="AVN3nLc?[V-m2j3v{fWL">
+<field name="TEXT">Running</field>
+</shadow>
+</value>
+<next>
+<block type="controls_if" id="YmIz+n]%.aGD26cOv.?:">
+<mutation elseif="1" else="1"/>
+<value name="IF0">
+<block type="logic_compare" id=")T7DkSCb0rYY^tNfd$B]">
+<field name="OP">GTE</field>
+<value name="A">
+<block type="aprilTagDetection_getProperty_Number" id="RG*qAdgS$wkzBf9#+cj7">
+<field name="PROP">ftcPose.bearing</field>
+<value name="APRIL_TAG_DETECTION">
+<block type="variables_get" id="KJa!2r!IK!.#g+V]@G={">
+<field name="VAR" id="vP~n9zf$lW%hYD/C.j_-">myAprilTagDetection</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="woaJqAw[eR/t@_^C,H,c">
+<field name="NUM">1</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="variables_set" id="O*zPI2:o#St44ukRNj#[">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="GaA`G4{mXK0Th$lv.J3K">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="UWx$zec0ox$S67ns~oS]">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="u`Ag%on}{A9-%#^[dy,m">
+<field name="OP">DIVIDE</field>
+<value name="A">
+<shadow type="math_number" id="_N?qE8qp]=!Y}D?i0^Br">
+<field name="NUM">-0.1</field>
+</shadow>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="fzO)|BkN3)6yE|#}e679">
+<field name="VAR" id="q)w)WgR[*$L5o8JRJ#71">wheelCircumfrenceIn</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="Ch/2dsmP}8-].WTP52l!">
+<field name="VAR" id="G-wba5-Z@[rc8YO`n}a{">ticksPerRotation</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="jeyGlXj:V|G^$@ktj}[*">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="controls_whileUntil" id="V]*u*{)PY-eqYFS7qkMP">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_operation" id="7?W]N|x=#d*CW*3a`X+l">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id="pFimu|MK^_@skzW@j[3Z">
+<field name="OP">GT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id="w[+O@^T[GqRR8/cEv]ud">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="O~6yZ/Cn7^fotAXjovBZ">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="linearOpMode_opModeIsActive" id="6BayqS;XJmN$4ijuRR$l"/>
+</value>
+</block>
+</value>
+<statement name="DO">
+<block type="telemetry_addTextData_All" id="_:r.AT84Mw8}5t-.9S,%">
+<value name="KEY">
+<shadow type="text" id="E?TY9l}R7}Mo$X-O/PB*">
+<field name="TEXT">drive with encoder</field>
+</shadow>
+</value>
+<value name="TEXT">
+<shadow type="text" id="~V;,r;JUS@)b2rU4{_/z">
+<field name="TEXT">in while loop</field>
+</shadow>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="uShZ6MDG$@:vP)S?0Xy3">
+<mutation name="movement">
+<arg name="forwardSpeed"/>
+<arg name="turnSpeed"/>
+<arg name="strafeSpeed"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="nBTPCXb_tci=Rm-8+S8%">
+<field name="NUM">-0.1</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="math_number" id="{@KGKjzQ`PrtK5D#KW3A">
+<field name="NUM">0</field>
+</block>
+</value>
+<value name="ARG2">
+<block type="math_number" id=")1eM+aqJHX#rSAK:cOa[">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="^uN5JBLZi#JyZw{ACL-g">
+<value name="KEY">
+<shadow type="text" id="o9W9AXQom.T1)NVxR=%A">
+<field name="TEXT">targetposition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="{lb+.(6kM#~VF$mj8(`p">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="VbRyE%,g!Q9{??w~_|um">
+<value name="KEY">
+<shadow type="text" id="i^[FqNp~?)}ri3E@rRM_">
+<field name="TEXT">currentPosition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="6Hlt:FI.{_itO[-O/he?">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="telemetry_addTextData_All" id="[mV)rA@o%usM?-)rHtSB">
+<value name="KEY">
+<shadow type="text" id="rW!bxqt7tO+?nrS]Rb~5">
+<field name="TEXT">distanceFunction</field>
+</shadow>
+</value>
+<value name="TEXT">
+<shadow type="text" id="b@s}~hA1+}t1;DfxSq~O">
+<field name="TEXT">moveBack</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="e49^+gSFG#.$y|=d]M/9">
+<field name="OP">LTE</field>
+<value name="A">
+<block type="aprilTagDetection_getProperty_Number" id="G6A!{~Gy.3O.VS/8}3%Y">
+<field name="PROP">ftcPose.bearing</field>
+<value name="APRIL_TAG_DETECTION">
+<block type="variables_get" id="qJXziVdP#.Kv2l*V`Qmh">
+<field name="VAR" id="vP~n9zf$lW%hYD/C.j_-">myAprilTagDetection</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="f$U2XxkD,/mA^n@Mbip;">
+<field name="NUM">-1</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="{d^2cxT18b$xbIz`3lMp">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+<value name="VALUE">
+<block type="math_arithmetic" id="B`B!cFXG?JV7t.qRNB01">
+<field name="OP">ADD</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="=RJ[qTua[L*~x;)2D#kI">
+<field name="OP">MULTIPLY</field>
+<value name="A">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="math_arithmetic" id="~O=R}#1F+lZeEN;xPk)?">
+<field name="OP">DIVIDE</field>
+<value name="A">
+<shadow type="math_number" id="QtN|Z5,pZ(|voUni8/;Y">
+<field name="NUM">0.1</field>
+</shadow>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="ivLa-NJ^9NVLeX;HXd*E">
+<field name="VAR" id="q)w)WgR[*$L5o8JRJ#71">wheelCircumfrenceIn</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="variables_get" id="l0XgwS3D%n-CWZa%}bT?">
+<field name="VAR" id="G-wba5-Z@[rc8YO`n}a{">ticksPerRotation</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<shadow type="math_number">
+<field name="NUM">1</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="obtBqO=r/YJh%o1.hVJf">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+</block>
+</value>
+<next>
+<block type="controls_whileUntil" id="H68@/37@Mr3M8{:d$gVP">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_operation" id="X`0%n8_UEPCL/KbxgAPE">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id="{qJ_`HVboV2=YVHP!B*|">
+<field name="OP">LT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id="5E=4}l7!$p=45hN0.Fez">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="_qsIPRZr#DUJ#-w$FvOO">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="linearOpMode_opModeIsActive" id="sd8EDLSX6+gC2Tan]QEl"/>
+</value>
+</block>
+</value>
+<statement name="DO">
+<block type="telemetry_addTextData_All" id="(?$=q0EEViEU7lyXy)B3">
+<value name="KEY">
+<shadow type="text" id="UisSqb-Rd~Iq9wjWC`xp">
+<field name="TEXT">drive with encoder</field>
+</shadow>
+</value>
+<value name="TEXT">
+<shadow type="text" id="KC|FV/3q)jOdBZ:Z,I)V">
+<field name="TEXT">in while loop</field>
+</shadow>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="nvoA]Ua*8hL01F5]?6!B">
+<mutation name="movement">
+<arg name="forwardSpeed"/>
+<arg name="turnSpeed"/>
+<arg name="strafeSpeed"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="pw@bIeCjD^0?M|VQv[fY">
+<field name="NUM">0.1</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="math_number" id="_4XNCHCEEzoVG[j/,kKg">
+<field name="NUM">0</field>
+</block>
+</value>
+<value name="ARG2">
+<block type="math_number" id="o`d2*j5w#fU]a|gtw2a2">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="GK%p+t#xLqS3(0-e?Ye=">
+<value name="KEY">
+<shadow type="text" id="u}km4w%/2)_*.]3|{oNt">
+<field name="TEXT">targetposition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="DpQ8#)66H#(XLQwj,(EZ">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="X?t|MM%gxHGIgVCg^$%%">
+<value name="KEY">
+<shadow type="text" id="b,`PzsT|jI8)^CRSj^;)">
+<field name="TEXT">currentPosition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="QO4EV6B~[_K!v!z-0b.Y">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="telemetry_addTextData_All" id="]lX$N@jP^`:qYcj,Jpep">
+<value name="KEY">
+<shadow type="text" id="mr%8Urg(s^}$efut*j(H">
+<field name="TEXT">distanceFunction</field>
+</shadow>
+</value>
+<value name="TEXT">
+<shadow type="text" id="!RnIuh;qya5XvoLS~^bs">
+<field name="TEXT">moveForward</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="dcMotor_setProperty_Number" id="M}HKsv52?5a[JC`8izo3">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="]#wis~3Ung+~Xj$rleUj">
+<field name="NUM">0</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_Number" id="D+qWj9d{r8zyOZP!8m%4">
+<field name="IDENTIFIER">backRightMotorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"backRightMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="1?E@ufxorB%8JR4fT=df">
+<field name="NUM">0</field>
+</shadow>
+</value>
+<next>
+<block type="crServo_setProperty_Number" id="haDaQ%}Sj]krv#Ha7lSq">
+<field name="IDENTIFIER">frontLeftMotorAsCRServo</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"frontLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="v~|Js1`Dm{,3-b[ciyQ0">
+<field name="NUM">0</field>
+</shadow>
+</value>
+<next>
+<block type="crServo_setProperty_Number" id="z,;0LmzDx|p.Do=%yjs3">
+<field name="IDENTIFIER">frontRightMotorAsCRServo</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"frontRightMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="9_~zB}uf35}}G}{4%I1*">
+<field name="NUM">0</field>
+</shadow>
+</value>
+<next>
+<block type="telemetry_addTextData_All" id="lb##e)C2azOjy0zx~O_G">
+<value name="KEY">
+<shadow type="text" id="4!I2HM4W~vb9_X[JSJf!">
+<field name="TEXT">distanceFunction</field>
+</shadow>
+</value>
+<value name="TEXT">
+<shadow type="text" id="[2cw.$qxX?1gq^C$],il">
+<field name="TEXT">Skipped</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+<next>
+<block type="controls_if" id="I+o$B58]+g05@IQ::U!/" disabled="true">
+<value name="IF0">
+<block type="logic_compare" id="G}x(4hXEw24DG9kDC;q@">
+<field name="OP">GTE</field>
+<value name="A">
+<block type="aprilTagDetection_getProperty_Number" id="/enw4R{P!*io-pF2`TN~">
+<field name="PROP">ftcPose.z</field>
+<value name="APRIL_TAG_DETECTION">
+<block type="variables_get" id="5Y3VAr@3O}FZc=}-eRo6">
+<field name="VAR" id="vP~n9zf$lW%hYD/C.j_-">myAprilTagDetection</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id=";t=.Zx(F[i*h_`{(fdq`">
+<field name="NUM">300</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="dcMotor_setProperty_Number" id="*Zm8avzei1T}KQxI3Vkz">
+<field name="IDENTIFIER">backRightMotorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"backRightMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="J?5kwQn!FLH:2J71eOy$">
+<field name="NUM">1</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_Number" id="1_skovYRw0pQ*anW(0-I">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="B3m8QT;Wtg^L}%4iM/hU">
+<field name="NUM">1</field>
 </shadow>
 </value>
 </block>
@@ -1898,7 +2106,13 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="5E=zv[|2;kjHc+@9!QXu" x="-697" y="3604">
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+<block type="procedures_defnoreturn" id="5E=zv[|2;kjHc+@9!QXu" x="-1133" y="3475">
 <mutation>
 <arg name="targetDistanceIn" varid="TihksMtfY3|3=*^$#%!s"/>
 <arg name="wheelCircumfrenceIn" varid="q)w)WgR[*$L5o8JRJ#71"/>
@@ -1993,6 +2207,28 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </value>
 <next>
+<block type="telemetry_update" id="nx59:Cqtr{;Zk9YOBy|=">
+<next>
+<block type="controls_if" id="(N5QesYU;6POo*`-g-XB">
+<mutation elseif="1"/>
+<value name="IF0">
+<block type="logic_compare" id="ecs^proQ*6%XAHge1FGJ">
+<field name="OP">GT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id=";_Kx:cH8,hyh.m,I9GA*">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="n7QsWZ{i9cv[%[av#XR4">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
 <block type="controls_whileUntil" id="{d:+34/VM];)8H{833.0">
 <field name="MODE">WHILE</field>
 <value name="BOOL">
@@ -2000,7 +2236,7 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 <field name="OP">AND</field>
 <value name="A">
 <block type="logic_compare" id="b!/a|^`o42u4:3qqH{Z2">
-<field name="OP">LT</field>
+<field name="OP">GT</field>
 <value name="A">
 <block type="dcMotor_getProperty_Number" id="zn-@0qOgT4a8HL[=fK,`">
 <field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
@@ -2009,16 +2245,8 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </value>
 <value name="B">
-<block type="math_single" id="~WX:RM)X,xNK[ziBw8cc">
-<field name="OP">ABS</field>
-<value name="NUM">
-<shadow type="math_number" id="Fh8Sv$z%nYOPt2p|/[A@">
-<field name="NUM">9</field>
-</shadow>
 <block type="variables_get" id="JgV-8znx.kZX5zlbW0Dj">
 <field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
-</block>
-</value>
 </block>
 </value>
 </block>
@@ -2103,6 +2331,119 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </statement>
 </block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id=":`luI#3I7;8Nm{9LuU3d">
+<field name="OP">LT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id="#N7Bnhivls+%AJZW0OOG">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="F1O=^|UUXYzr3L?hHejZ">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="controls_whileUntil" id="xZujRoV(#4wyMAiG@Rfl">
+<field name="MODE">WHILE</field>
+<value name="BOOL">
+<block type="logic_operation" id="pE7|=Gv?x]Roaj3@Xdli">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id="WMj2JvZEwEMN`ipk8p[s">
+<field name="OP">GT</field>
+<value name="A">
+<block type="dcMotor_getProperty_Number" id="ak^]A-a)f4sp)_nhQ;8O">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+<value name="B">
+<block type="variables_get" id="92hlf.`U.IyU%C9P~,gt">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+</block>
+</value>
+<value name="B">
+<block type="linearOpMode_opModeIsActive" id="=Hm.x,mWMt97#;mVumIq"/>
+</value>
+</block>
+</value>
+<statement name="DO">
+<block type="telemetry_addTextData_All" id="j-Fd;0+xLxazuXuaoKKD">
+<value name="KEY">
+<shadow type="text" id="RyYu#fQ3[,Rb~f33^5n[">
+<field name="TEXT">drive with encoder</field>
+</shadow>
+</value>
+<value name="TEXT">
+<shadow type="text" id="(5^iSv2w1zAyEu4pP*)m">
+<field name="TEXT">in while loop</field>
+</shadow>
+</value>
+<next>
+<block type="procedures_callnoreturn" id="XcJS@}3k(DO[KFAF?{fN">
+<mutation name="movement">
+<arg name="forwardSpeed"/>
+<arg name="turnSpeed"/>
+<arg name="strafeSpeed"/>
+</mutation>
+<value name="ARG0">
+<block type="variables_get" id="]2GT5X/s?30z^x:oG#XF">
+<field name="VAR" id="@+/}O6j;iVU16c1C5YgQ">driveWithEncoderSpeed</field>
+</block>
+</value>
+<value name="ARG1">
+<block type="math_number" id=";{]}d$K0Xdo7{oeILtoY">
+<field name="NUM">0</field>
+</block>
+</value>
+<value name="ARG2">
+<block type="math_number" id="XHsj_lGpIo@)w3*{|=Lk">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="A}tkdFp8n$iDclgXqLdZ">
+<value name="KEY">
+<shadow type="text" id="~Zjtw(gZ|G5RmuF[X$pn">
+<field name="TEXT">targetposition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="variables_get" id="}w00Neotr]l?hFMe:vQE">
+<field name="VAR" id="N~=%Ety-vy}h=^jdC0{.">calculateTargetPosition</field>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="f:X?L5HdSW:9T/K!EY7k">
+<value name="KEY">
+<shadow type="text" id="|FylxJL1yg|GHEOdQS]M">
+<field name="TEXT">currentPosition</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="|sF6gl-$;J/(m.^W2sj~">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+</block>
+</value>
+</block>
 </next>
 </block>
 </next>
@@ -2111,57 +2452,15 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </statement>
 </block>
-<block type="procedures_defnoreturn" id="1E{g1J~3wJ?%9;Ad4-$=" x="-1295" y="3927">
-<mutation>
-<arg name="distance" varid="|%d}C)SKt37gDc;NwhUD"/>
-<arg name="speed" varid="|*FRyn7rVpJgKK62S)%j"/>
-</mutation>
-<field name="NAME">moveBack</field>
-<comment pinned="false" h="80" w="160">Describe this function...</comment>
-<statement name="STACK">
-<block type="procedures_callnoreturn" id="!lKDMGc?A1HQmcFP~TGf">
-<mutation name="driveWithEncoder">
-<arg name="targetDistanceIn"/>
-<arg name="wheelCircumfrenceIn"/>
-<arg name="ticksPerRotation"/>
-<arg name="driveWithEncoderSpeed"/>
-</mutation>
-<value name="ARG0">
-<block type="math_single" id="I4Zy`Yr/2b?}G7`EdL}3">
-<field name="OP">NEG</field>
-<value name="NUM">
-<shadow type="math_number">
-<field name="NUM">9</field>
-</shadow>
-<block type="variables_get" id=";:pcFL_FAE}X:NqXNfs`">
-<field name="VAR" id="|%d}C)SKt37gDc;NwhUD">distance</field>
+</statement>
 </block>
-</value>
+</next>
 </block>
-</value>
-<value name="ARG1">
-<block type="variables_get" id="EV^Q9e,A[^{28nRk]B:*">
-<field name="VAR" id="q)w)WgR[*$L5o8JRJ#71">wheelCircumfrenceIn</field>
+</next>
 </block>
-</value>
-<value name="ARG2">
-<block type="variables_get" id="8f*4BrguwaA^tRaqDL_(">
-<field name="VAR" id="G-wba5-Z@[rc8YO`n}a{">ticksPerRotation</field>
+</next>
 </block>
-</value>
-<value name="ARG3">
-<block type="math_single" id="H0srU-UA#i)dh-nQrYS@">
-<field name="OP">NEG</field>
-<value name="NUM">
-<shadow type="math_number">
-<field name="NUM">9</field>
-</shadow>
-<block type="variables_get" id="MAx(%RK-SU=d}29?g`x3">
-<field name="VAR" id="|*FRyn7rVpJgKK62S)%j">speed</field>
-</block>
-</value>
-</block>
-</value>
+</next>
 </block>
 </statement>
 </block>
