@@ -643,7 +643,7 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </value>
 <next>
 <block type="procedures_callnoreturn" id="J$9be_0roT~H:7)aolV0">
-<mutation name="distanceForMovement"/>
+<mutation name="moveAlignment"/>
 </block>
 </next>
 </block>
@@ -1453,7 +1453,7 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </statement>
 </block>
 <block type="procedures_defnoreturn" id="o2Zs=bylc84kLYguqLi," x="1284" y="2740">
-<field name="NAME">distanceForMovement</field>
+<field name="NAME">moveAlignment</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
 <block type="telemetry_addTextData_All" id="SWZ^3{}fiej$dov($f@%">
@@ -1503,7 +1503,7 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </value>
 <value name="ARG1">
 <block type="math_number" id="^9P0:f-+5)W42J-F5VEu">
-<field name="NUM">0.25</field>
+<field name="NUM">0.1</field>
 </block>
 </value>
 <next>
@@ -1555,7 +1555,7 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </value>
 <value name="ARG1">
 <block type="math_number" id="vYqiB#{cK)B{D[F:ij0?">
-<field name="NUM">0.25</field>
+<field name="NUM">0.1</field>
 </block>
 </value>
 <next>
@@ -1575,20 +1575,44 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 </block>
 </statement>
 <statement name="ELSE">
-<block type="procedures_callnoreturn" id="(B7o-R:XhW0@l(sd{e$B">
-<mutation name="moveBack">
-<arg name="distance"/>
-<arg name="speed"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id="lqr-4HUanQ1No.?F8D.h">
+<block type="dcMotor_setProperty_Number" id="M}HKsv52?5a[JC`8izo3">
+<field name="IDENTIFIER">backLeftMotorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"backLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="]#wis~3Ung+~Xj$rleUj">
 <field name="NUM">0</field>
-</block>
+</shadow>
 </value>
-<value name="ARG1">
-<block type="math_number" id="(;BxsKi2s:8Wj=PGVKDG">
-<field name="NUM">0.25</field>
-</block>
+<next>
+<block type="dcMotor_setProperty_Number" id="D+qWj9d{r8zyOZP!8m%4">
+<field name="IDENTIFIER">backRightMotorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"backRightMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="1?E@ufxorB%8JR4fT=df">
+<field name="NUM">0</field>
+</shadow>
+</value>
+<next>
+<block type="crServo_setProperty_Number" id="haDaQ%}Sj]krv#Ha7lSq">
+<field name="IDENTIFIER">frontLeftMotorAsCRServo</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"frontLeftMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="v~|Js1`Dm{,3-b[ciyQ0">
+<field name="NUM">0</field>
+</shadow>
+</value>
+<next>
+<block type="crServo_setProperty_Number" id="z,;0LmzDx|p.Do=%yjs3">
+<field name="IDENTIFIER">frontRightMotorAsCRServo</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"frontRightMotor"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="9_~zB}uf35}}G}{4%I1*">
+<field name="NUM">0</field>
+</shadow>
 </value>
 <next>
 <block type="telemetry_addTextData_All" id="lb##e)C2azOjy0zx~O_G">
@@ -1602,6 +1626,12 @@ https://ftc-docs.firstinspires.org/apriltag-detection-values</comment>
 <field name="TEXT">Skipped</field>
 </shadow>
 </value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
 </block>
 </next>
 </block>
