@@ -8,40 +8,42 @@
 <variable id="1.KR2^hof=$u8E4uOjc?">highViperPositionInput</variable>
 <variable id="UX7TM2U[!3l=SWiJ-aT;">LowViperPositionInput</variable>
 <variable id="2tkV+W]+8,,J9A3wxaRp">viperRunDirect</variable>
+<variable id="L$_wY{kosYOxvd*4sHce">wristIntakeInput</variable>
+<variable id="_BlBCcpP)1D(RtDxTVaB">wristOuttakeInput</variable>
 <variable id="b0(GSHYaEg$OM{D(C:,-">rotatorLowButton</variable>
 <variable id="xY[%V7UAtl,11_J-PBH^">rotatorHighButton</variable>
 <variable id="4oUYqhnnOa8l7;Wyd#}_">rotatorStick</variable>
 <variable id="34!;}4BSyu;Kp~-$aLfC">rotatorRunDirect</variable>
 <variable id="B#^Iq$-H)??CK(}xCNYt">clipScale</variable>
 <variable id="IhPK^r:tb-yShtdp6G=S">viperSlideCurrentPosition</variable>
+<variable id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</variable>
 <variable id="VmgP3Gi|a$*BTVfa0{-m">rotatorCurrentPosition</variable>
 <variable id="o0U|r*$pX,txAmW.Zh0J">turnSpeedFinalInput</variable>
 <variable id="]o$LVW[;4PODtpPINPi#">strafeSpeedFinalInput</variable>
 <variable id="0]K(1HI(/b.sSW{pM85P">frontRightMotorTemp</variable>
 <variable id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</variable>
 <variable id="PQ_Te0iaBHt$|X[{2QP7">wristPosition</variable>
-<variable id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</variable>
+<variable id="gmRsY[E%w%`^7G~*R9u7">intakePressCount</variable>
 <variable id="bJUB|L9Ad:!GI:huC!aX">manualScaling</variable>
+<variable id="y;RT|AsWGHxZQOva9#Z3">intakePressed</variable>
+<variable id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</variable>
 <variable id=",O~k+QF-zz^=]6-LXT)l">rotatorTargetPosition</variable>
-<variable id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</variable>
 <variable id="ok+F8~Jc1FsF]h?K(i.4">leftStickX</variable>
 <variable id="d%HDHN0gU6{$4g%},uYo">frontLeftMotorTemp</variable>
 <variable id="0-Tje/STOJ~2V~.LD4]$">wristIncrementValue</variable>
 <variable id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</variable>
-<variable id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</variable>
 <variable id="i1^|QkmM7dL0hOq*.dvk">preSetSlideSpeed</variable>
+<variable id="LIM9P2(CP7Fi74|8v`%M">wristIncrementMax</variable>
+<variable id="1pz[#)Z`lAPnZ2Xkll2{">wristIncrementMin</variable>
 <variable id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</variable>
-<variable id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</variable>
 <variable id="#rP+ooiiTEeP+!+)~md7">g2rightStickX</variable>
 <variable id="tNw!3HclKq$(;M^7R$h$">g2leftStickX</variable>
 <variable id="lJ-L8P%Yr_F^al0-~;S|">backLeftMotorTemp</variable>
-<variable id="1pz[#)Z`lAPnZ2Xkll2{">wristIncrementMin</variable>
 <variable id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</variable>
 <variable id="^+*y.~3)(Ie#qD+7)gNT">lowBasketHeight</variable>
 <variable id="9rJ`/]R5wCmX2h,I*tS*">backRightMotorTemp</variable>
 <variable id="{#AUw@FMw|pD(SO80ps+">viperLowButton</variable>
 <variable id="`)OjI*W#^7n?-zf@*nZ)">buttonPressed</variable>
-<variable id="LIM9P2(CP7Fi74|8v`%M">wristIncrementMax</variable>
 <variable id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</variable>
 <variable id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</variable>
 <variable id="pmr.@6oSMjU_L;s?}izv">viperTicksPerRotation</variable>
@@ -52,16 +54,16 @@
 <variable id="nv^HGhpb?a$gaCyLKb$~">speedScaleButtonState</variable>
 <variable id="B0TR%]+l}_jx=YHJ)o)M">rotatorScaling</variable>
 <variable id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</variable>
-<variable id="B-dChE?L5C%Ls5uF6cMZ">speedScalePressCount</variable>
 <variable id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</variable>
+<variable id="B-dChE?L5C%Ls5uF6cMZ">speedScalePressCount</variable>
 <variable id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</variable>
 <variable id="#+)!gjvm6[Zkck_}8:@F">leftStickY</variable>
 <variable id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</variable>
 <variable id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</variable>
 <variable id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</variable>
 <variable id="1EISY^,GT/(.7vVxA=+M">G2RightStickY</variable>
-<variable id="qxKw0u;S{D22ZW@hI$[*">rotatorButtonX</variable>
-<variable id="!KOa#tJY0{[^*Kud4)`|">rotatorButtonY</variable>
+<variable id="qxKw0u;S{D22ZW@hI$[*">wristButtonIntake</variable>
+<variable id="!KOa#tJY0{[^*Kud4)`|">wristButtonOuttake</variable>
 <variable id="V9XUv`jb4jq3q2dS[5=j">RotatorStickInput</variable>
 <variable id=":-7K+[-gq#y/TjxS{_1h">viperStickInput</variable>
 </variables>
@@ -659,7 +661,7 @@ Stopped).</comment>
 </value>
 <next>
 <block type="variables_set" id="Y^$DOqJ04PFE{aJBz3!!">
-<field name="VAR" id="qxKw0u;S{D22ZW@hI$[*">rotatorButtonX</field>
+<field name="VAR" id="qxKw0u;S{D22ZW@hI$[*">wristButtonIntake</field>
 <value name="VALUE">
 <block type="gamepad_getProperty_Boolean" id="Kv|d~GU{_=)^o0{@kLfi">
 <field name="IDENTIFIER">gamepad2</field>
@@ -669,7 +671,7 @@ Stopped).</comment>
 </value>
 <next>
 <block type="variables_set" id="S5Toc%7IKcw7Cf70WqVp">
-<field name="VAR" id="!KOa#tJY0{[^*Kud4)`|">rotatorButtonY</field>
+<field name="VAR" id="!KOa#tJY0{[^*Kud4)`|">wristButtonOuttake</field>
 <value name="VALUE">
 <block type="gamepad_getProperty_Boolean" id=".P,KF7WXMwSF=meA]V[j">
 <field name="IDENTIFIER">gamepad2</field>
@@ -830,7 +832,10 @@ Stopped).</comment>
 </value>
 <next>
 <block type="procedures_callnoreturn" id="t$$onYWpD_EUl%)7sYaM">
-<mutation name="wristControl"/>
+<mutation name="wristControl">
+<arg name="wristIntakeInput"/>
+<arg name="wristOuttakeInput"/>
+</mutation>
 <next>
 <block type="telemetry_update" id="E)2PUguQHoIF=nKR6L0!"/>
 </next>
@@ -1785,7 +1790,7 @@ Stopped).</comment>
 <field name="VAR" id="1pz[#)Z`lAPnZ2Xkll2{">wristIncrementMin</field>
 <value name="VALUE">
 <block type="math_number" id="F+7yX@tVI:ZziW+O|TX-">
-<field name="NUM">0.475</field>
+<field name="NUM">0</field>
 </block>
 </value>
 <next>
@@ -1793,7 +1798,7 @@ Stopped).</comment>
 <field name="VAR" id="LIM9P2(CP7Fi74|8v`%M">wristIncrementMax</field>
 <value name="VALUE">
 <block type="math_number" id="|vRLK}PUfeJFn+XH1q_p">
-<field name="NUM">0.85</field>
+<field name="NUM">1</field>
 </block>
 </value>
 </block>
@@ -1986,41 +1991,21 @@ Stopped).</comment>
 </shadow>
 </value>
 <next>
-<block type="variables_set" id="tmF|7H88fk~UmRAxX9lT">
-<field name="VAR" id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</field>
+<block type="variables_set" id="vkJ1`g)y]igASK()IR5?">
+<field name="VAR" id="gmRsY[E%w%`^7G~*R9u7">intakePressCount</field>
 <value name="VALUE">
-<block type="logic_boolean" id="g4a}?d#,)Xx|J2?}H,.w">
-<field name="BOOL">FALSE</field>
-</block>
-</value>
-<next>
-<block type="variables_set" id="!DRz7Z%o]y5%o`Zgx7r2">
-<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
-<value name="VALUE">
-<block type="math_number" id="yu@.66*9AxG@[+7Bril9">
+<block type="math_number" id="b-2G=0qtBMs:R4bTa^]c">
 <field name="NUM">0</field>
 </block>
 </value>
 <next>
-<block type="variables_set" id="$]r:mzd2OA%m}Nt8;w5L">
-<field name="VAR" id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</field>
+<block type="variables_set" id="%X`yn+Er=(3KeH^sEu0Q">
+<field name="VAR" id="y;RT|AsWGHxZQOva9#Z3">intakePressed</field>
 <value name="VALUE">
-<block type="logic_boolean" id="*G,T9pqwzb}T[9Vzrxq)">
-<field name="BOOL">FALSE</field>
+<block type="logic_boolean" id="-HsIk^JyzkxC0ekheRk*">
+<field name="BOOL">TRUE</field>
 </block>
 </value>
-<next>
-<block type="variables_set" id="DCt}^qRtgu3E(B4Wc,+N">
-<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
-<value name="VALUE">
-<block type="math_number" id="_M7W?x7L]zlF4M}16,{I">
-<field name="NUM">0</field>
-</block>
-</value>
-</block>
-</next>
-</block>
-</next>
 </block>
 </next>
 </block>
@@ -2068,120 +2053,125 @@ Stopped).</comment>
 <field name="NAME">runIntake</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
-<block type="controls_if" id="3@cprgsSR%uMrW#4Wce|">
-<mutation else="1"/>
+<block type="controls_if" id="hb.S[/E}3#8+It.K5U3a">
+<mutation elseif="1"/>
 <value name="IF0">
-<block type="logic_compare" id="eipVs;C9%)vsIY#Y4Ezm">
+<block type="logic_operation" id="WT?usORiBRSsw9bcQ[KG">
+<field name="OP">AND</field>
+<value name="A">
+<block type="logic_compare" id=";/XhpyyHd*V,XX,Ek;+E">
 <field name="OP">GTE</field>
 <value name="A">
-<block type="gamepad_getProperty_Number" id="F4fhZO=YfSRPvt;f;bMH">
+<block type="gamepad_getProperty_Number" id="d#GbHL^N~@kgE2+Sa4q?">
 <field name="IDENTIFIER">gamepad2</field>
 <field name="PROP">LeftTrigger</field>
 <data>{"IDENTIFIER":"gamepad2"}</data>
 </block>
 </value>
 <value name="B">
-<block type="math_number" id="ph4gNSPUW~LsK/CFe7X[">
+<block type="math_number" id="^%M(^EO?|SF_D^Vp._L!">
 <field name="NUM">0.1</field>
 </block>
 </value>
 </block>
 </value>
-<statement name="DO0">
-<block type="controls_if" id="K$_7[;VnSb;V!1L:@Tqg">
-<value name="IF0">
-<block type="logic_compare" id="szSFk`#2ksV1wVPkyvRW">
+<value name="B">
+<block type="logic_compare" id="r_q@hj7f!Vn!m?gjToff">
 <field name="OP">EQ</field>
 <value name="A">
-<block type="variables_get" id="25X;fwA]nF;K{G=9pg=U">
-<field name="VAR" id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</field>
+<block type="variables_get" id="V904SYqlo5;.lvTod5Mq">
+<field name="VAR" id="y;RT|AsWGHxZQOva9#Z3">intakePressed</field>
 </block>
 </value>
 <value name="B">
-<block type="logic_boolean" id="u=%WC#+8;DG3#@7Bx[!N">
+<block type="logic_boolean" id="K%C0`DY[.l8naSZq9yKu">
 <field name="BOOL">FALSE</field>
 </block>
 </value>
 </block>
 </value>
-<statement name="DO0">
-<block type="math_change" id="Scc@f,odF7/GadgM.V8W">
-<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
-<value name="DELTA">
-<shadow type="math_number" id="|RD,{8Ub(Oc|hh)ANgA_">
-<field name="NUM">1</field>
-</shadow>
+</block>
 </value>
-<next>
-<block type="variables_set" id="-tGZg)y9aokR`mh}dvyM">
-<field name="VAR" id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</field>
+<statement name="DO0">
+<block type="variables_set" id="ph0Fg(hzvIH)T6ml~6/C">
+<field name="VAR" id="y;RT|AsWGHxZQOva9#Z3">intakePressed</field>
 <value name="VALUE">
-<block type="logic_boolean" id="|ZfJGR#5..@gu,#;IAR!">
+<block type="logic_boolean" id="kbkw1`p@cD40M#;E}^g3">
 <field name="BOOL">TRUE</field>
 </block>
 </value>
 <next>
-<block type="controls_if" id="T?qh-;ejizXO%l~{,b=#">
+<block type="controls_if" id="$B:j=?Rkysnpur@~UX%u">
 <mutation elseif="1"/>
 <value name="IF0">
-<block type="logic_compare" id="*[gu.`rV+YzBj!8U]ES8">
+<block type="logic_compare" id="xw{vAZz;V2bMAmb$+}uK">
 <field name="OP">EQ</field>
 <value name="A">
-<block type="variables_get" id="1kTsw/!~?t|SQt~l365z">
-<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
+<block type="variables_get" id="c#%,D@7,FTf2_G/Sw]Y;">
+<field name="VAR" id="gmRsY[E%w%`^7G~*R9u7">intakePressCount</field>
 </block>
 </value>
 <value name="B">
-<block type="math_number" id="GZ,LA)i$nhF1IG,NWt^9">
-<field name="NUM">1</field>
+<block type="math_number" id=".)[GBOZmV,:?pgKS!r[{">
+<field name="NUM">0</field>
 </block>
 </value>
 </block>
 </value>
 <statement name="DO0">
-<block type="servo_setProperty_Number" id="b0gfz:R5xD=S5=tYSDn%">
+<block type="servo_setProperty_Number" id="T*3c1+4/:~*L/Hv]d0;3">
 <field name="IDENTIFIER">intakeAsServo</field>
 <field name="PROP">Position</field>
 <data>{"IDENTIFIER":"intake"}</data>
 <value name="VALUE">
-<shadow type="math_number" id="8b5Ilm!8P^5%k:TFk{n,">
+<shadow type="math_number" id="v}V+fn3Dyh!4Gkt/vPVH">
 <field name="NUM">1</field>
 </shadow>
 </value>
+<next>
+<block type="variables_set" id="e,aFu|;V:T^vdBPCl(ss">
+<field name="VAR" id="gmRsY[E%w%`^7G~*R9u7">intakePressCount</field>
+<value name="VALUE">
+<block type="math_number" id="7h5,Mg9JRs1K|V[P75X;">
+<field name="NUM">1</field>
+</block>
+</value>
+</block>
+</next>
 </block>
 </statement>
 <value name="IF1">
-<block type="logic_compare" id="bmFx/lCC;mT~$Pon?.af">
+<block type="logic_compare" id="%=%l.=0iGj$~/VXBzQ$6">
 <field name="OP">EQ</field>
 <value name="A">
-<block type="variables_get" id="@lCi^Nm^_?^5P-9%NLH7">
-<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
+<block type="variables_get" id="x9-ClU1BlH~Wycm4H5^o">
+<field name="VAR" id="gmRsY[E%w%`^7G~*R9u7">intakePressCount</field>
 </block>
 </value>
 <value name="B">
-<block type="math_number" id="d=E!4#]Cc5r.!XEF]JT-">
-<field name="NUM">2</field>
+<block type="math_number" id="%[2(^hU/k2!:~0gS:}Ve">
+<field name="NUM">1</field>
 </block>
 </value>
 </block>
 </value>
 <statement name="DO1">
-<block type="variables_set" id="T%5#0xa6cA_2`oxP6/t%">
-<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
-<value name="VALUE">
-<block type="math_number" id="kmQl)=hh|BBQ1lFrUUEW">
-<field name="NUM">0</field>
-</block>
-</value>
-<next>
-<block type="servo_setProperty_Number" id="6v(Pk5XUL/%J{wdxPk8D">
+<block type="servo_setProperty_Number" id="1C:cz:mzE6f8?_ca=maY">
 <field name="IDENTIFIER">intakeAsServo</field>
 <field name="PROP">Position</field>
 <data>{"IDENTIFIER":"intake"}</data>
 <value name="VALUE">
-<shadow type="math_number" id="j0Ms/#3W-9aX9{61n;Zt">
+<shadow type="math_number" id="8*to*+e,{ml,IqDCT0dJ">
 <field name="NUM">0.5</field>
 </shadow>
+</value>
+<next>
+<block type="variables_set" id="Rn`KGFz|KZ}P$5+KhGJz">
+<field name="VAR" id="gmRsY[E%w%`^7G~*R9u7">intakePressCount</field>
+<value name="VALUE">
+<block type="math_number" id="fl~#tz^V2hAS_/TB_KO;">
+<field name="NUM">0</field>
+</block>
 </value>
 </block>
 </next>
@@ -2190,16 +2180,29 @@ Stopped).</comment>
 </block>
 </next>
 </block>
-</next>
-</block>
 </statement>
+<value name="IF1">
+<block type="logic_compare" id="[zggh1O[:wS^vR2h0|+e">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="gamepad_getProperty_Number" id="al~F}#?vX#:7-:)/sEt,">
+<field name="IDENTIFIER">gamepad2</field>
+<field name="PROP">LeftTrigger</field>
+<data>{"IDENTIFIER":"gamepad2"}</data>
 </block>
-</statement>
-<statement name="ELSE">
-<block type="variables_set" id="qRTwY!:|SL5PIoNZ7{4H">
-<field name="VAR" id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</field>
+</value>
+<value name="B">
+<block type="math_number" id="^FP,(B^$)#*j/IXqAH#^">
+<field name="NUM">0</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="tD@aVW3jy|faCX+Yi:7f">
+<field name="VAR" id="y;RT|AsWGHxZQOva9#Z3">intakePressed</field>
 <value name="VALUE">
-<block type="logic_boolean" id="=0Y:SR~R9Kmgs/ePIsWD">
+<block type="logic_boolean" id="{;P35$p.{%Ug3*J.K1~y">
 <field name="BOOL">FALSE</field>
 </block>
 </value>
@@ -2353,11 +2356,15 @@ Stopped).</comment>
 </statement>
 </block>
 <block type="procedures_defnoreturn" id="i4npm3%xj#EV)^zwI!bD" x="-2892" y="287">
+<mutation>
+<arg name="wristIntakeInput" varid="L$_wY{kosYOxvd*4sHce"/>
+<arg name="wristOuttakeInput" varid="_BlBCcpP)1D(RtDxTVaB"/>
+</mutation>
 <field name="NAME">wristControl</field>
 <comment pinned="false" h="80" w="160">Describe this function...</comment>
 <statement name="STACK">
 <block type="controls_if" id=")PcR!e7*@lf*W?,YJ|#p">
-<mutation elseif="1"/>
+<mutation elseif="3"/>
 <value name="IF0">
 <block type="gamepad_getProperty_Boolean" id="fu5%=~NE.f*+FTZ7%M3)">
 <field name="IDENTIFIER">gamepad2</field>
@@ -2482,6 +2489,36 @@ Stopped).</comment>
 </next>
 </block>
 </statement>
+<value name="IF2">
+<block type="variables_get" id="lOfzbD:M07;uStt+?kH2">
+<field name="VAR" id="L$_wY{kosYOxvd*4sHce">wristIntakeInput</field>
+</block>
+</value>
+<statement name="DO2">
+<block type="variables_set" id="s1i_T/Yc2Lagfj[,6/7w">
+<field name="VAR" id="PQ_Te0iaBHt$|X[{2QP7">wristPosition</field>
+<value name="VALUE">
+<block type="variables_get" id="a$49zH)Tn*SJ:KypF.Vq">
+<field name="VAR" id="LIM9P2(CP7Fi74|8v`%M">wristIncrementMax</field>
+</block>
+</value>
+</block>
+</statement>
+<value name="IF3">
+<block type="variables_get" id="R`%e)|0+mO|#Ztlaiym{">
+<field name="VAR" id="_BlBCcpP)1D(RtDxTVaB">wristOuttakeInput</field>
+</block>
+</value>
+<statement name="DO3">
+<block type="variables_set" id="I=H!`J5/VdESgHKR=C@j">
+<field name="VAR" id="PQ_Te0iaBHt$|X[{2QP7">wristPosition</field>
+<value name="VALUE">
+<block type="variables_get" id="D?lM}X%#%lGwUbjWrmN/">
+<field name="VAR" id="1pz[#)Z`lAPnZ2Xkll2{">wristIncrementMin</field>
+</block>
+</value>
+</block>
+</statement>
 <next>
 <block type="servo_setProperty_Number" id="9+h~G8m_84Nk(y(*2@cN">
 <field name="IDENTIFIER">wristAsServo</field>
@@ -2514,6 +2551,144 @@ Stopped).</comment>
 </next>
 </block>
 </next>
+</block>
+</statement>
+</block>
+<block type="controls_if" id="3@cprgsSR%uMrW#4Wce|" x="884" y="200">
+<mutation else="1"/>
+<value name="IF0">
+<block type="logic_compare" id="eipVs;C9%)vsIY#Y4Ezm">
+<field name="OP">GTE</field>
+<value name="A">
+<block type="gamepad_getProperty_Number" id="F4fhZO=YfSRPvt;f;bMH">
+<field name="IDENTIFIER">gamepad2</field>
+<field name="PROP">LeftTrigger</field>
+<data>{"IDENTIFIER":"gamepad2"}</data>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="ph4gNSPUW~LsK/CFe7X[">
+<field name="NUM">0.1</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="controls_if" id="K$_7[;VnSb;V!1L:@Tqg">
+<value name="IF0">
+<block type="logic_compare" id="szSFk`#2ksV1wVPkyvRW">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="variables_get" id="25X;fwA]nF;K{G=9pg=U">
+<field name="VAR" id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</field>
+</block>
+</value>
+<value name="B">
+<block type="logic_boolean" id="u=%WC#+8;DG3#@7Bx[!N">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="math_change" id="Scc@f,odF7/GadgM.V8W">
+<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
+<value name="DELTA">
+<shadow type="math_number" id="|RD,{8Ub(Oc|hh)ANgA_">
+<field name="NUM">1</field>
+</shadow>
+</value>
+<next>
+<block type="variables_set" id="-tGZg)y9aokR`mh}dvyM">
+<field name="VAR" id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</field>
+<value name="VALUE">
+<block type="logic_boolean" id="|ZfJGR#5..@gu,#;IAR!">
+<field name="BOOL">TRUE</field>
+</block>
+</value>
+<next>
+<block type="controls_if" id="T?qh-;ejizXO%l~{,b=#">
+<mutation elseif="1"/>
+<value name="IF0">
+<block type="logic_compare" id="*[gu.`rV+YzBj!8U]ES8">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="variables_get" id="1kTsw/!~?t|SQt~l365z">
+<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="GZ,LA)i$nhF1IG,NWt^9">
+<field name="NUM">1</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block type="servo_setProperty_Number" id="b0gfz:R5xD=S5=tYSDn%">
+<field name="IDENTIFIER">intakeAsServo</field>
+<field name="PROP">Position</field>
+<data>{"IDENTIFIER":"intake"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="8b5Ilm!8P^5%k:TFk{n,">
+<field name="NUM">1</field>
+</shadow>
+</value>
+</block>
+</statement>
+<value name="IF1">
+<block type="logic_compare" id="bmFx/lCC;mT~$Pon?.af">
+<field name="OP">EQ</field>
+<value name="A">
+<block type="variables_get" id="@lCi^Nm^_?^5P-9%NLH7">
+<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
+</block>
+</value>
+<value name="B">
+<block type="math_number" id="d=E!4#]Cc5r.!XEF]JT-">
+<field name="NUM">2</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO1">
+<block type="variables_set" id="T%5#0xa6cA_2`oxP6/t%">
+<field name="VAR" id="R6%Ob.#4Dbj/PpG5rCS(">intakeRightBumperPressCount</field>
+<value name="VALUE">
+<block type="math_number" id="kmQl)=hh|BBQ1lFrUUEW">
+<field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="servo_setProperty_Number" id="6v(Pk5XUL/%J{wdxPk8D">
+<field name="IDENTIFIER">intakeAsServo</field>
+<field name="PROP">Position</field>
+<data>{"IDENTIFIER":"intake"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="j0Ms/#3W-9aX9{61n;Zt">
+<field name="NUM">0.5</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</statement>
+<statement name="ELSE">
+<block type="variables_set" id="qRTwY!:|SL5PIoNZ7{4H">
+<field name="VAR" id="^b%fF=;*9vGk[CF$E[[k">intakeRightBumperCurrentState</field>
+<value name="VALUE">
+<block type="logic_boolean" id="=0Y:SR~R9Kmgs/ePIsWD">
+<field name="BOOL">FALSE</field>
+</block>
+</value>
 </block>
 </statement>
 </block>
@@ -2586,60 +2761,6 @@ Stopped).</comment>
 </value>
 </block>
 </value>
-<next>
-<block type="controls_if" id="E!r8?~ouuB,{dzgLvwZc">
-<value name="IF0">
-<block type="variables_get" id="w8Rb^PY]fO!K.I3X)GMn">
-<field name="VAR" id="b0(GSHYaEg$OM{D(C:,-">rotatorLowButton</field>
-</block>
-</value>
-<statement name="DO0">
-<block type="variables_set" id="7*OU*K9H}Y0O(b1n*zDr">
-<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
-<value name="VALUE">
-<block type="variables_get" id="$~{b%NF71)7Ep4~Z|i7*">
-<field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
-</block>
-</value>
-<next>
-<block type="variables_set" id="^BColqW:;N`W5v6~5F0}">
-<field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
-<value name="VALUE">
-<block type="logic_boolean" id="XGyK9_vg||so.UTuhxye">
-<field name="BOOL">TRUE</field>
-</block>
-</value>
-</block>
-</next>
-</block>
-</statement>
-<next>
-<block type="controls_if" id="Wje(XWY3Lv,Dq1aSGN(E">
-<value name="IF0">
-<block type="variables_get" id=",lP)|~EwpO$E7h1;,C7(">
-<field name="VAR" id="xY[%V7UAtl,11_J-PBH^">rotatorHighButton</field>
-</block>
-</value>
-<statement name="DO0">
-<block type="variables_set" id="2^5!8R4M_CJ:{*QaNMv[">
-<field name="VAR" id="lp=r::V(-+M#WDf.zbZu">rotatorButtonPressed</field>
-<value name="VALUE">
-<block type="logic_boolean" id="Qgk$8-Od!^I**y!E`d.^">
-<field name="BOOL">TRUE</field>
-</block>
-</value>
-<next>
-<block type="variables_set" id=",E?d57hH%*e6KFE#?F6,">
-<field name="VAR" id="M_B1GPp@:M/]mzaMbAU}">rotatorTarget</field>
-<value name="VALUE">
-<block type="variables_get" id="H3).5;n7x2r1c91|D;5`">
-<field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
-</block>
-</value>
-</block>
-</next>
-</block>
-</statement>
 <next>
 <block type="controls_if" id="{@*SZvrYFTmbT3~~!u*x">
 <value name="IF0">
@@ -2913,10 +3034,6 @@ Stopped).</comment>
 </block>
 </next>
 </block>
-</next>
-</block>
-</next>
-</block>
 </statement>
 </block>
 <block type="procedures_defnoreturn" id="*2J(sDW;;D)4rb.Y`O_@" x="290" y="497">
@@ -2943,92 +3060,18 @@ Stopped).</comment>
 </block>
 </value>
 <statement name="DO0">
-<block type="controls_if" id="TePUlNqRS-)5iEY}$6R0">
-<value name="IF0">
-<block type="logic_compare" id="=y/jk-!z45s5BzsfqpR%">
-<field name="OP">EQ</field>
-<value name="A">
-<block type="variables_get" id="iYe-*ry}x-#9$s85tJ}S">
-<field name="VAR" id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</field>
-</block>
-</value>
-<value name="B">
-<block type="logic_boolean" id="?W3~$Qspu#b~Xw[q1Gv+">
-<field name="BOOL">FALSE</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
-<block type="math_change" id="N*--+tI3X:.9@pK[v_P_">
-<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
-<value name="DELTA">
-<shadow type="math_number" id="p0[ut9*p)/zKsd+*(42e">
-<field name="NUM">1</field>
-</shadow>
-</value>
-<next>
-<block type="variables_set" id="SXsfQ%iz:iKz+^Ml;kwT">
-<field name="VAR" id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</field>
-<value name="VALUE">
-<block type="logic_boolean" id="ywYk|8a%:84e.MQ#=a1d">
-<field name="BOOL">TRUE</field>
-</block>
-</value>
-<next>
-<block type="controls_if" id="IE{1Sm7^VI_7/5;_K`[p">
-<mutation elseif="1"/>
-<value name="IF0">
-<block type="logic_compare" id="Vi?FuDmf!%B;(9~F~(cA">
-<field name="OP">EQ</field>
-<value name="A">
-<block type="variables_get" id="i/]R/p#I/.Sd*@d2)?T(">
-<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="0sfjaG4ZL2ac#efmJ?Sq">
-<field name="NUM">1</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO0">
 <block type="servo_setProperty_Number" id="U`V9woFznT@)_wX6akFz">
 <field name="IDENTIFIER">intakeAsServo</field>
 <field name="PROP">Position</field>
 <data>{"IDENTIFIER":"intake"}</data>
 <value name="VALUE">
 <shadow type="math_number" id="a}^QrJ|O(hej|$16g-1@">
-<field name="NUM">0</field>
+<field name="NUM">1</field>
 </shadow>
 </value>
 </block>
 </statement>
-<value name="IF1">
-<block type="logic_compare" id="S,[}7E;,1Xr@~to%r3F_">
-<field name="OP">EQ</field>
-<value name="A">
-<block type="variables_get" id="A$4.]iT=L4piwQ8hFblb">
-<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
-</block>
-</value>
-<value name="B">
-<block type="math_number" id="tDqC1!]OKPtKQt*/jIuE">
-<field name="NUM">2</field>
-</block>
-</value>
-</block>
-</value>
-<statement name="DO1">
-<block type="variables_set" id="Nbw0?mxlql9c?$mKJ.2K">
-<field name="VAR" id="U8G;ruYplB*j^U@3eACi">leftBumperPressCount</field>
-<value name="VALUE">
-<block type="math_number" id="xWMO}(blE|1Qzth-e3;1">
-<field name="NUM">0</field>
-</block>
-</value>
-<next>
+<statement name="ELSE">
 <block type="servo_setProperty_Number" id="SYTimuyaOxZ1|2d$N`=+">
 <field name="IDENTIFIER">intakeAsServo</field>
 <field name="PROP">Position</field>
@@ -3037,26 +3080,6 @@ Stopped).</comment>
 <shadow type="math_number" id="fU~_We{N@E^L,^m?=iA0">
 <field name="NUM">0.5</field>
 </shadow>
-</value>
-</block>
-</next>
-</block>
-</statement>
-</block>
-</next>
-</block>
-</next>
-</block>
-</statement>
-</block>
-</statement>
-<statement name="ELSE">
-<block type="variables_set" id="V#r[djff|,1,;Iva}vKX">
-<field name="VAR" id="H`JA0tbO,J93-;0SGlw9">leftBumperCurrentState</field>
-<value name="VALUE">
-<block type="logic_boolean" id="k~i)|?cHhnjk(Y2RD)+L">
-<field name="BOOL">FALSE</field>
-</block>
 </value>
 </block>
 </statement>
