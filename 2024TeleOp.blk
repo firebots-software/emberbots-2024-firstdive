@@ -339,7 +339,7 @@
 </value>
 <value name="B">
 <shadow type="math_number" id="EY2Y7P|9rl-~s~Z`w$#D">
-<field name="NUM">0.2</field>
+<field name="NUM">0.3</field>
 </shadow>
 </value>
 </block>
@@ -1782,7 +1782,7 @@ Stopped).</comment>
 <field name="VAR" id="0-Tje/STOJ~2V~.LD4]$">wristIncrementValue</field>
 <value name="VALUE">
 <block type="math_number" id="48l%N]7[+pRXPxC=#;CM">
-<field name="NUM">0.015</field>
+<field name="NUM">0.02</field>
 </block>
 </value>
 <next>
@@ -1848,7 +1848,7 @@ Stopped).</comment>
 <field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
 <value name="VALUE">
 <block type="math_number" id="s%$VsDB9rF@Z:,Io2Yub">
-<field name="NUM">1500</field>
+<field name="NUM">1570</field>
 </block>
 </value>
 <next>
@@ -1891,45 +1891,6 @@ Stopped).</comment>
 <field name="NUM">5281.1</field>
 </block>
 </value>
-<next>
-<block type="dcMotor_setProperty_Number" id="q(fc$^!%djn/UsXT$@fr">
-<field name="IDENTIFIER">rotatorAsDcMotor</field>
-<field name="PROP">TargetPosition</field>
-<data>{"IDENTIFIER":"rotator"}</data>
-<value name="VALUE">
-<shadow type="math_number">
-<field name="NUM">0</field>
-</shadow>
-<block type="variables_get" id="nJ280!bQRp_CsI%d)DHB">
-<field name="VAR" id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</field>
-</block>
-</value>
-<next>
-<block type="dcMotor_setProperty_Number" id="JKI#}2I6$Ra!7jiQ0Pq0">
-<field name="IDENTIFIER">rotatorAsDcMotor</field>
-<field name="PROP">Power</field>
-<data>{"IDENTIFIER":"rotator"}</data>
-<value name="VALUE">
-<shadow type="math_number" id=")!3QE@Ew2.M!{e?s.lQx">
-<field name="NUM">0.5</field>
-</shadow>
-</value>
-<next>
-<block type="dcMotor_setProperty_RunMode" id="AjENAKT%k!y_uBg0OSNg">
-<field name="IDENTIFIER">rotatorAsDcMotor</field>
-<field name="PROP">Mode</field>
-<data>{"IDENTIFIER":"rotator"}</data>
-<value name="VALUE">
-<shadow type="dcMotor_typedEnum_runMode" id="v~)r13h7P!yofc~0q)!N">
-<field name="RUN_MODE">RUN_TO_POSITION</field>
-</shadow>
-</value>
-</block>
-</next>
-</block>
-</next>
-</block>
-</next>
 </block>
 </next>
 </block>
