@@ -5,10 +5,10 @@ Software repository for team 26106 Emberbots - Fremont High School, Sunnyvale CA
 TeleOp OpMode
 [`2024TeleOp.blk`](/comp_ready/2024TeleOp.blk)
 
-Current Auton OpModes (T_ indicates the tiles from the left of the field)
-[`2024AutonBasketT2.blk`](/comp_ready/2024AutonBasketT2.blk)
-[`2024AutonBasketRightT3.blk`](/comp_ready/2024AutonBasketRightT3.blk)
-[`2024AutonBasketRightT4.blk`](/comp_ready/2024AutonBasketRightT4.blk)
+Current Auton OpModes (T_ indicates the tiles from the left of the field)                       
+[`2024AutonBasketT2.blk`](/comp_ready/2024AutonBasketT2.blk)                        
+[`2024AutonBasketRightT3.blk`](/comp_ready/2024AutonBasketRightT3.blk)                  
+[`2024AutonBasketRightT4.blk`](/comp_ready/2024AutonBasketRightT4.blk)                  
 
 
 ### TeleOp: 2024TeleOp.blk
