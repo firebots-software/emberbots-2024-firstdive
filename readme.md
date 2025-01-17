@@ -12,7 +12,7 @@ Current Auton OpModes (T_ indicates the tiles from the left of the field)
 ### 2024TeleOp.blk
 Full control by a driver and arm operator   
     
-Key Features:
+#### Key Features:
 * Slowmode for the driver
 * Scaled down strafe and rotate function for the arm operator (whichever driver's input is greater will be taken)
 * Viperslide presets
