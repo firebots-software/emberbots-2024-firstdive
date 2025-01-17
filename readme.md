@@ -1,7 +1,7 @@
 # emberbots-2024-firstdive
 Software repository for team 26106 Emberbots - Fremont High School, Sunnyvale CA for the 2024-2025 FTC game "Into The Deep"
 
-## Currently maintained files (/comp_ready)
+## Files currently maintained for competition (/comp_ready)
 TeleOp OpMode                   
 `2024TeleOp.blk`    
   
