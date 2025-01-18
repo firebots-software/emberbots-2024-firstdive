@@ -53,13 +53,14 @@
 <variable id="sKi7z-1YC[,j#twF*s|A">rotatorTicksPerRotation</variable>
 <variable id="nv^HGhpb?a$gaCyLKb$~">speedScaleButtonState</variable>
 <variable id="B0TR%]+l}_jx=YHJ)o)M">rotatorScaling</variable>
-<variable id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</variable>
+<variable id="?Y~+d:1v]yZd-8xhI7nk">viperSlideMaxValue</variable>
 <variable id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</variable>
 <variable id="B-dChE?L5C%Ls5uF6cMZ">speedScalePressCount</variable>
+<variable id="J@-^28Z,VL%yRluKZ9#k">viperslideScalingValue</variable>
 <variable id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</variable>
-<variable id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</variable>
 <variable id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</variable>
 <variable id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</variable>
+<variable id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</variable>
 <variable id="#+)!gjvm6[Zkck_}8:@F">leftStickY</variable>
 <variable id="1EISY^,GT/(.7vVxA=+M">G2RightStickY</variable>
 <variable id="qxKw0u;S{D22ZW@hI$[*">wristButtonIntake</variable>
@@ -1587,7 +1588,7 @@ Stopped).</comment>
 </value>
 <value name="B">
 <shadow type="math_number" id="?e)EdO:Qu[Y?ckucS55b">
-<field name="NUM">750</field>
+<field name="NUM">900</field>
 </shadow>
 </value>
 </block>
@@ -1648,7 +1649,7 @@ Stopped).</comment>
 </value>
 <value name="B">
 <block type="variables_get" id="1o_wWp{W/AXX@+4u*;EE">
-<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
+<field name="VAR" id="?Y~+d:1v]yZd-8xhI7nk">viperSlideMaxValue</field>
 </block>
 </value>
 </block>
@@ -1658,7 +1659,7 @@ Stopped).</comment>
 <field name="VAR" id="_gZn(t)m$-VK*1c%H`{}">viperslideTargetHeight</field>
 <value name="VALUE">
 <block type="variables_get" id=",laZHfaVgC|]f*CE%AHb">
-<field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
+<field name="VAR" id="?Y~+d:1v]yZd-8xhI7nk">viperSlideMaxValue</field>
 </block>
 </value>
 </block>
@@ -2105,7 +2106,7 @@ Stopped).</comment>
 <field name="VAR" id="bJUB|L9Ad:!GI:huC!aX">manualScaling</field>
 <value name="VALUE">
 <block type="math_number" id="+k#D}f*)-9=3;8_p=b7@">
-<field name="NUM">0.25</field>
+<field name="NUM">0.35</field>
 </block>
 </value>
 </block>
@@ -2332,7 +2333,7 @@ Stopped).</comment>
 <field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
 <value name="VALUE">
 <block type="math_number" id="qe$%D!I|Qth/kHZJr_na">
-<field name="NUM">-5700</field>
+<field name="NUM">-5600</field>
 </block>
 </value>
 <next>
@@ -2341,6 +2342,14 @@ Stopped).</comment>
 <value name="VALUE">
 <block type="math_number" id="T*b1(BT4fB6Xj~BiC%hh">
 <field name="NUM">0</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="3f3n=W13?e-S`~KFcl}/">
+<field name="VAR" id="?Y~+d:1v]yZd-8xhI7nk">viperSlideMaxValue</field>
+<value name="VALUE">
+<block type="math_number" id="zrzX5n)X4T0|iK~#wC7^">
+<field name="NUM">-5700</field>
 </block>
 </value>
 <next>
@@ -2400,6 +2409,8 @@ Stopped).</comment>
 <data>{"IDENTIFIER":"rotator"}</data>
 </block>
 </value>
+</block>
+</next>
 </block>
 </next>
 </block>

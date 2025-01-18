@@ -179,7 +179,7 @@ Stopped).</comment>
 </mutation>
 <value name="ARG0">
 <block type="math_number" id="?2[Mi8wo7`7N6T9ow_.^">
-<field name="NUM">0.5</field>
+<field name="NUM">0.75</field>
 </block>
 </value>
 <value name="ARG1">
@@ -217,7 +217,7 @@ Stopped).</comment>
 </mutation>
 <value name="ARG0">
 <block type="math_number" id="jO]bRY/Nd?RmdSPw;a?+">
-<field name="NUM">31</field>
+<field name="NUM">33</field>
 </block>
 </value>
 <value name="ARG1">
@@ -234,7 +234,7 @@ Stopped).</comment>
 </mutation>
 <value name="ARG0">
 <block type="math_number" id="9,=73v%KgR/A9N;6:jB2">
-<field name="NUM">1.5</field>
+<field name="NUM">2</field>
 </block>
 </value>
 <value name="ARG1">
@@ -245,16 +245,6 @@ Stopped).</comment>
 <value name="ARG2">
 <block type="math_number" id="YF!vG?8R7eY5RddgEmit">
 <field name="NUM">16.5</field>
-</block>
-</value>
-<next>
-<block type="procedures_callnoreturn" id="+9y9UUQ~?RXkz7CI99Zv">
-<mutation name="runIntakeOuttake">
-<arg name="intakePosition"/>
-</mutation>
-<value name="ARG0">
-<block type="math_number" id="6@r2)l*chToeksN7VZGg">
-<field name="NUM">0</field>
 </block>
 </value>
 <next>
@@ -281,13 +271,13 @@ Stopped).</comment>
 </block>
 </value>
 <next>
-<block type="procedures_callnoreturn" id=")pT=L9`#Z132j~xepF(G">
+<block type="procedures_callnoreturn" id="+9y9UUQ~?RXkz7CI99Zv">
 <mutation name="runIntakeOuttake">
 <arg name="intakePosition"/>
 </mutation>
 <value name="ARG0">
-<block type="math_number" id="z-tgT!i@0+:kKLX|9P(S">
-<field name="NUM">0.5</field>
+<block type="math_number" id="6@r2)l*chToeksN7VZGg">
+<field name="NUM">0</field>
 </block>
 </value>
 <next>
@@ -311,6 +301,16 @@ Stopped).</comment>
 <field name="NUM">17.5</field>
 </block>
 </value>
+</block>
+</value>
+<next>
+<block type="procedures_callnoreturn" id=")pT=L9`#Z132j~xepF(G">
+<mutation name="runIntakeOuttake">
+<arg name="intakePosition"/>
+</mutation>
+<value name="ARG0">
+<block type="math_number" id="z-tgT!i@0+:kKLX|9P(S">
+<field name="NUM">0.5</field>
 </block>
 </value>
 <next>
@@ -2497,7 +2497,7 @@ strafeRight: +</comment>
 <field name="VAR" id="oJv0H~ox_l%OrBERllqs">rotatorMinPosition</field>
 <value name="VALUE">
 <block type="math_number" id="[LwK{[-.;1V.15W%KdA@">
-<field name="NUM">-125</field>
+<field name="NUM">0</field>
 </block>
 </value>
 <next>
