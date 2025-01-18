@@ -57,10 +57,10 @@
 <variable id="iwWjghx8ZD2M`;Gn?;gr">rotatorSpeed</variable>
 <variable id="B-dChE?L5C%Ls5uF6cMZ">speedScalePressCount</variable>
 <variable id="oR@J=yNfc.Tci^lu]MKW">wheelCircumfrenceIn</variable>
-<variable id="#+)!gjvm6[Zkck_}8:@F">leftStickY</variable>
 <variable id="xnIzDe{Zc?Mlh)%85cD(">targetHeightRange</variable>
 <variable id="G1f1#2@2_Ou(.vC|vn^[">ticksPerRotation</variable>
 <variable id=")mg!]vQx_|dw]rE,0n!E">viperslideSpeed</variable>
+<variable id="#+)!gjvm6[Zkck_}8:@F">leftStickY</variable>
 <variable id="1EISY^,GT/(.7vVxA=+M">G2RightStickY</variable>
 <variable id="qxKw0u;S{D22ZW@hI$[*">wristButtonIntake</variable>
 <variable id="!KOa#tJY0{[^*Kud4)`|">wristButtonOuttake</variable>
@@ -558,6 +558,42 @@ Stopped).</comment>
 <block type="procedures_callnoreturn" id="1xdhGxWqW:zqLs*`1y4v">
 <mutation name="initialConfigViperslide"/>
 <next>
+<block type="telemetry_addNumericData_Number" id="]_K;L9cQECmNwYVtb?/n">
+<value name="KEY">
+<shadow type="text" id="gt0JGlH-Gk@(praH$lgU">
+<field name="TEXT">rotatorinit</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="7{M#MP1~j9[6Kidb7*CZ">
+<field name="NUM">123</field>
+</shadow>
+<block type="dcMotor_getProperty_Number" id="8UNP#;5sM}QJ/$)A`nLf">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">CurrentPosition</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_addNumericData_Number" id="hBKRr3Ig7$c+Sb-`%$@6">
+<value name="KEY">
+<shadow type="text" id="lvN5:g!o%oCh!6JPK+g)">
+<field name="TEXT">wristinit</field>
+</shadow>
+</value>
+<value name="NUMBER">
+<shadow type="math_number" id="mve/z86XEBlMG.w%pRKN">
+<field name="NUM">123</field>
+</shadow>
+<block type="servo_getProperty_Number" id="gO0-}BWLT(y^`p1MPNK)">
+<field name="IDENTIFIER">wristAsServo</field>
+<field name="PROP">Position</field>
+<data>{"IDENTIFIER":"wrist"}</data>
+</block>
+</value>
+<next>
+<block type="telemetry_update" id="/5THqM%r./0(/HzKKK^%">
+<next>
 <block type="linearOpMode_waitForStart" id=":`$wN_ci`O;o6P0~.(+g">
 <next>
 <block type="controls_whileUntil" id="qPx!e$d5*td~icAIx==7">
@@ -885,6 +921,12 @@ Stopped).</comment>
 </next>
 </block>
 </statement>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
 </block>
 </next>
 </block>
@@ -1848,7 +1890,7 @@ Stopped).</comment>
 <field name="VAR" id="o[NH)?Z$w6bk;I8r(^N2">rotatorMaxPosition</field>
 <value name="VALUE">
 <block type="math_number" id="s%$VsDB9rF@Z:,Io2Yub">
-<field name="NUM">1570</field>
+<field name="NUM">1615</field>
 </block>
 </value>
 <next>
@@ -1891,6 +1933,45 @@ Stopped).</comment>
 <field name="NUM">5281.1</field>
 </block>
 </value>
+<next>
+<block type="dcMotor_setProperty_Number" id="f@+_uJ5PDF;Y[K,03-SJ">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">TargetPosition</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="I|_Wl@cUQGjKb9IWW`7=">
+<field name="NUM">0</field>
+</shadow>
+<block type="variables_get" id="oSyY)MKE,w~6ED%5+Oz3">
+<field name="VAR" id="OktIC3NHC+mcQqM2fb/$">rotatorStartPostion</field>
+</block>
+</value>
+<next>
+<block type="dcMotor_setProperty_Number" id="e!7e$q)p(AHdqsV}#{wP">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">Power</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="math_number" id="1)HY$zSs:a:},rV4L/[Y">
+<field name="NUM">0.5</field>
+</shadow>
+</value>
+<next>
+<block type="dcMotor_setProperty_RunMode" id="`bYy:mr|:FtNd?h*OL9s">
+<field name="IDENTIFIER">rotatorAsDcMotor</field>
+<field name="PROP">Mode</field>
+<data>{"IDENTIFIER":"rotator"}</data>
+<value name="VALUE">
+<shadow type="dcMotor_typedEnum_runMode" id="YNJ!qUK75*L+DCuVxr8(">
+<field name="RUN_MODE">RUN_TO_POSITION</field>
+</shadow>
+</value>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
 </block>
 </next>
 </block>
