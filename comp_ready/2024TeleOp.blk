@@ -2333,7 +2333,7 @@ Stopped).</comment>
 <field name="VAR" id="P3;8O1lKR@)1VNNfmc#L">highBasketHeight</field>
 <value name="VALUE">
 <block type="math_number" id="qe$%D!I|Qth/kHZJr_na">
-<field name="NUM">-5600</field>
+<field name="NUM">-5550</field>
 </block>
 </value>
 <next>
